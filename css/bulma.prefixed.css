@@ -1,4 +1,4 @@
-/*! bulma.io v0.8.1 | MIT License | github.com/jgthms/bulma */
+/*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -4318,23 +4318,23 @@ a.bulma-tag:hover {
   background-color: white;
   border-color: #dbdbdb;
   border-radius: 4px;
-  color: inherit;
+  color: #363636;
 }
 
 .bulma-input::-moz-placeholder, .bulma-textarea::-moz-placeholder, .bulma-select select::-moz-placeholder {
-  color: inherit;
+  color: rgba(54, 54, 54, 0.3);
 }
 
 .bulma-input::-webkit-input-placeholder, .bulma-textarea::-webkit-input-placeholder, .bulma-select select::-webkit-input-placeholder {
-  color: inherit;
+  color: rgba(54, 54, 54, 0.3);
 }
 
 .bulma-input:-moz-placeholder, .bulma-textarea:-moz-placeholder, .bulma-select select:-moz-placeholder {
-  color: inherit;
+  color: rgba(54, 54, 54, 0.3);
 }
 
 .bulma-input:-ms-input-placeholder, .bulma-textarea:-ms-input-placeholder, .bulma-select select:-ms-input-placeholder {
-  color: inherit;
+  color: rgba(54, 54, 54, 0.3);
 }
 
 .bulma-input:hover, .bulma-textarea:hover, .bulma-select select:hover, .bulma-is-hovered.bulma-input, .bulma-is-hovered.bulma-textarea, .bulma-select select.bulma-is-hovered {
@@ -7352,9 +7352,6 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
   .bulma-navbar-item,
   .bulma-navbar-link {
     align-items: center;
-    display: flex;
-  }
-  .bulma-navbar-item {
     display: flex;
   }
   .bulma-navbar-item.bulma-has-dropdown {
