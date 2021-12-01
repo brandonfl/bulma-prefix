@@ -1,6 +1,6 @@
 {
   "name": "bulma-prefix",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "Bulma CSS framework with bulma as css prefix",
   "homepage": "https://github.com/brandonfl/bulma-prefix",
   "main": "css/bulma.prefixed.css",
@@ -37,7 +37,7 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "bulma": "0.9.2",
+    "bulma": "0.9.3",
     "clean-css-cli": "^5.4.2",
     "node-sass": "^6.0.1",
     "postcss": "^8.4.4",

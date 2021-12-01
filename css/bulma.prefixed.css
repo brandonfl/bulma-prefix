@@ -1,4 +1,4 @@
-/*! bulma.io v0.9.2 | MIT License | github.com/jgthms/bulma */
+/*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .bulma-button, .bulma-input, .bulma-textarea, .bulma-select select, .bulma-file-cta,
 .bulma-file-name, .bulma-pagination-previous,
@@ -92,7 +92,7 @@ fieldset[disabled] .bulma-pagination-ellipsis {
 }
 
 .bulma-box:not(:last-child), .bulma-content:not(:last-child), .bulma-notification:not(:last-child), .bulma-progress:not(:last-child), .bulma-table:not(:last-child), .bulma-table-container:not(:last-child), .bulma-title:not(:last-child),
-.bulma-subtitle:not(:last-child), .bulma-block:not(:last-child), .bulma-highlight:not(:last-child), .bulma-breadcrumb:not(:last-child), .bulma-level:not(:last-child), .bulma-message:not(:last-child), .bulma-pagination:not(:last-child), .bulma-tabs:not(:last-child) {
+.bulma-subtitle:not(:last-child), .bulma-block:not(:last-child), .bulma-breadcrumb:not(:last-child), .bulma-level:not(:last-child), .bulma-message:not(:last-child), .bulma-pagination:not(:last-child), .bulma-tabs:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
@@ -106,7 +106,7 @@ fieldset[disabled] .bulma-pagination-ellipsis {
   -webkit-appearance: none;
   background-color: rgba(10, 10, 10, 0.2);
   border: none;
-  border-radius: 290486px;
+  border-radius: 9999px;
   cursor: pointer;
   pointer-events: auto;
   display: inline-block;
@@ -184,7 +184,7 @@ fieldset[disabled] .bulma-pagination-ellipsis {
   -webkit-animation: spinAround 500ms infinite linear;
           animation: spinAround 500ms infinite linear;
   border: 2px solid #dbdbdb;
-  border-radius: 290486px;
+  border-radius: 9999px;
   border-right-color: transparent;
   border-top-color: transparent;
   content: "";
@@ -216,6 +216,19 @@ fieldset[disabled] .bulma-pagination-ellipsis {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.bulma-navbar-burger {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  color: currentColor;
+  font-family: inherit;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
 }
 
 /* Bulma Base */
@@ -349,7 +362,7 @@ body {
 }
 
 a {
-  color: #3273dc;
+  color: #485fc7;
   cursor: pointer;
   text-decoration: none;
 }
@@ -467,11 +480,11 @@ table th {
 }
 
 a.bulma-box:hover, a.bulma-box:focus {
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px #3273dc;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px #485fc7;
 }
 
 a.bulma-box:active {
-  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #3273dc;
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #485fc7;
 }
 
 .bulma-button {
@@ -519,12 +532,12 @@ a.bulma-box:active {
 }
 
 .bulma-button:focus, .bulma-button.bulma-is-focused {
-  border-color: #3273dc;
+  border-color: #485fc7;
   color: #363636;
 }
 
 .bulma-button:focus:not(:active), .bulma-button.bulma-is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
 }
 
 .bulma-button:active, .bulma-button.bulma-is-active {
@@ -559,12 +572,12 @@ fieldset[disabled] .bulma-button.bulma-is-text {
 .bulma-button.bulma-is-ghost {
   background: none;
   border-color: transparent;
-  color: #3273dc;
+  color: #485fc7;
   text-decoration: none;
 }
 
 .bulma-button.bulma-is-ghost:hover, .bulma-button.bulma-is-ghost.bulma-is-hovered {
-  color: #3273dc;
+  color: #485fc7;
   text-decoration: underline;
 }
 
@@ -1116,13 +1129,13 @@ fieldset[disabled] .bulma-button.bulma-is-primary.bulma-is-inverted.bulma-is-out
 }
 
 .bulma-button.bulma-is-link {
-  background-color: #3273dc;
+  background-color: #485fc7;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-button.bulma-is-link:hover, .bulma-button.bulma-is-link.bulma-is-hovered {
-  background-color: #276cda;
+  background-color: #3e56c4;
   border-color: transparent;
   color: #fff;
 }
@@ -1133,25 +1146,25 @@ fieldset[disabled] .bulma-button.bulma-is-primary.bulma-is-inverted.bulma-is-out
 }
 
 .bulma-button.bulma-is-link:focus:not(:active), .bulma-button.bulma-is-link.bulma-is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
 }
 
 .bulma-button.bulma-is-link:active, .bulma-button.bulma-is-link.bulma-is-active {
-  background-color: #2366d1;
+  background-color: #3a51bb;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-button.bulma-is-link[disabled],
 fieldset[disabled] .bulma-button.bulma-is-link {
-  background-color: #3273dc;
+  background-color: #485fc7;
   border-color: transparent;
   box-shadow: none;
 }
 
 .bulma-button.bulma-is-link.bulma-is-inverted {
   background-color: #fff;
-  color: #3273dc;
+  color: #485fc7;
 }
 
 .bulma-button.bulma-is-link.bulma-is-inverted:hover, .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-hovered {
@@ -1163,7 +1176,7 @@ fieldset[disabled] .bulma-button.bulma-is-link.bulma-is-inverted {
   background-color: #fff;
   border-color: transparent;
   box-shadow: none;
-  color: #3273dc;
+  color: #485fc7;
 }
 
 .bulma-button.bulma-is-link.bulma-is-loading::after {
@@ -1172,18 +1185,18 @@ fieldset[disabled] .bulma-button.bulma-is-link.bulma-is-inverted {
 
 .bulma-button.bulma-is-link.bulma-is-outlined {
   background-color: transparent;
-  border-color: #3273dc;
-  color: #3273dc;
+  border-color: #485fc7;
+  color: #485fc7;
 }
 
 .bulma-button.bulma-is-link.bulma-is-outlined:hover, .bulma-button.bulma-is-link.bulma-is-outlined.bulma-is-hovered, .bulma-button.bulma-is-link.bulma-is-outlined:focus, .bulma-button.bulma-is-link.bulma-is-outlined.bulma-is-focused {
-  background-color: #3273dc;
-  border-color: #3273dc;
+  background-color: #485fc7;
+  border-color: #485fc7;
   color: #fff;
 }
 
 .bulma-button.bulma-is-link.bulma-is-outlined.bulma-is-loading::after {
-  border-color: transparent transparent #3273dc #3273dc !important;
+  border-color: transparent transparent #485fc7 #485fc7 !important;
 }
 
 .bulma-button.bulma-is-link.bulma-is-outlined.bulma-is-loading:hover::after, .bulma-button.bulma-is-link.bulma-is-outlined.bulma-is-loading.bulma-is-hovered::after, .bulma-button.bulma-is-link.bulma-is-outlined.bulma-is-loading:focus::after, .bulma-button.bulma-is-link.bulma-is-outlined.bulma-is-loading.bulma-is-focused::after {
@@ -1193,9 +1206,9 @@ fieldset[disabled] .bulma-button.bulma-is-link.bulma-is-inverted {
 .bulma-button.bulma-is-link.bulma-is-outlined[disabled],
 fieldset[disabled] .bulma-button.bulma-is-link.bulma-is-outlined {
   background-color: transparent;
-  border-color: #3273dc;
+  border-color: #485fc7;
   box-shadow: none;
-  color: #3273dc;
+  color: #485fc7;
 }
 
 .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined {
@@ -1206,11 +1219,11 @@ fieldset[disabled] .bulma-button.bulma-is-link.bulma-is-outlined {
 
 .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined:hover, .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined.bulma-is-hovered, .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined:focus, .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined.bulma-is-focused {
   background-color: #fff;
-  color: #3273dc;
+  color: #485fc7;
 }
 
 .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined.bulma-is-loading:hover::after, .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined.bulma-is-loading.bulma-is-hovered::after, .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined.bulma-is-loading:focus::after, .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined.bulma-is-loading.bulma-is-focused::after {
-  border-color: transparent transparent #3273dc #3273dc !important;
+  border-color: transparent transparent #485fc7 #485fc7 !important;
 }
 
 .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined[disabled],
@@ -1222,30 +1235,30 @@ fieldset[disabled] .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlin
 }
 
 .bulma-button.bulma-is-link.bulma-is-light {
-  background-color: #eef3fc;
-  color: #2160c4;
+  background-color: #eff1fa;
+  color: #3850b7;
 }
 
 .bulma-button.bulma-is-link.bulma-is-light:hover, .bulma-button.bulma-is-link.bulma-is-light.bulma-is-hovered {
-  background-color: #e3ecfa;
+  background-color: #e6e9f7;
   border-color: transparent;
-  color: #2160c4;
+  color: #3850b7;
 }
 
 .bulma-button.bulma-is-link.bulma-is-light:active, .bulma-button.bulma-is-link.bulma-is-light.bulma-is-active {
-  background-color: #d8e4f8;
+  background-color: #dce0f4;
   border-color: transparent;
-  color: #2160c4;
+  color: #3850b7;
 }
 
 .bulma-button.bulma-is-info {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-button.bulma-is-info:hover, .bulma-button.bulma-is-info.bulma-is-hovered {
-  background-color: #2793da;
+  background-color: #3488ce;
   border-color: transparent;
   color: #fff;
 }
@@ -1256,25 +1269,25 @@ fieldset[disabled] .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlin
 }
 
 .bulma-button.bulma-is-info:focus:not(:active), .bulma-button.bulma-is-info.bulma-is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(50, 152, 220, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(62, 142, 208, 0.25);
 }
 
 .bulma-button.bulma-is-info:active, .bulma-button.bulma-is-info.bulma-is-active {
-  background-color: #238cd1;
+  background-color: #3082c5;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-button.bulma-is-info[disabled],
 fieldset[disabled] .bulma-button.bulma-is-info {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
   border-color: transparent;
   box-shadow: none;
 }
 
 .bulma-button.bulma-is-info.bulma-is-inverted {
   background-color: #fff;
-  color: #3298dc;
+  color: #3e8ed0;
 }
 
 .bulma-button.bulma-is-info.bulma-is-inverted:hover, .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-hovered {
@@ -1286,7 +1299,7 @@ fieldset[disabled] .bulma-button.bulma-is-info.bulma-is-inverted {
   background-color: #fff;
   border-color: transparent;
   box-shadow: none;
-  color: #3298dc;
+  color: #3e8ed0;
 }
 
 .bulma-button.bulma-is-info.bulma-is-loading::after {
@@ -1295,18 +1308,18 @@ fieldset[disabled] .bulma-button.bulma-is-info.bulma-is-inverted {
 
 .bulma-button.bulma-is-info.bulma-is-outlined {
   background-color: transparent;
-  border-color: #3298dc;
-  color: #3298dc;
+  border-color: #3e8ed0;
+  color: #3e8ed0;
 }
 
 .bulma-button.bulma-is-info.bulma-is-outlined:hover, .bulma-button.bulma-is-info.bulma-is-outlined.bulma-is-hovered, .bulma-button.bulma-is-info.bulma-is-outlined:focus, .bulma-button.bulma-is-info.bulma-is-outlined.bulma-is-focused {
-  background-color: #3298dc;
-  border-color: #3298dc;
+  background-color: #3e8ed0;
+  border-color: #3e8ed0;
   color: #fff;
 }
 
 .bulma-button.bulma-is-info.bulma-is-outlined.bulma-is-loading::after {
-  border-color: transparent transparent #3298dc #3298dc !important;
+  border-color: transparent transparent #3e8ed0 #3e8ed0 !important;
 }
 
 .bulma-button.bulma-is-info.bulma-is-outlined.bulma-is-loading:hover::after, .bulma-button.bulma-is-info.bulma-is-outlined.bulma-is-loading.bulma-is-hovered::after, .bulma-button.bulma-is-info.bulma-is-outlined.bulma-is-loading:focus::after, .bulma-button.bulma-is-info.bulma-is-outlined.bulma-is-loading.bulma-is-focused::after {
@@ -1316,9 +1329,9 @@ fieldset[disabled] .bulma-button.bulma-is-info.bulma-is-inverted {
 .bulma-button.bulma-is-info.bulma-is-outlined[disabled],
 fieldset[disabled] .bulma-button.bulma-is-info.bulma-is-outlined {
   background-color: transparent;
-  border-color: #3298dc;
+  border-color: #3e8ed0;
   box-shadow: none;
-  color: #3298dc;
+  color: #3e8ed0;
 }
 
 .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined {
@@ -1329,11 +1342,11 @@ fieldset[disabled] .bulma-button.bulma-is-info.bulma-is-outlined {
 
 .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined:hover, .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined.bulma-is-hovered, .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined:focus, .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined.bulma-is-focused {
   background-color: #fff;
-  color: #3298dc;
+  color: #3e8ed0;
 }
 
 .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined.bulma-is-loading:hover::after, .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined.bulma-is-loading.bulma-is-hovered::after, .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined.bulma-is-loading:focus::after, .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined.bulma-is-loading.bulma-is-focused::after {
-  border-color: transparent transparent #3298dc #3298dc !important;
+  border-color: transparent transparent #3e8ed0 #3e8ed0 !important;
 }
 
 .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined[disabled],
@@ -1345,30 +1358,30 @@ fieldset[disabled] .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlin
 }
 
 .bulma-button.bulma-is-info.bulma-is-light {
-  background-color: #eef6fc;
-  color: #1d72aa;
+  background-color: #eff5fb;
+  color: #296fa8;
 }
 
 .bulma-button.bulma-is-info.bulma-is-light:hover, .bulma-button.bulma-is-info.bulma-is-light.bulma-is-hovered {
-  background-color: #e3f1fa;
+  background-color: #e4eff9;
   border-color: transparent;
-  color: #1d72aa;
+  color: #296fa8;
 }
 
 .bulma-button.bulma-is-info.bulma-is-light:active, .bulma-button.bulma-is-info.bulma-is-light.bulma-is-active {
-  background-color: #d8ebf8;
+  background-color: #dae9f6;
   border-color: transparent;
-  color: #1d72aa;
+  color: #296fa8;
 }
 
 .bulma-button.bulma-is-success {
-  background-color: #48c774;
+  background-color: #48c78e;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-button.bulma-is-success:hover, .bulma-button.bulma-is-success.bulma-is-hovered {
-  background-color: #3ec46d;
+  background-color: #3ec487;
   border-color: transparent;
   color: #fff;
 }
@@ -1379,25 +1392,25 @@ fieldset[disabled] .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlin
 }
 
 .bulma-button.bulma-is-success:focus:not(:active), .bulma-button.bulma-is-success.bulma-is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(72, 199, 116, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(72, 199, 142, 0.25);
 }
 
 .bulma-button.bulma-is-success:active, .bulma-button.bulma-is-success.bulma-is-active {
-  background-color: #3abb67;
+  background-color: #3abb81;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-button.bulma-is-success[disabled],
 fieldset[disabled] .bulma-button.bulma-is-success {
-  background-color: #48c774;
+  background-color: #48c78e;
   border-color: transparent;
   box-shadow: none;
 }
 
 .bulma-button.bulma-is-success.bulma-is-inverted {
   background-color: #fff;
-  color: #48c774;
+  color: #48c78e;
 }
 
 .bulma-button.bulma-is-success.bulma-is-inverted:hover, .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-hovered {
@@ -1409,7 +1422,7 @@ fieldset[disabled] .bulma-button.bulma-is-success.bulma-is-inverted {
   background-color: #fff;
   border-color: transparent;
   box-shadow: none;
-  color: #48c774;
+  color: #48c78e;
 }
 
 .bulma-button.bulma-is-success.bulma-is-loading::after {
@@ -1418,18 +1431,18 @@ fieldset[disabled] .bulma-button.bulma-is-success.bulma-is-inverted {
 
 .bulma-button.bulma-is-success.bulma-is-outlined {
   background-color: transparent;
-  border-color: #48c774;
-  color: #48c774;
+  border-color: #48c78e;
+  color: #48c78e;
 }
 
 .bulma-button.bulma-is-success.bulma-is-outlined:hover, .bulma-button.bulma-is-success.bulma-is-outlined.bulma-is-hovered, .bulma-button.bulma-is-success.bulma-is-outlined:focus, .bulma-button.bulma-is-success.bulma-is-outlined.bulma-is-focused {
-  background-color: #48c774;
-  border-color: #48c774;
+  background-color: #48c78e;
+  border-color: #48c78e;
   color: #fff;
 }
 
 .bulma-button.bulma-is-success.bulma-is-outlined.bulma-is-loading::after {
-  border-color: transparent transparent #48c774 #48c774 !important;
+  border-color: transparent transparent #48c78e #48c78e !important;
 }
 
 .bulma-button.bulma-is-success.bulma-is-outlined.bulma-is-loading:hover::after, .bulma-button.bulma-is-success.bulma-is-outlined.bulma-is-loading.bulma-is-hovered::after, .bulma-button.bulma-is-success.bulma-is-outlined.bulma-is-loading:focus::after, .bulma-button.bulma-is-success.bulma-is-outlined.bulma-is-loading.bulma-is-focused::after {
@@ -1439,9 +1452,9 @@ fieldset[disabled] .bulma-button.bulma-is-success.bulma-is-inverted {
 .bulma-button.bulma-is-success.bulma-is-outlined[disabled],
 fieldset[disabled] .bulma-button.bulma-is-success.bulma-is-outlined {
   background-color: transparent;
-  border-color: #48c774;
+  border-color: #48c78e;
   box-shadow: none;
-  color: #48c774;
+  color: #48c78e;
 }
 
 .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-outlined {
@@ -1452,11 +1465,11 @@ fieldset[disabled] .bulma-button.bulma-is-success.bulma-is-outlined {
 
 .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-outlined:hover, .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-outlined.bulma-is-hovered, .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-outlined:focus, .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-outlined.bulma-is-focused {
   background-color: #fff;
-  color: #48c774;
+  color: #48c78e;
 }
 
 .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-outlined.bulma-is-loading:hover::after, .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-outlined.bulma-is-loading.bulma-is-hovered::after, .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-outlined.bulma-is-loading:focus::after, .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-outlined.bulma-is-loading.bulma-is-focused::after {
-  border-color: transparent transparent #48c774 #48c774 !important;
+  border-color: transparent transparent #48c78e #48c78e !important;
 }
 
 .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-outlined[disabled],
@@ -1468,30 +1481,30 @@ fieldset[disabled] .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-out
 }
 
 .bulma-button.bulma-is-success.bulma-is-light {
-  background-color: #effaf3;
-  color: #257942;
+  background-color: #effaf5;
+  color: #257953;
 }
 
 .bulma-button.bulma-is-success.bulma-is-light:hover, .bulma-button.bulma-is-success.bulma-is-light.bulma-is-hovered {
-  background-color: #e6f7ec;
+  background-color: #e6f7ef;
   border-color: transparent;
-  color: #257942;
+  color: #257953;
 }
 
 .bulma-button.bulma-is-success.bulma-is-light:active, .bulma-button.bulma-is-success.bulma-is-light.bulma-is-active {
-  background-color: #dcf4e4;
+  background-color: #dcf4e9;
   border-color: transparent;
-  color: #257942;
+  color: #257953;
 }
 
 .bulma-button.bulma-is-warning {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
   border-color: transparent;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .bulma-button.bulma-is-warning:hover, .bulma-button.bulma-is-warning.bulma-is-hovered {
-  background-color: #ffdb4a;
+  background-color: #ffdc7d;
   border-color: transparent;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -1502,25 +1515,25 @@ fieldset[disabled] .bulma-button.bulma-is-success.bulma-is-inverted.bulma-is-out
 }
 
 .bulma-button.bulma-is-warning:focus:not(:active), .bulma-button.bulma-is-warning.bulma-is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(255, 224, 138, 0.25);
 }
 
 .bulma-button.bulma-is-warning:active, .bulma-button.bulma-is-warning.bulma-is-active {
-  background-color: #ffd83d;
+  background-color: #ffd970;
   border-color: transparent;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .bulma-button.bulma-is-warning[disabled],
 fieldset[disabled] .bulma-button.bulma-is-warning {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
   border-color: transparent;
   box-shadow: none;
 }
 
 .bulma-button.bulma-is-warning.bulma-is-inverted {
   background-color: rgba(0, 0, 0, 0.7);
-  color: #ffdd57;
+  color: #ffe08a;
 }
 
 .bulma-button.bulma-is-warning.bulma-is-inverted:hover, .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-hovered {
@@ -1532,7 +1545,7 @@ fieldset[disabled] .bulma-button.bulma-is-warning.bulma-is-inverted {
   background-color: rgba(0, 0, 0, 0.7);
   border-color: transparent;
   box-shadow: none;
-  color: #ffdd57;
+  color: #ffe08a;
 }
 
 .bulma-button.bulma-is-warning.bulma-is-loading::after {
@@ -1541,18 +1554,18 @@ fieldset[disabled] .bulma-button.bulma-is-warning.bulma-is-inverted {
 
 .bulma-button.bulma-is-warning.bulma-is-outlined {
   background-color: transparent;
-  border-color: #ffdd57;
-  color: #ffdd57;
+  border-color: #ffe08a;
+  color: #ffe08a;
 }
 
 .bulma-button.bulma-is-warning.bulma-is-outlined:hover, .bulma-button.bulma-is-warning.bulma-is-outlined.bulma-is-hovered, .bulma-button.bulma-is-warning.bulma-is-outlined:focus, .bulma-button.bulma-is-warning.bulma-is-outlined.bulma-is-focused {
-  background-color: #ffdd57;
-  border-color: #ffdd57;
+  background-color: #ffe08a;
+  border-color: #ffe08a;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .bulma-button.bulma-is-warning.bulma-is-outlined.bulma-is-loading::after {
-  border-color: transparent transparent #ffdd57 #ffdd57 !important;
+  border-color: transparent transparent #ffe08a #ffe08a !important;
 }
 
 .bulma-button.bulma-is-warning.bulma-is-outlined.bulma-is-loading:hover::after, .bulma-button.bulma-is-warning.bulma-is-outlined.bulma-is-loading.bulma-is-hovered::after, .bulma-button.bulma-is-warning.bulma-is-outlined.bulma-is-loading:focus::after, .bulma-button.bulma-is-warning.bulma-is-outlined.bulma-is-loading.bulma-is-focused::after {
@@ -1562,9 +1575,9 @@ fieldset[disabled] .bulma-button.bulma-is-warning.bulma-is-inverted {
 .bulma-button.bulma-is-warning.bulma-is-outlined[disabled],
 fieldset[disabled] .bulma-button.bulma-is-warning.bulma-is-outlined {
   background-color: transparent;
-  border-color: #ffdd57;
+  border-color: #ffe08a;
   box-shadow: none;
-  color: #ffdd57;
+  color: #ffe08a;
 }
 
 .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-outlined {
@@ -1575,11 +1588,11 @@ fieldset[disabled] .bulma-button.bulma-is-warning.bulma-is-outlined {
 
 .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-outlined:hover, .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-outlined.bulma-is-hovered, .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-outlined:focus, .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-outlined.bulma-is-focused {
   background-color: rgba(0, 0, 0, 0.7);
-  color: #ffdd57;
+  color: #ffe08a;
 }
 
 .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-outlined.bulma-is-loading:hover::after, .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-outlined.bulma-is-loading.bulma-is-hovered::after, .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-outlined.bulma-is-loading:focus::after, .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-outlined.bulma-is-loading.bulma-is-focused::after {
-  border-color: transparent transparent #ffdd57 #ffdd57 !important;
+  border-color: transparent transparent #ffe08a #ffe08a !important;
 }
 
 .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-outlined[disabled],
@@ -1591,20 +1604,20 @@ fieldset[disabled] .bulma-button.bulma-is-warning.bulma-is-inverted.bulma-is-out
 }
 
 .bulma-button.bulma-is-warning.bulma-is-light {
-  background-color: #fffbeb;
-  color: #947600;
+  background-color: #fffaeb;
+  color: #946c00;
 }
 
 .bulma-button.bulma-is-warning.bulma-is-light:hover, .bulma-button.bulma-is-warning.bulma-is-light.bulma-is-hovered {
-  background-color: #fff8de;
+  background-color: #fff6de;
   border-color: transparent;
-  color: #947600;
+  color: #946c00;
 }
 
 .bulma-button.bulma-is-warning.bulma-is-light:active, .bulma-button.bulma-is-warning.bulma-is-light.bulma-is-active {
-  background-color: #fff6d1;
+  background-color: #fff3d1;
   border-color: transparent;
-  color: #947600;
+  color: #946c00;
 }
 
 .bulma-button.bulma-is-danger {
@@ -1770,8 +1783,8 @@ fieldset[disabled] .bulma-button {
 
 .bulma-button.bulma-is-loading::after {
   position: absolute;
-  left: calc(50% - (1em / 2));
-  top: calc(50% - (1em / 2));
+  left: calc(50% - (1em * 0.5));
+  top: calc(50% - (1em * 0.5));
   position: absolute !important;
 }
 
@@ -1784,7 +1797,7 @@ fieldset[disabled] .bulma-button {
 }
 
 .bulma-button.bulma-is-rounded {
-  border-radius: 290486px;
+  border-radius: 9999px;
   padding-left: calc(1em + 0.25em);
   padding-right: calc(1em + 0.25em);
 }
@@ -2120,6 +2133,10 @@ fieldset[disabled] .bulma-button {
   font-size: 0.75rem;
 }
 
+.bulma-content.bulma-is-normal {
+  font-size: 1rem;
+}
+
 .bulma-content.bulma-is-medium {
   font-size: 1.25rem;
 }
@@ -2189,7 +2206,7 @@ div.bulma-icon-text {
 }
 
 .bulma-image img.bulma-is-rounded {
-  border-radius: 290486px;
+  border-radius: 9999px;
 }
 
 .bulma-image.bulma-is-fullwidth {
@@ -2380,43 +2397,43 @@ div.bulma-icon-text {
 }
 
 .bulma-notification.bulma-is-link {
-  background-color: #3273dc;
+  background-color: #485fc7;
   color: #fff;
 }
 
 .bulma-notification.bulma-is-link.bulma-is-light {
-  background-color: #eef3fc;
-  color: #2160c4;
+  background-color: #eff1fa;
+  color: #3850b7;
 }
 
 .bulma-notification.bulma-is-info {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
   color: #fff;
 }
 
 .bulma-notification.bulma-is-info.bulma-is-light {
-  background-color: #eef6fc;
-  color: #1d72aa;
+  background-color: #eff5fb;
+  color: #296fa8;
 }
 
 .bulma-notification.bulma-is-success {
-  background-color: #48c774;
+  background-color: #48c78e;
   color: #fff;
 }
 
 .bulma-notification.bulma-is-success.bulma-is-light {
-  background-color: #effaf3;
-  color: #257942;
+  background-color: #effaf5;
+  color: #257953;
 }
 
 .bulma-notification.bulma-is-warning {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .bulma-notification.bulma-is-warning.bulma-is-light {
-  background-color: #fffbeb;
-  color: #947600;
+  background-color: #fffaeb;
+  color: #946c00;
 }
 
 .bulma-notification.bulma-is-danger {
@@ -2433,7 +2450,7 @@ div.bulma-icon-text {
   -moz-appearance: none;
   -webkit-appearance: none;
   border: none;
-  border-radius: 290486px;
+  border-radius: 9999px;
   display: block;
   height: 1rem;
   overflow: hidden;
@@ -2539,67 +2556,67 @@ div.bulma-icon-text {
 }
 
 .bulma-progress.bulma-is-link::-webkit-progress-value {
-  background-color: #3273dc;
+  background-color: #485fc7;
 }
 
 .bulma-progress.bulma-is-link::-moz-progress-bar {
-  background-color: #3273dc;
+  background-color: #485fc7;
 }
 
 .bulma-progress.bulma-is-link::-ms-fill {
-  background-color: #3273dc;
+  background-color: #485fc7;
 }
 
 .bulma-progress.bulma-is-link:indeterminate {
-  background-image: linear-gradient(to right, #3273dc 30%, #ededed 30%);
+  background-image: linear-gradient(to right, #485fc7 30%, #ededed 30%);
 }
 
 .bulma-progress.bulma-is-info::-webkit-progress-value {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
 }
 
 .bulma-progress.bulma-is-info::-moz-progress-bar {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
 }
 
 .bulma-progress.bulma-is-info::-ms-fill {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
 }
 
 .bulma-progress.bulma-is-info:indeterminate {
-  background-image: linear-gradient(to right, #3298dc 30%, #ededed 30%);
+  background-image: linear-gradient(to right, #3e8ed0 30%, #ededed 30%);
 }
 
 .bulma-progress.bulma-is-success::-webkit-progress-value {
-  background-color: #48c774;
+  background-color: #48c78e;
 }
 
 .bulma-progress.bulma-is-success::-moz-progress-bar {
-  background-color: #48c774;
+  background-color: #48c78e;
 }
 
 .bulma-progress.bulma-is-success::-ms-fill {
-  background-color: #48c774;
+  background-color: #48c78e;
 }
 
 .bulma-progress.bulma-is-success:indeterminate {
-  background-image: linear-gradient(to right, #48c774 30%, #ededed 30%);
+  background-image: linear-gradient(to right, #48c78e 30%, #ededed 30%);
 }
 
 .bulma-progress.bulma-is-warning::-webkit-progress-value {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
 }
 
 .bulma-progress.bulma-is-warning::-moz-progress-bar {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
 }
 
 .bulma-progress.bulma-is-warning::-ms-fill {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
 }
 
 .bulma-progress.bulma-is-warning:indeterminate {
-  background-image: linear-gradient(to right, #ffdd57 30%, #ededed 30%);
+  background-image: linear-gradient(to right, #ffe08a 30%, #ededed 30%);
 }
 
 .bulma-progress.bulma-is-danger::-webkit-progress-value {
@@ -2726,29 +2743,29 @@ div.bulma-icon-text {
 
 .bulma-table td.bulma-is-link,
 .bulma-table th.bulma-is-link {
-  background-color: #3273dc;
-  border-color: #3273dc;
+  background-color: #485fc7;
+  border-color: #485fc7;
   color: #fff;
 }
 
 .bulma-table td.bulma-is-info,
 .bulma-table th.bulma-is-info {
-  background-color: #3298dc;
-  border-color: #3298dc;
+  background-color: #3e8ed0;
+  border-color: #3e8ed0;
   color: #fff;
 }
 
 .bulma-table td.bulma-is-success,
 .bulma-table th.bulma-is-success {
-  background-color: #48c774;
-  border-color: #48c774;
+  background-color: #48c78e;
+  border-color: #48c78e;
   color: #fff;
 }
 
 .bulma-table td.bulma-is-warning,
 .bulma-table th.bulma-is-warning {
-  background-color: #ffdd57;
-  border-color: #ffdd57;
+  background-color: #ffe08a;
+  border-color: #ffe08a;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -2996,43 +3013,43 @@ div.bulma-icon-text {
 }
 
 .bulma-tag:not(body).bulma-is-link {
-  background-color: #3273dc;
+  background-color: #485fc7;
   color: #fff;
 }
 
 .bulma-tag:not(body).bulma-is-link.bulma-is-light {
-  background-color: #eef3fc;
-  color: #2160c4;
+  background-color: #eff1fa;
+  color: #3850b7;
 }
 
 .bulma-tag:not(body).bulma-is-info {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
   color: #fff;
 }
 
 .bulma-tag:not(body).bulma-is-info.bulma-is-light {
-  background-color: #eef6fc;
-  color: #1d72aa;
+  background-color: #eff5fb;
+  color: #296fa8;
 }
 
 .bulma-tag:not(body).bulma-is-success {
-  background-color: #48c774;
+  background-color: #48c78e;
   color: #fff;
 }
 
 .bulma-tag:not(body).bulma-is-success.bulma-is-light {
-  background-color: #effaf3;
-  color: #257942;
+  background-color: #effaf5;
+  color: #257953;
 }
 
 .bulma-tag:not(body).bulma-is-warning {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .bulma-tag:not(body).bulma-is-warning.bulma-is-light {
-  background-color: #fffbeb;
-  color: #947600;
+  background-color: #fffaeb;
+  color: #946c00;
 }
 
 .bulma-tag:not(body).bulma-is-danger {
@@ -3109,7 +3126,7 @@ div.bulma-icon-text {
 }
 
 .bulma-tag:not(body).bulma-is-rounded {
-  border-radius: 290486px;
+  border-radius: 9999px;
 }
 
 a.bulma-tag:hover {
@@ -3153,10 +3170,6 @@ a.bulma-tag:hover {
 .bulma-title strong {
   color: inherit;
   font-weight: inherit;
-}
-
-.bulma-title + .bulma-highlight {
-  margin-top: -0.75rem;
 }
 
 .bulma-title:not(.bulma-is-spaced) + .bulma-subtitle {
@@ -3243,22 +3256,10 @@ a.bulma-tag:hover {
   text-transform: uppercase;
 }
 
-.bulma-highlight {
-  font-weight: 400;
-  max-width: 100%;
-  overflow: hidden;
-  padding: 0;
-}
-
-.bulma-highlight pre {
-  overflow: auto;
-  max-width: 100%;
-}
-
 .bulma-number {
   align-items: center;
   background-color: whitesmoke;
-  border-radius: 290486px;
+  border-radius: 9999px;
   display: inline-flex;
   font-size: 1.25rem;
   height: 2em;
@@ -3299,8 +3300,8 @@ a.bulma-tag:hover {
 }
 
 .bulma-input:focus, .bulma-textarea:focus, .bulma-select select:focus, .bulma-is-focused.bulma-input, .bulma-is-focused.bulma-textarea, .bulma-select select.bulma-is-focused, .bulma-input:active, .bulma-textarea:active, .bulma-select select:active, .bulma-is-active.bulma-input, .bulma-is-active.bulma-textarea, .bulma-select select.bulma-is-active {
-  border-color: #3273dc;
-  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+  border-color: #485fc7;
+  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
 }
 
 .bulma-input[disabled], .bulma-textarea[disabled], .bulma-select select[disabled],
@@ -3397,35 +3398,35 @@ fieldset[disabled] .bulma-select select:-ms-input-placeholder,
 }
 
 .bulma-is-link.bulma-input, .bulma-is-link.bulma-textarea {
-  border-color: #3273dc;
+  border-color: #485fc7;
 }
 
 .bulma-is-link.bulma-input:focus, .bulma-is-link.bulma-textarea:focus, .bulma-is-link.bulma-is-focused.bulma-input, .bulma-is-link.bulma-is-focused.bulma-textarea, .bulma-is-link.bulma-input:active, .bulma-is-link.bulma-textarea:active, .bulma-is-link.bulma-is-active.bulma-input, .bulma-is-link.bulma-is-active.bulma-textarea {
-  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
 }
 
 .bulma-is-info.bulma-input, .bulma-is-info.bulma-textarea {
-  border-color: #3298dc;
+  border-color: #3e8ed0;
 }
 
 .bulma-is-info.bulma-input:focus, .bulma-is-info.bulma-textarea:focus, .bulma-is-info.bulma-is-focused.bulma-input, .bulma-is-info.bulma-is-focused.bulma-textarea, .bulma-is-info.bulma-input:active, .bulma-is-info.bulma-textarea:active, .bulma-is-info.bulma-is-active.bulma-input, .bulma-is-info.bulma-is-active.bulma-textarea {
-  box-shadow: 0 0 0 0.125em rgba(50, 152, 220, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(62, 142, 208, 0.25);
 }
 
 .bulma-is-success.bulma-input, .bulma-is-success.bulma-textarea {
-  border-color: #48c774;
+  border-color: #48c78e;
 }
 
 .bulma-is-success.bulma-input:focus, .bulma-is-success.bulma-textarea:focus, .bulma-is-success.bulma-is-focused.bulma-input, .bulma-is-success.bulma-is-focused.bulma-textarea, .bulma-is-success.bulma-input:active, .bulma-is-success.bulma-textarea:active, .bulma-is-success.bulma-is-active.bulma-input, .bulma-is-success.bulma-is-active.bulma-textarea {
-  box-shadow: 0 0 0 0.125em rgba(72, 199, 116, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(72, 199, 142, 0.25);
 }
 
 .bulma-is-warning.bulma-input, .bulma-is-warning.bulma-textarea {
-  border-color: #ffdd57;
+  border-color: #ffe08a;
 }
 
 .bulma-is-warning.bulma-input:focus, .bulma-is-warning.bulma-textarea:focus, .bulma-is-warning.bulma-is-focused.bulma-input, .bulma-is-warning.bulma-is-focused.bulma-textarea, .bulma-is-warning.bulma-input:active, .bulma-is-warning.bulma-textarea:active, .bulma-is-warning.bulma-is-active.bulma-input, .bulma-is-warning.bulma-is-active.bulma-textarea {
-  box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(255, 224, 138, 0.25);
 }
 
 .bulma-is-danger.bulma-input, .bulma-is-danger.bulma-textarea {
@@ -3460,7 +3461,7 @@ fieldset[disabled] .bulma-select select:-ms-input-placeholder,
 }
 
 .bulma-input.bulma-is-rounded {
-  border-radius: 290486px;
+  border-radius: 9999px;
   padding-left: calc(calc(0.75em - 1px) + 0.375em);
   padding-right: calc(calc(0.75em - 1px) + 0.375em);
 }
@@ -3534,13 +3535,13 @@ fieldset[disabled] .bulma-radio,
 }
 
 .bulma-select:not(.bulma-is-multiple):not(.bulma-is-loading)::after {
-  border-color: #3273dc;
+  border-color: #485fc7;
   right: 1.125em;
   z-index: 4;
 }
 
 .bulma-select.bulma-is-rounded select {
-  border-radius: 290486px;
+  border-radius: 9999px;
   padding-left: 1em;
 }
 
@@ -3659,67 +3660,67 @@ fieldset[disabled] .bulma-select select:hover {
 }
 
 .bulma-select.bulma-is-link:not(:hover)::after {
-  border-color: #3273dc;
+  border-color: #485fc7;
 }
 
 .bulma-select.bulma-is-link select {
-  border-color: #3273dc;
+  border-color: #485fc7;
 }
 
 .bulma-select.bulma-is-link select:hover, .bulma-select.bulma-is-link select.bulma-is-hovered {
-  border-color: #2366d1;
+  border-color: #3a51bb;
 }
 
 .bulma-select.bulma-is-link select:focus, .bulma-select.bulma-is-link select.bulma-is-focused, .bulma-select.bulma-is-link select:active, .bulma-select.bulma-is-link select.bulma-is-active {
-  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
 }
 
 .bulma-select.bulma-is-info:not(:hover)::after {
-  border-color: #3298dc;
+  border-color: #3e8ed0;
 }
 
 .bulma-select.bulma-is-info select {
-  border-color: #3298dc;
+  border-color: #3e8ed0;
 }
 
 .bulma-select.bulma-is-info select:hover, .bulma-select.bulma-is-info select.bulma-is-hovered {
-  border-color: #238cd1;
+  border-color: #3082c5;
 }
 
 .bulma-select.bulma-is-info select:focus, .bulma-select.bulma-is-info select.bulma-is-focused, .bulma-select.bulma-is-info select:active, .bulma-select.bulma-is-info select.bulma-is-active {
-  box-shadow: 0 0 0 0.125em rgba(50, 152, 220, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(62, 142, 208, 0.25);
 }
 
 .bulma-select.bulma-is-success:not(:hover)::after {
-  border-color: #48c774;
+  border-color: #48c78e;
 }
 
 .bulma-select.bulma-is-success select {
-  border-color: #48c774;
+  border-color: #48c78e;
 }
 
 .bulma-select.bulma-is-success select:hover, .bulma-select.bulma-is-success select.bulma-is-hovered {
-  border-color: #3abb67;
+  border-color: #3abb81;
 }
 
 .bulma-select.bulma-is-success select:focus, .bulma-select.bulma-is-success select.bulma-is-focused, .bulma-select.bulma-is-success select:active, .bulma-select.bulma-is-success select.bulma-is-active {
-  box-shadow: 0 0 0 0.125em rgba(72, 199, 116, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(72, 199, 142, 0.25);
 }
 
 .bulma-select.bulma-is-warning:not(:hover)::after {
-  border-color: #ffdd57;
+  border-color: #ffe08a;
 }
 
 .bulma-select.bulma-is-warning select {
-  border-color: #ffdd57;
+  border-color: #ffe08a;
 }
 
 .bulma-select.bulma-is-warning select:hover, .bulma-select.bulma-is-warning select.bulma-is-hovered {
-  border-color: #ffd83d;
+  border-color: #ffd970;
 }
 
 .bulma-select.bulma-is-warning select:focus, .bulma-select.bulma-is-warning select.bulma-is-focused, .bulma-select.bulma-is-warning select:active, .bulma-select.bulma-is-warning select.bulma-is-active {
-  box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(255, 224, 138, 0.25);
 }
 
 .bulma-select.bulma-is-danger:not(:hover)::after {
@@ -3911,97 +3912,97 @@ fieldset[disabled] .bulma-select select:hover {
 }
 
 .bulma-file.bulma-is-link .bulma-file-cta {
-  background-color: #3273dc;
+  background-color: #485fc7;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-file.bulma-is-link:hover .bulma-file-cta, .bulma-file.bulma-is-link.bulma-is-hovered .bulma-file-cta {
-  background-color: #276cda;
+  background-color: #3e56c4;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-file.bulma-is-link:focus .bulma-file-cta, .bulma-file.bulma-is-link.bulma-is-focused .bulma-file-cta {
   border-color: transparent;
-  box-shadow: 0 0 0.5em rgba(50, 115, 220, 0.25);
+  box-shadow: 0 0 0.5em rgba(72, 95, 199, 0.25);
   color: #fff;
 }
 
 .bulma-file.bulma-is-link:active .bulma-file-cta, .bulma-file.bulma-is-link.bulma-is-active .bulma-file-cta {
-  background-color: #2366d1;
+  background-color: #3a51bb;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-file.bulma-is-info .bulma-file-cta {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-file.bulma-is-info:hover .bulma-file-cta, .bulma-file.bulma-is-info.bulma-is-hovered .bulma-file-cta {
-  background-color: #2793da;
+  background-color: #3488ce;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-file.bulma-is-info:focus .bulma-file-cta, .bulma-file.bulma-is-info.bulma-is-focused .bulma-file-cta {
   border-color: transparent;
-  box-shadow: 0 0 0.5em rgba(50, 152, 220, 0.25);
+  box-shadow: 0 0 0.5em rgba(62, 142, 208, 0.25);
   color: #fff;
 }
 
 .bulma-file.bulma-is-info:active .bulma-file-cta, .bulma-file.bulma-is-info.bulma-is-active .bulma-file-cta {
-  background-color: #238cd1;
+  background-color: #3082c5;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-file.bulma-is-success .bulma-file-cta {
-  background-color: #48c774;
+  background-color: #48c78e;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-file.bulma-is-success:hover .bulma-file-cta, .bulma-file.bulma-is-success.bulma-is-hovered .bulma-file-cta {
-  background-color: #3ec46d;
+  background-color: #3ec487;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-file.bulma-is-success:focus .bulma-file-cta, .bulma-file.bulma-is-success.bulma-is-focused .bulma-file-cta {
   border-color: transparent;
-  box-shadow: 0 0 0.5em rgba(72, 199, 116, 0.25);
+  box-shadow: 0 0 0.5em rgba(72, 199, 142, 0.25);
   color: #fff;
 }
 
 .bulma-file.bulma-is-success:active .bulma-file-cta, .bulma-file.bulma-is-success.bulma-is-active .bulma-file-cta {
-  background-color: #3abb67;
+  background-color: #3abb81;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-file.bulma-is-warning .bulma-file-cta {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
   border-color: transparent;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .bulma-file.bulma-is-warning:hover .bulma-file-cta, .bulma-file.bulma-is-warning.bulma-is-hovered .bulma-file-cta {
-  background-color: #ffdb4a;
+  background-color: #ffdc7d;
   border-color: transparent;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .bulma-file.bulma-is-warning:focus .bulma-file-cta, .bulma-file.bulma-is-warning.bulma-is-focused .bulma-file-cta {
   border-color: transparent;
-  box-shadow: 0 0 0.5em rgba(255, 221, 87, 0.25);
+  box-shadow: 0 0 0.5em rgba(255, 224, 138, 0.25);
   color: rgba(0, 0, 0, 0.7);
 }
 
 .bulma-file.bulma-is-warning:active .bulma-file-cta, .bulma-file.bulma-is-warning.bulma-is-active .bulma-file-cta {
-  background-color: #ffd83d;
+  background-color: #ffd970;
   border-color: transparent;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -4032,6 +4033,10 @@ fieldset[disabled] .bulma-select select:hover {
 
 .bulma-file.bulma-is-small {
   font-size: 0.75rem;
+}
+
+.bulma-file.bulma-is-normal {
+  font-size: 1rem;
 }
 
 .bulma-file.bulma-is-medium {
@@ -4265,19 +4270,19 @@ fieldset[disabled] .bulma-select select:hover {
 }
 
 .bulma-help.bulma-is-link {
-  color: #3273dc;
+  color: #485fc7;
 }
 
 .bulma-help.bulma-is-info {
-  color: #3298dc;
+  color: #3e8ed0;
 }
 
 .bulma-help.bulma-is-success {
-  color: #48c774;
+  color: #48c78e;
 }
 
 .bulma-help.bulma-is-warning {
-  color: #ffdd57;
+  color: #ffe08a;
 }
 
 .bulma-help.bulma-is-danger {
@@ -4563,7 +4568,7 @@ fieldset[disabled] .bulma-select select:hover {
 
 .bulma-breadcrumb a {
   align-items: center;
-  color: #3273dc;
+  color: #485fc7;
   display: flex;
   justify-content: center;
   padding: 0 0.75em;
@@ -4687,6 +4692,16 @@ fieldset[disabled] .bulma-select select:hover {
 }
 
 .bulma-card-header-icon {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  color: currentColor;
+  font-family: inherit;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -4804,7 +4819,7 @@ button.bulma-dropdown-item:hover {
 
 a.bulma-dropdown-item.bulma-is-active,
 button.bulma-dropdown-item.bulma-is-active {
-  background-color: #3273dc;
+  background-color: #485fc7;
   color: #fff;
 }
 
@@ -5029,7 +5044,7 @@ button.bulma-dropdown-item.bulma-is-active {
 }
 
 .bulma-menu-list a.bulma-is-active {
-  background-color: #3273dc;
+  background-color: #485fc7;
   color: #fff;
 }
 
@@ -5148,59 +5163,59 @@ button.bulma-dropdown-item.bulma-is-active {
 }
 
 .bulma-message.bulma-is-link {
-  background-color: #eef3fc;
+  background-color: #eff1fa;
 }
 
 .bulma-message.bulma-is-link .bulma-message-header {
-  background-color: #3273dc;
+  background-color: #485fc7;
   color: #fff;
 }
 
 .bulma-message.bulma-is-link .bulma-message-body {
-  border-color: #3273dc;
-  color: #2160c4;
+  border-color: #485fc7;
+  color: #3850b7;
 }
 
 .bulma-message.bulma-is-info {
-  background-color: #eef6fc;
+  background-color: #eff5fb;
 }
 
 .bulma-message.bulma-is-info .bulma-message-header {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
   color: #fff;
 }
 
 .bulma-message.bulma-is-info .bulma-message-body {
-  border-color: #3298dc;
-  color: #1d72aa;
+  border-color: #3e8ed0;
+  color: #296fa8;
 }
 
 .bulma-message.bulma-is-success {
-  background-color: #effaf3;
+  background-color: #effaf5;
 }
 
 .bulma-message.bulma-is-success .bulma-message-header {
-  background-color: #48c774;
+  background-color: #48c78e;
   color: #fff;
 }
 
 .bulma-message.bulma-is-success .bulma-message-body {
-  border-color: #48c774;
-  color: #257942;
+  border-color: #48c78e;
+  color: #257953;
 }
 
 .bulma-message.bulma-is-warning {
-  background-color: #fffbeb;
+  background-color: #fffaeb;
 }
 
 .bulma-message.bulma-is-warning .bulma-message-header {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .bulma-message.bulma-is-warning .bulma-message-body {
-  border-color: #ffdd57;
-  color: #947600;
+  border-color: #ffe08a;
+  color: #946c00;
 }
 
 .bulma-message.bulma-is-danger {
@@ -5675,7 +5690,7 @@ button.bulma-dropdown-item.bulma-is-active {
 }
 
 .bulma-navbar.bulma-is-link {
-  background-color: #3273dc;
+  background-color: #485fc7;
   color: #fff;
 }
 
@@ -5688,7 +5703,7 @@ button.bulma-dropdown-item.bulma-is-active {
 .bulma-navbar.bulma-is-link .bulma-navbar-brand .bulma-navbar-link:focus,
 .bulma-navbar.bulma-is-link .bulma-navbar-brand .bulma-navbar-link:hover,
 .bulma-navbar.bulma-is-link .bulma-navbar-brand .bulma-navbar-link.bulma-is-active {
-  background-color: #2366d1;
+  background-color: #3a51bb;
   color: #fff;
 }
 
@@ -5717,7 +5732,7 @@ button.bulma-dropdown-item.bulma-is-active {
   .bulma-navbar.bulma-is-link .bulma-navbar-end .bulma-navbar-link:focus,
   .bulma-navbar.bulma-is-link .bulma-navbar-end .bulma-navbar-link:hover,
   .bulma-navbar.bulma-is-link .bulma-navbar-end .bulma-navbar-link.bulma-is-active {
-    background-color: #2366d1;
+    background-color: #3a51bb;
     color: #fff;
   }
   .bulma-navbar.bulma-is-link .bulma-navbar-start .bulma-navbar-link::after,
@@ -5727,17 +5742,17 @@ button.bulma-dropdown-item.bulma-is-active {
   .bulma-navbar.bulma-is-link .bulma-navbar-item.bulma-has-dropdown:focus .bulma-navbar-link,
   .bulma-navbar.bulma-is-link .bulma-navbar-item.bulma-has-dropdown:hover .bulma-navbar-link,
   .bulma-navbar.bulma-is-link .bulma-navbar-item.bulma-has-dropdown.bulma-is-active .bulma-navbar-link {
-    background-color: #2366d1;
+    background-color: #3a51bb;
     color: #fff;
   }
   .bulma-navbar.bulma-is-link .bulma-navbar-dropdown a.bulma-navbar-item.bulma-is-active {
-    background-color: #3273dc;
+    background-color: #485fc7;
     color: #fff;
   }
 }
 
 .bulma-navbar.bulma-is-info {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
   color: #fff;
 }
 
@@ -5750,7 +5765,7 @@ button.bulma-dropdown-item.bulma-is-active {
 .bulma-navbar.bulma-is-info .bulma-navbar-brand .bulma-navbar-link:focus,
 .bulma-navbar.bulma-is-info .bulma-navbar-brand .bulma-navbar-link:hover,
 .bulma-navbar.bulma-is-info .bulma-navbar-brand .bulma-navbar-link.bulma-is-active {
-  background-color: #238cd1;
+  background-color: #3082c5;
   color: #fff;
 }
 
@@ -5779,7 +5794,7 @@ button.bulma-dropdown-item.bulma-is-active {
   .bulma-navbar.bulma-is-info .bulma-navbar-end .bulma-navbar-link:focus,
   .bulma-navbar.bulma-is-info .bulma-navbar-end .bulma-navbar-link:hover,
   .bulma-navbar.bulma-is-info .bulma-navbar-end .bulma-navbar-link.bulma-is-active {
-    background-color: #238cd1;
+    background-color: #3082c5;
     color: #fff;
   }
   .bulma-navbar.bulma-is-info .bulma-navbar-start .bulma-navbar-link::after,
@@ -5789,17 +5804,17 @@ button.bulma-dropdown-item.bulma-is-active {
   .bulma-navbar.bulma-is-info .bulma-navbar-item.bulma-has-dropdown:focus .bulma-navbar-link,
   .bulma-navbar.bulma-is-info .bulma-navbar-item.bulma-has-dropdown:hover .bulma-navbar-link,
   .bulma-navbar.bulma-is-info .bulma-navbar-item.bulma-has-dropdown.bulma-is-active .bulma-navbar-link {
-    background-color: #238cd1;
+    background-color: #3082c5;
     color: #fff;
   }
   .bulma-navbar.bulma-is-info .bulma-navbar-dropdown a.bulma-navbar-item.bulma-is-active {
-    background-color: #3298dc;
+    background-color: #3e8ed0;
     color: #fff;
   }
 }
 
 .bulma-navbar.bulma-is-success {
-  background-color: #48c774;
+  background-color: #48c78e;
   color: #fff;
 }
 
@@ -5812,7 +5827,7 @@ button.bulma-dropdown-item.bulma-is-active {
 .bulma-navbar.bulma-is-success .bulma-navbar-brand .bulma-navbar-link:focus,
 .bulma-navbar.bulma-is-success .bulma-navbar-brand .bulma-navbar-link:hover,
 .bulma-navbar.bulma-is-success .bulma-navbar-brand .bulma-navbar-link.bulma-is-active {
-  background-color: #3abb67;
+  background-color: #3abb81;
   color: #fff;
 }
 
@@ -5841,7 +5856,7 @@ button.bulma-dropdown-item.bulma-is-active {
   .bulma-navbar.bulma-is-success .bulma-navbar-end .bulma-navbar-link:focus,
   .bulma-navbar.bulma-is-success .bulma-navbar-end .bulma-navbar-link:hover,
   .bulma-navbar.bulma-is-success .bulma-navbar-end .bulma-navbar-link.bulma-is-active {
-    background-color: #3abb67;
+    background-color: #3abb81;
     color: #fff;
   }
   .bulma-navbar.bulma-is-success .bulma-navbar-start .bulma-navbar-link::after,
@@ -5851,17 +5866,17 @@ button.bulma-dropdown-item.bulma-is-active {
   .bulma-navbar.bulma-is-success .bulma-navbar-item.bulma-has-dropdown:focus .bulma-navbar-link,
   .bulma-navbar.bulma-is-success .bulma-navbar-item.bulma-has-dropdown:hover .bulma-navbar-link,
   .bulma-navbar.bulma-is-success .bulma-navbar-item.bulma-has-dropdown.bulma-is-active .bulma-navbar-link {
-    background-color: #3abb67;
+    background-color: #3abb81;
     color: #fff;
   }
   .bulma-navbar.bulma-is-success .bulma-navbar-dropdown a.bulma-navbar-item.bulma-is-active {
-    background-color: #48c774;
+    background-color: #48c78e;
     color: #fff;
   }
 }
 
 .bulma-navbar.bulma-is-warning {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -5874,7 +5889,7 @@ button.bulma-dropdown-item.bulma-is-active {
 .bulma-navbar.bulma-is-warning .bulma-navbar-brand .bulma-navbar-link:focus,
 .bulma-navbar.bulma-is-warning .bulma-navbar-brand .bulma-navbar-link:hover,
 .bulma-navbar.bulma-is-warning .bulma-navbar-brand .bulma-navbar-link.bulma-is-active {
-  background-color: #ffd83d;
+  background-color: #ffd970;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -5903,7 +5918,7 @@ button.bulma-dropdown-item.bulma-is-active {
   .bulma-navbar.bulma-is-warning .bulma-navbar-end .bulma-navbar-link:focus,
   .bulma-navbar.bulma-is-warning .bulma-navbar-end .bulma-navbar-link:hover,
   .bulma-navbar.bulma-is-warning .bulma-navbar-end .bulma-navbar-link.bulma-is-active {
-    background-color: #ffd83d;
+    background-color: #ffd970;
     color: rgba(0, 0, 0, 0.7);
   }
   .bulma-navbar.bulma-is-warning .bulma-navbar-start .bulma-navbar-link::after,
@@ -5913,11 +5928,11 @@ button.bulma-dropdown-item.bulma-is-active {
   .bulma-navbar.bulma-is-warning .bulma-navbar-item.bulma-has-dropdown:focus .bulma-navbar-link,
   .bulma-navbar.bulma-is-warning .bulma-navbar-item.bulma-has-dropdown:hover .bulma-navbar-link,
   .bulma-navbar.bulma-is-warning .bulma-navbar-item.bulma-has-dropdown.bulma-is-active .bulma-navbar-link {
-    background-color: #ffd83d;
+    background-color: #ffd970;
     color: rgba(0, 0, 0, 0.7);
   }
   .bulma-navbar.bulma-is-warning .bulma-navbar-dropdown a.bulma-navbar-item.bulma-is-active {
-    background-color: #ffdd57;
+    background-color: #ffe08a;
     color: rgba(0, 0, 0, 0.7);
   }
 }
@@ -6124,7 +6139,7 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
 .bulma-navbar-link:hover,
 .bulma-navbar-link.bulma-is-active {
   background-color: #fafafa;
-  color: #3273dc;
+  color: #485fc7;
 }
 
 .bulma-navbar-item {
@@ -6153,15 +6168,15 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
 
 .bulma-navbar-item.bulma-is-tab:focus, .bulma-navbar-item.bulma-is-tab:hover {
   background-color: transparent;
-  border-bottom-color: #3273dc;
+  border-bottom-color: #485fc7;
 }
 
 .bulma-navbar-item.bulma-is-tab.bulma-is-active {
   background-color: transparent;
-  border-bottom-color: #3273dc;
+  border-bottom-color: #485fc7;
   border-bottom-style: solid;
   border-bottom-width: 3px;
-  color: #3273dc;
+  color: #485fc7;
   padding-bottom: calc(0.5rem - 3px);
 }
 
@@ -6175,7 +6190,7 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
 }
 
 .bulma-navbar-link:not(.bulma-is-arrowless)::after {
-  border-color: #3273dc;
+  border-color: #485fc7;
   margin-top: -0.375em;
   right: 1.125em;
 }
@@ -6286,7 +6301,7 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
   }
   .bulma-navbar.bulma-is-transparent .bulma-navbar-dropdown a.bulma-navbar-item.bulma-is-active {
     background-color: whitesmoke;
-    color: #3273dc;
+    color: #485fc7;
   }
   .bulma-navbar-burger {
     display: none;
@@ -6357,7 +6372,7 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
   }
   .bulma-navbar-dropdown a.bulma-navbar-item.bulma-is-active {
     background-color: whitesmoke;
-    color: #3273dc;
+    color: #485fc7;
   }
   .bulma-navbar.bulma-is-spaced .bulma-navbar-dropdown, .bulma-navbar-dropdown.bulma-is-boxed {
     border-radius: 6px;
@@ -6455,11 +6470,11 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
 .bulma-pagination.bulma-is-rounded .bulma-pagination-next {
   padding-left: 1em;
   padding-right: 1em;
-  border-radius: 290486px;
+  border-radius: 9999px;
 }
 
 .bulma-pagination.bulma-is-rounded .bulma-pagination-link {
-  border-radius: 290486px;
+  border-radius: 9999px;
 }
 
 .bulma-pagination,
@@ -6500,7 +6515,7 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
 .bulma-pagination-previous:focus,
 .bulma-pagination-next:focus,
 .bulma-pagination-link:focus {
-  border-color: #3273dc;
+  border-color: #485fc7;
 }
 
 .bulma-pagination-previous:active,
@@ -6527,8 +6542,8 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
 }
 
 .bulma-pagination-link.bulma-is-current {
-  background-color: #3273dc;
-  border-color: #3273dc;
+  background-color: #485fc7;
+  border-color: #485fc7;
   color: #fff;
 }
 
@@ -6567,6 +6582,13 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
     justify-content: flex-start;
     order: 1;
   }
+  .bulma-pagination-previous,
+  .bulma-pagination-next,
+  .bulma-pagination-link,
+  .bulma-pagination-ellipsis {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
   .bulma-pagination-previous {
     order: 2;
   }
@@ -6575,6 +6597,8 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
   }
   .bulma-pagination {
     justify-content: space-between;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   .bulma-pagination.bulma-is-centered .bulma-pagination-previous {
     order: 1;
@@ -6674,55 +6698,55 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
 }
 
 .bulma-panel.bulma-is-link .bulma-panel-heading {
-  background-color: #3273dc;
+  background-color: #485fc7;
   color: #fff;
 }
 
 .bulma-panel.bulma-is-link .bulma-panel-tabs a.bulma-is-active {
-  border-bottom-color: #3273dc;
+  border-bottom-color: #485fc7;
 }
 
 .bulma-panel.bulma-is-link .bulma-panel-block.bulma-is-active .bulma-panel-icon {
-  color: #3273dc;
+  color: #485fc7;
 }
 
 .bulma-panel.bulma-is-info .bulma-panel-heading {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
   color: #fff;
 }
 
 .bulma-panel.bulma-is-info .bulma-panel-tabs a.bulma-is-active {
-  border-bottom-color: #3298dc;
+  border-bottom-color: #3e8ed0;
 }
 
 .bulma-panel.bulma-is-info .bulma-panel-block.bulma-is-active .bulma-panel-icon {
-  color: #3298dc;
+  color: #3e8ed0;
 }
 
 .bulma-panel.bulma-is-success .bulma-panel-heading {
-  background-color: #48c774;
+  background-color: #48c78e;
   color: #fff;
 }
 
 .bulma-panel.bulma-is-success .bulma-panel-tabs a.bulma-is-active {
-  border-bottom-color: #48c774;
+  border-bottom-color: #48c78e;
 }
 
 .bulma-panel.bulma-is-success .bulma-panel-block.bulma-is-active .bulma-panel-icon {
-  color: #48c774;
+  color: #48c78e;
 }
 
 .bulma-panel.bulma-is-warning .bulma-panel-heading {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .bulma-panel.bulma-is-warning .bulma-panel-tabs a.bulma-is-active {
-  border-bottom-color: #ffdd57;
+  border-bottom-color: #ffe08a;
 }
 
 .bulma-panel.bulma-is-warning .bulma-panel-block.bulma-is-active .bulma-panel-icon {
-  color: #ffdd57;
+  color: #ffe08a;
 }
 
 .bulma-panel.bulma-is-danger .bulma-panel-heading {
@@ -6776,7 +6800,7 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
 }
 
 .bulma-panel-list a:hover {
-  color: #3273dc;
+  color: #485fc7;
 }
 
 .bulma-panel-block {
@@ -6802,12 +6826,12 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
 }
 
 .bulma-panel-block.bulma-is-active {
-  border-left-color: #3273dc;
+  border-left-color: #485fc7;
   color: #363636;
 }
 
 .bulma-panel-block.bulma-is-active .bulma-panel-icon {
-  color: #3273dc;
+  color: #485fc7;
 }
 
 .bulma-panel-block:last-child {
@@ -6876,8 +6900,8 @@ label.bulma-panel-block:hover {
 }
 
 .bulma-tabs li.bulma-is-active a {
-  border-bottom-color: #3273dc;
-  color: #3273dc;
+  border-bottom-color: #485fc7;
+  color: #485fc7;
 }
 
 .bulma-tabs ul {
@@ -6973,8 +6997,8 @@ label.bulma-panel-block:hover {
 }
 
 .bulma-tabs.bulma-is-toggle li.bulma-is-active a {
-  background-color: #3273dc;
-  border-color: #3273dc;
+  background-color: #485fc7;
+  border-color: #485fc7;
   color: #fff;
   z-index: 1;
 }
@@ -6984,14 +7008,14 @@ label.bulma-panel-block:hover {
 }
 
 .bulma-tabs.bulma-is-toggle.bulma-is-toggle-rounded li:first-child a {
-  border-bottom-left-radius: 290486px;
-  border-top-left-radius: 290486px;
+  border-bottom-left-radius: 9999px;
+  border-top-left-radius: 9999px;
   padding-left: 1.25em;
 }
 
 .bulma-tabs.bulma-is-toggle.bulma-is-toggle-rounded li:last-child a {
-  border-bottom-right-radius: 290486px;
-  border-top-right-radius: 290486px;
+  border-bottom-right-radius: 9999px;
+  border-top-right-radius: 9999px;
   padding-right: 1.25em;
 }
 
@@ -8989,147 +9013,147 @@ a.bulma-has-text-primary-dark:hover, a.bulma-has-text-primary-dark:focus {
 }
 
 .bulma-has-text-link {
-  color: #3273dc !important;
+  color: #485fc7 !important;
 }
 
 a.bulma-has-text-link:hover, a.bulma-has-text-link:focus {
-  color: #205bbc !important;
+  color: #3449a8 !important;
 }
 
 .bulma-has-background-link {
-  background-color: #3273dc !important;
+  background-color: #485fc7 !important;
 }
 
 .bulma-has-text-link-light {
-  color: #eef3fc !important;
+  color: #eff1fa !important;
 }
 
 a.bulma-has-text-link-light:hover, a.bulma-has-text-link-light:focus {
-  color: #c2d5f5 !important;
+  color: #c8cfee !important;
 }
 
 .bulma-has-background-link-light {
-  background-color: #eef3fc !important;
+  background-color: #eff1fa !important;
 }
 
 .bulma-has-text-link-dark {
-  color: #2160c4 !important;
+  color: #3850b7 !important;
 }
 
 a.bulma-has-text-link-dark:hover, a.bulma-has-text-link-dark:focus {
-  color: #3b79de !important;
+  color: #576dcb !important;
 }
 
 .bulma-has-background-link-dark {
-  background-color: #2160c4 !important;
+  background-color: #3850b7 !important;
 }
 
 .bulma-has-text-info {
-  color: #3298dc !important;
+  color: #3e8ed0 !important;
 }
 
 a.bulma-has-text-info:hover, a.bulma-has-text-info:focus {
-  color: #207dbc !important;
+  color: #2b74b1 !important;
 }
 
 .bulma-has-background-info {
-  background-color: #3298dc !important;
+  background-color: #3e8ed0 !important;
 }
 
 .bulma-has-text-info-light {
-  color: #eef6fc !important;
+  color: #eff5fb !important;
 }
 
 a.bulma-has-text-info-light:hover, a.bulma-has-text-info-light:focus {
-  color: #c2e0f5 !important;
+  color: #c6ddf1 !important;
 }
 
 .bulma-has-background-info-light {
-  background-color: #eef6fc !important;
+  background-color: #eff5fb !important;
 }
 
 .bulma-has-text-info-dark {
-  color: #1d72aa !important;
+  color: #296fa8 !important;
 }
 
 a.bulma-has-text-info-dark:hover, a.bulma-has-text-info-dark:focus {
-  color: #248fd6 !important;
+  color: #368ace !important;
 }
 
 .bulma-has-background-info-dark {
-  background-color: #1d72aa !important;
+  background-color: #296fa8 !important;
 }
 
 .bulma-has-text-success {
-  color: #48c774 !important;
+  color: #48c78e !important;
 }
 
 a.bulma-has-text-success:hover, a.bulma-has-text-success:focus {
-  color: #34a85c !important;
+  color: #34a873 !important;
 }
 
 .bulma-has-background-success {
-  background-color: #48c774 !important;
+  background-color: #48c78e !important;
 }
 
 .bulma-has-text-success-light {
-  color: #effaf3 !important;
+  color: #effaf5 !important;
 }
 
 a.bulma-has-text-success-light:hover, a.bulma-has-text-success-light:focus {
-  color: #c8eed6 !important;
+  color: #c8eedd !important;
 }
 
 .bulma-has-background-success-light {
-  background-color: #effaf3 !important;
+  background-color: #effaf5 !important;
 }
 
 .bulma-has-text-success-dark {
-  color: #257942 !important;
+  color: #257953 !important;
 }
 
 a.bulma-has-text-success-dark:hover, a.bulma-has-text-success-dark:focus {
-  color: #31a058 !important;
+  color: #31a06e !important;
 }
 
 .bulma-has-background-success-dark {
-  background-color: #257942 !important;
+  background-color: #257953 !important;
 }
 
 .bulma-has-text-warning {
-  color: #ffdd57 !important;
+  color: #ffe08a !important;
 }
 
 a.bulma-has-text-warning:hover, a.bulma-has-text-warning:focus {
-  color: #ffd324 !important;
+  color: #ffd257 !important;
 }
 
 .bulma-has-background-warning {
-  background-color: #ffdd57 !important;
+  background-color: #ffe08a !important;
 }
 
 .bulma-has-text-warning-light {
-  color: #fffbeb !important;
+  color: #fffaeb !important;
 }
 
 a.bulma-has-text-warning-light:hover, a.bulma-has-text-warning-light:focus {
-  color: #fff1b8 !important;
+  color: #ffecb8 !important;
 }
 
 .bulma-has-background-warning-light {
-  background-color: #fffbeb !important;
+  background-color: #fffaeb !important;
 }
 
 .bulma-has-text-warning-dark {
-  color: #947600 !important;
+  color: #946c00 !important;
 }
 
 a.bulma-has-text-warning-dark:hover, a.bulma-has-text-warning-dark:focus {
-  color: #c79f00 !important;
+  color: #c79200 !important;
 }
 
 .bulma-has-background-warning-dark {
-  background-color: #947600 !important;
+  background-color: #946c00 !important;
 }
 
 .bulma-has-text-danger {
@@ -9709,6 +9733,36 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
   margin-bottom: 3rem !important;
 }
 
+.bulma-m-auto {
+  margin: auto !important;
+}
+
+.bulma-mt-auto {
+  margin-top: auto !important;
+}
+
+.bulma-mr-auto {
+  margin-right: auto !important;
+}
+
+.bulma-mb-auto {
+  margin-bottom: auto !important;
+}
+
+.bulma-ml-auto {
+  margin-left: auto !important;
+}
+
+.bulma-mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.bulma-my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
 .bulma-p-0 {
   padding: 0 !important;
 }
@@ -9917,6 +9971,36 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 .bulma-py-6 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+}
+
+.bulma-p-auto {
+  padding: auto !important;
+}
+
+.bulma-pt-auto {
+  padding-top: auto !important;
+}
+
+.bulma-pr-auto {
+  padding-right: auto !important;
+}
+
+.bulma-pb-auto {
+  padding-bottom: auto !important;
+}
+
+.bulma-pl-auto {
+  padding-left: auto !important;
+}
+
+.bulma-px-auto {
+  padding-left: auto !important;
+  padding-right: auto !important;
+}
+
+.bulma-py-auto {
+  padding-top: auto !important;
+  padding-bottom: auto !important;
 }
 
 .bulma-is-size-1 {
@@ -10337,6 +10421,10 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 
 .bulma-is-italic {
   font-style: italic !important;
+}
+
+.bulma-is-underlined {
+  text-decoration: underline !important;
 }
 
 .bulma-has-text-weight-light {
@@ -10863,6 +10951,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 }
 
 .bulma-hero.bulma-is-white .bulma-tabs li.bulma-is-active a {
+  color: white !important;
   opacity: 1;
 }
 
@@ -10941,6 +11030,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 }
 
 .bulma-hero.bulma-is-black .bulma-tabs li.bulma-is-active a {
+  color: #0a0a0a !important;
   opacity: 1;
 }
 
@@ -11019,6 +11109,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 }
 
 .bulma-hero.bulma-is-light .bulma-tabs li.bulma-is-active a {
+  color: whitesmoke !important;
   opacity: 1;
 }
 
@@ -11097,6 +11188,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 }
 
 .bulma-hero.bulma-is-dark .bulma-tabs li.bulma-is-active a {
+  color: #363636 !important;
   opacity: 1;
 }
 
@@ -11175,6 +11267,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 }
 
 .bulma-hero.bulma-is-primary .bulma-tabs li.bulma-is-active a {
+  color: #00d1b2 !important;
   opacity: 1;
 }
 
@@ -11203,7 +11296,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 }
 
 .bulma-hero.bulma-is-link {
-  background-color: #3273dc;
+  background-color: #485fc7;
   color: #fff;
 }
 
@@ -11227,7 +11320,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 
 @media screen and (max-width: 1023px) {
   .bulma-hero.bulma-is-link .bulma-navbar-menu {
-    background-color: #3273dc;
+    background-color: #485fc7;
   }
 }
 
@@ -11239,7 +11332,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 .bulma-hero.bulma-is-link a.bulma-navbar-item:hover, .bulma-hero.bulma-is-link a.bulma-navbar-item.bulma-is-active,
 .bulma-hero.bulma-is-link .bulma-navbar-link:hover,
 .bulma-hero.bulma-is-link .bulma-navbar-link.bulma-is-active {
-  background-color: #2366d1;
+  background-color: #3a51bb;
   color: #fff;
 }
 
@@ -11253,6 +11346,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 }
 
 .bulma-hero.bulma-is-link .bulma-tabs li.bulma-is-active a {
+  color: #485fc7 !important;
   opacity: 1;
 }
 
@@ -11267,21 +11361,21 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 .bulma-hero.bulma-is-link .bulma-tabs.bulma-is-boxed li.bulma-is-active a, .bulma-hero.bulma-is-link .bulma-tabs.bulma-is-boxed li.bulma-is-active a:hover, .bulma-hero.bulma-is-link .bulma-tabs.bulma-is-toggle li.bulma-is-active a, .bulma-hero.bulma-is-link .bulma-tabs.bulma-is-toggle li.bulma-is-active a:hover {
   background-color: #fff;
   border-color: #fff;
-  color: #3273dc;
+  color: #485fc7;
 }
 
 .bulma-hero.bulma-is-link.bulma-is-bold {
-  background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%);
+  background-image: linear-gradient(141deg, #2959b3 0%, #485fc7 71%, #5658d2 100%);
 }
 
 @media screen and (max-width: 768px) {
   .bulma-hero.bulma-is-link.bulma-is-bold .bulma-navbar-menu {
-    background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%);
+    background-image: linear-gradient(141deg, #2959b3 0%, #485fc7 71%, #5658d2 100%);
   }
 }
 
 .bulma-hero.bulma-is-info {
-  background-color: #3298dc;
+  background-color: #3e8ed0;
   color: #fff;
 }
 
@@ -11305,7 +11399,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 
 @media screen and (max-width: 1023px) {
   .bulma-hero.bulma-is-info .bulma-navbar-menu {
-    background-color: #3298dc;
+    background-color: #3e8ed0;
   }
 }
 
@@ -11317,7 +11411,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 .bulma-hero.bulma-is-info a.bulma-navbar-item:hover, .bulma-hero.bulma-is-info a.bulma-navbar-item.bulma-is-active,
 .bulma-hero.bulma-is-info .bulma-navbar-link:hover,
 .bulma-hero.bulma-is-info .bulma-navbar-link.bulma-is-active {
-  background-color: #238cd1;
+  background-color: #3082c5;
   color: #fff;
 }
 
@@ -11331,6 +11425,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 }
 
 .bulma-hero.bulma-is-info .bulma-tabs li.bulma-is-active a {
+  color: #3e8ed0 !important;
   opacity: 1;
 }
 
@@ -11345,21 +11440,21 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 .bulma-hero.bulma-is-info .bulma-tabs.bulma-is-boxed li.bulma-is-active a, .bulma-hero.bulma-is-info .bulma-tabs.bulma-is-boxed li.bulma-is-active a:hover, .bulma-hero.bulma-is-info .bulma-tabs.bulma-is-toggle li.bulma-is-active a, .bulma-hero.bulma-is-info .bulma-tabs.bulma-is-toggle li.bulma-is-active a:hover {
   background-color: #fff;
   border-color: #fff;
-  color: #3298dc;
+  color: #3e8ed0;
 }
 
 .bulma-hero.bulma-is-info.bulma-is-bold {
-  background-image: linear-gradient(141deg, #159dc6 0%, #3298dc 71%, #4389e5 100%);
+  background-image: linear-gradient(141deg, #208fbc 0%, #3e8ed0 71%, #4d83db 100%);
 }
 
 @media screen and (max-width: 768px) {
   .bulma-hero.bulma-is-info.bulma-is-bold .bulma-navbar-menu {
-    background-image: linear-gradient(141deg, #159dc6 0%, #3298dc 71%, #4389e5 100%);
+    background-image: linear-gradient(141deg, #208fbc 0%, #3e8ed0 71%, #4d83db 100%);
   }
 }
 
 .bulma-hero.bulma-is-success {
-  background-color: #48c774;
+  background-color: #48c78e;
   color: #fff;
 }
 
@@ -11383,7 +11478,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 
 @media screen and (max-width: 1023px) {
   .bulma-hero.bulma-is-success .bulma-navbar-menu {
-    background-color: #48c774;
+    background-color: #48c78e;
   }
 }
 
@@ -11395,7 +11490,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 .bulma-hero.bulma-is-success a.bulma-navbar-item:hover, .bulma-hero.bulma-is-success a.bulma-navbar-item.bulma-is-active,
 .bulma-hero.bulma-is-success .bulma-navbar-link:hover,
 .bulma-hero.bulma-is-success .bulma-navbar-link.bulma-is-active {
-  background-color: #3abb67;
+  background-color: #3abb81;
   color: #fff;
 }
 
@@ -11409,6 +11504,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 }
 
 .bulma-hero.bulma-is-success .bulma-tabs li.bulma-is-active a {
+  color: #48c78e !important;
   opacity: 1;
 }
 
@@ -11423,21 +11519,21 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 .bulma-hero.bulma-is-success .bulma-tabs.bulma-is-boxed li.bulma-is-active a, .bulma-hero.bulma-is-success .bulma-tabs.bulma-is-boxed li.bulma-is-active a:hover, .bulma-hero.bulma-is-success .bulma-tabs.bulma-is-toggle li.bulma-is-active a, .bulma-hero.bulma-is-success .bulma-tabs.bulma-is-toggle li.bulma-is-active a:hover {
   background-color: #fff;
   border-color: #fff;
-  color: #48c774;
+  color: #48c78e;
 }
 
 .bulma-hero.bulma-is-success.bulma-is-bold {
-  background-image: linear-gradient(141deg, #29b342 0%, #48c774 71%, #56d296 100%);
+  background-image: linear-gradient(141deg, #29b35e 0%, #48c78e 71%, #56d2af 100%);
 }
 
 @media screen and (max-width: 768px) {
   .bulma-hero.bulma-is-success.bulma-is-bold .bulma-navbar-menu {
-    background-image: linear-gradient(141deg, #29b342 0%, #48c774 71%, #56d296 100%);
+    background-image: linear-gradient(141deg, #29b35e 0%, #48c78e 71%, #56d2af 100%);
   }
 }
 
 .bulma-hero.bulma-is-warning {
-  background-color: #ffdd57;
+  background-color: #ffe08a;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -11461,7 +11557,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 
 @media screen and (max-width: 1023px) {
   .bulma-hero.bulma-is-warning .bulma-navbar-menu {
-    background-color: #ffdd57;
+    background-color: #ffe08a;
   }
 }
 
@@ -11473,7 +11569,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 .bulma-hero.bulma-is-warning a.bulma-navbar-item:hover, .bulma-hero.bulma-is-warning a.bulma-navbar-item.bulma-is-active,
 .bulma-hero.bulma-is-warning .bulma-navbar-link:hover,
 .bulma-hero.bulma-is-warning .bulma-navbar-link.bulma-is-active {
-  background-color: #ffd83d;
+  background-color: #ffd970;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -11487,6 +11583,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 }
 
 .bulma-hero.bulma-is-warning .bulma-tabs li.bulma-is-active a {
+  color: #ffe08a !important;
   opacity: 1;
 }
 
@@ -11501,16 +11598,16 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 .bulma-hero.bulma-is-warning .bulma-tabs.bulma-is-boxed li.bulma-is-active a, .bulma-hero.bulma-is-warning .bulma-tabs.bulma-is-boxed li.bulma-is-active a:hover, .bulma-hero.bulma-is-warning .bulma-tabs.bulma-is-toggle li.bulma-is-active a, .bulma-hero.bulma-is-warning .bulma-tabs.bulma-is-toggle li.bulma-is-active a:hover {
   background-color: rgba(0, 0, 0, 0.7);
   border-color: rgba(0, 0, 0, 0.7);
-  color: #ffdd57;
+  color: #ffe08a;
 }
 
 .bulma-hero.bulma-is-warning.bulma-is-bold {
-  background-image: linear-gradient(141deg, #ffaf24 0%, #ffdd57 71%, #fffa70 100%);
+  background-image: linear-gradient(141deg, #ffb657 0%, #ffe08a 71%, #fff6a3 100%);
 }
 
 @media screen and (max-width: 768px) {
   .bulma-hero.bulma-is-warning.bulma-is-bold .bulma-navbar-menu {
-    background-image: linear-gradient(141deg, #ffaf24 0%, #ffdd57 71%, #fffa70 100%);
+    background-image: linear-gradient(141deg, #ffb657 0%, #ffe08a 71%, #fff6a3 100%);
   }
 }
 
@@ -11565,6 +11662,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 }
 
 .bulma-hero.bulma-is-danger .bulma-tabs li.bulma-is-active a {
+  color: #f14668 !important;
   opacity: 1;
 }
 
@@ -11598,13 +11696,13 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 
 @media screen and (min-width: 769px), print {
   .bulma-hero.bulma-is-medium .bulma-hero-body {
-    padding: 9rem 1.5rem;
+    padding: 9rem 4.5rem;
   }
 }
 
 @media screen and (min-width: 769px), print {
   .bulma-hero.bulma-is-large .bulma-hero-body {
-    padding: 18rem 1.5rem;
+    padding: 18rem 6rem;
   }
 }
 
@@ -11684,16 +11782,25 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
   padding: 3rem 1.5rem;
 }
 
+@media screen and (min-width: 769px), print {
+  .bulma-hero-body {
+    padding: 3rem 3rem;
+  }
+}
+
 .bulma-section {
   padding: 3rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
+  .bulma-section {
+    padding: 3rem 3rem;
+  }
   .bulma-section.bulma-is-medium {
-    padding: 9rem 1.5rem;
+    padding: 9rem 4.5rem;
   }
   .bulma-section.bulma-is-large {
-    padding: 18rem 1.5rem;
+    padding: 18rem 6rem;
   }
 }
 
