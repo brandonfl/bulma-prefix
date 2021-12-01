@@ -1,4 +1,4 @@
-/*! bulma.io v0.6.0 | MIT License | github.com/jgthms/bulma */
+/*! bulma.io v0.6.1 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -101,7 +101,7 @@ th {
 }
 
 html {
-  background-color: #fff;
+  background-color: white;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -1147,6 +1147,64 @@ a.bulma-has-text-danger:hover, a.bulma-has-text-danger:focus {
 @media screen and (min-width: 1408px) {
   .bulma-is-hidden-fullhd {
     display: none !important;
+  }
+}
+
+.bulma-is-invisible {
+  visibility: hidden !important;
+}
+
+@media screen and (max-width: 768px) {
+  .bulma-is-invisible-mobile {
+    visibility: hidden !important;
+  }
+}
+
+@media screen and (min-width: 769px), print {
+  .bulma-is-invisible-tablet {
+    visibility: hidden !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .bulma-is-invisible-tablet-only {
+    visibility: hidden !important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .bulma-is-invisible-touch {
+    visibility: hidden !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bulma-is-invisible-desktop {
+    visibility: hidden !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .bulma-is-invisible-desktop-only {
+    visibility: hidden !important;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .bulma-is-invisible-widescreen {
+    visibility: hidden !important;
+  }
+}
+
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+  .bulma-is-invisible-widescreen-only {
+    visibility: hidden !important;
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  .bulma-is-invisible-fullhd {
+    visibility: hidden !important;
   }
 }
 
@@ -2299,6 +2357,64 @@ a.bulma-box:active {
   pointer-events: none;
 }
 
+.bulma-buttons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.bulma-buttons .bulma-button {
+  margin-bottom: 0.5rem;
+}
+
+.bulma-buttons .bulma-button:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.bulma-buttons:last-child {
+  margin-bottom: -0.5rem;
+}
+
+.bulma-buttons:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.bulma-buttons.bulma-has-addons .bulma-button:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.bulma-buttons.bulma-has-addons .bulma-button:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin-right: -1px;
+}
+
+.bulma-buttons.bulma-has-addons .bulma-button:last-child {
+  margin-right: 0;
+}
+
+.bulma-buttons.bulma-has-addons .bulma-button:hover, .bulma-buttons.bulma-has-addons .bulma-button.bulma-is-hovered {
+  z-index: 2;
+}
+
+.bulma-buttons.bulma-has-addons .bulma-button:focus, .bulma-buttons.bulma-has-addons .bulma-button.bulma-is-focused, .bulma-buttons.bulma-has-addons .bulma-button:active, .bulma-buttons.bulma-has-addons .bulma-button.bulma-is-active, .bulma-buttons.bulma-has-addons .bulma-button.bulma-is-selected {
+  z-index: 3;
+}
+
+.bulma-buttons.bulma-has-addons .bulma-button:focus:hover, .bulma-buttons.bulma-has-addons .bulma-button.bulma-is-focused:hover, .bulma-buttons.bulma-has-addons .bulma-button:active:hover, .bulma-buttons.bulma-has-addons .bulma-button.bulma-is-active:hover, .bulma-buttons.bulma-has-addons .bulma-button.bulma-is-selected:hover {
+  z-index: 4;
+}
+
+.bulma-buttons.bulma-is-centered {
+  justify-content: center;
+}
+
+.bulma-buttons.bulma-is-right {
+  justify-content: flex-end;
+}
+
 .bulma-container {
   margin: 0 auto;
   position: relative;
@@ -2881,6 +2997,7 @@ a.bulma-box:active {
   pointer-events: none;
   position: absolute;
   transform: rotate(-45deg);
+  transform-origin: center;
   width: 0.5em;
   margin-top: -0.375em;
   right: 1.125em;
@@ -3413,6 +3530,14 @@ a.bulma-box:active {
 .bulma-file.bulma-has-name .bulma-file-name {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+}
+
+.bulma-file.bulma-has-name.bulma-is-empty .bulma-file-cta {
+  border-radius: 3px;
+}
+
+.bulma-file.bulma-has-name.bulma-is-empty .bulma-file-name {
+  display: none;
 }
 
 .bulma-file.bulma-is-centered {
@@ -4198,11 +4323,20 @@ a.bulma-box:active {
   background-color: #4a4a4a;
 }
 
+.bulma-progress::-ms-fill {
+  background-color: #4a4a4a;
+  border: none;
+}
+
 .bulma-progress.bulma-is-white::-webkit-progress-value {
   background-color: white;
 }
 
 .bulma-progress.bulma-is-white::-moz-progress-bar {
+  background-color: white;
+}
+
+.bulma-progress.bulma-is-white::-ms-fill {
   background-color: white;
 }
 
@@ -4214,11 +4348,19 @@ a.bulma-box:active {
   background-color: #0a0a0a;
 }
 
+.bulma-progress.bulma-is-black::-ms-fill {
+  background-color: #0a0a0a;
+}
+
 .bulma-progress.bulma-is-light::-webkit-progress-value {
   background-color: whitesmoke;
 }
 
 .bulma-progress.bulma-is-light::-moz-progress-bar {
+  background-color: whitesmoke;
+}
+
+.bulma-progress.bulma-is-light::-ms-fill {
   background-color: whitesmoke;
 }
 
@@ -4230,11 +4372,19 @@ a.bulma-box:active {
   background-color: #363636;
 }
 
+.bulma-progress.bulma-is-dark::-ms-fill {
+  background-color: #363636;
+}
+
 .bulma-progress.bulma-is-primary::-webkit-progress-value {
   background-color: #00d1b2;
 }
 
 .bulma-progress.bulma-is-primary::-moz-progress-bar {
+  background-color: #00d1b2;
+}
+
+.bulma-progress.bulma-is-primary::-ms-fill {
   background-color: #00d1b2;
 }
 
@@ -4246,11 +4396,19 @@ a.bulma-box:active {
   background-color: #3273dc;
 }
 
+.bulma-progress.bulma-is-link::-ms-fill {
+  background-color: #3273dc;
+}
+
 .bulma-progress.bulma-is-info::-webkit-progress-value {
   background-color: #209cee;
 }
 
 .bulma-progress.bulma-is-info::-moz-progress-bar {
+  background-color: #209cee;
+}
+
+.bulma-progress.bulma-is-info::-ms-fill {
   background-color: #209cee;
 }
 
@@ -4262,6 +4420,10 @@ a.bulma-box:active {
   background-color: #23d160;
 }
 
+.bulma-progress.bulma-is-success::-ms-fill {
+  background-color: #23d160;
+}
+
 .bulma-progress.bulma-is-warning::-webkit-progress-value {
   background-color: #ffdd57;
 }
@@ -4270,11 +4432,19 @@ a.bulma-box:active {
   background-color: #ffdd57;
 }
 
+.bulma-progress.bulma-is-warning::-ms-fill {
+  background-color: #ffdd57;
+}
+
 .bulma-progress.bulma-is-danger::-webkit-progress-value {
   background-color: #ff3860;
 }
 
 .bulma-progress.bulma-is-danger::-moz-progress-bar {
+  background-color: #ff3860;
+}
+
+.bulma-progress.bulma-is-danger::-ms-fill {
   background-color: #ff3860;
 }
 
@@ -4380,6 +4550,19 @@ a.bulma-box:active {
   width: 1%;
 }
 
+.bulma-table td.bulma-is-selected,
+.bulma-table th.bulma-is-selected {
+  background-color: #00d1b2;
+  color: #fff;
+}
+
+.bulma-table td.bulma-is-selected a,
+.bulma-table td.bulma-is-selected strong,
+.bulma-table th.bulma-is-selected a,
+.bulma-table th.bulma-is-selected strong {
+  color: currentColor;
+}
+
 .bulma-table th {
   color: #363636;
   text-align: left;
@@ -4432,7 +4615,7 @@ a.bulma-box:active {
   width: 100%;
 }
 
-.bulma-table.bulma-is-hoverable tbody tr:hover {
+.bulma-table.bulma-is-hoverable tbody tr:not(.bulma-is-selected):hover {
   background-color: #fafafa;
 }
 
@@ -4484,6 +4667,27 @@ a.bulma-box:active {
 .bulma-tags.bulma-has-addons .bulma-tag:not(:last-child) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
+}
+
+.bulma-tags.bulma-is-centered {
+  justify-content: center;
+}
+
+.bulma-tags.bulma-is-centered .bulma-tag {
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+}
+
+.bulma-tags.bulma-is-right {
+  justify-content: flex-end;
+}
+
+.bulma-tags.bulma-is-right .bulma-tag:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.bulma-tags.bulma-is-right .bulma-tag:not(:last-child) {
+  margin-right: 0;
 }
 
 .bulma-tag:not(body) {
@@ -4562,6 +4766,21 @@ a.bulma-box:active {
 
 .bulma-tag:not(body).bulma-is-large {
   font-size: 1.25rem;
+}
+
+.bulma-tag:not(body) .bulma-icon:first-child:not(:last-child) {
+  margin-left: -0.375em;
+  margin-right: 0.1875em;
+}
+
+.bulma-tag:not(body) .bulma-icon:last-child:not(:first-child) {
+  margin-left: 0.1875em;
+  margin-right: -0.375em;
+}
+
+.bulma-tag:not(body) .bulma-icon:first-child:last-child {
+  margin-left: -0.375em;
+  margin-right: -0.375em;
 }
 
 .bulma-tag:not(body).bulma-is-delete {
@@ -4741,7 +4960,7 @@ a.bulma-tag:hover {
   display: inline-block;
   flex-grow: 0;
   flex-shrink: 0;
-  font-size: 1rem;
+  font-size: 0;
   height: 20px;
   max-height: 20px;
   max-width: 20px;
@@ -5614,7 +5833,7 @@ a.bulma-dropdown-item.bulma-is-active {
   display: inline-block;
   flex-grow: 0;
   flex-shrink: 0;
-  font-size: 1rem;
+  font-size: 0;
   height: 20px;
   max-height: 20px;
   max-width: 20px;
@@ -6286,6 +6505,33 @@ a.bulma-dropdown-item.bulma-is-active {
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
 }
 
+.bulma-navbar.bulma-is-fixed-bottom, .bulma-navbar.bulma-is-fixed-top {
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 30;
+}
+
+.bulma-navbar.bulma-is-fixed-bottom {
+  bottom: 0;
+}
+
+.bulma-navbar.bulma-is-fixed-bottom.bulma-has-shadow {
+  box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1);
+}
+
+.bulma-navbar.bulma-is-fixed-top {
+  top: 0;
+}
+
+html.bulma-has-navbar-fixed-top {
+  padding-top: 3.25rem;
+}
+
+html.bulma-has-navbar-fixed-bottom {
+  padding-bottom: 3.25rem;
+}
+
 .bulma-navbar-brand,
 .bulma-navbar-tabs {
   align-items: stretch;
@@ -6314,25 +6560,25 @@ a.bulma-dropdown-item.bulma-is-active {
   background-color: currentColor;
   display: block;
   height: 1px;
-  left: 50%;
-  margin-left: -7px;
+  left: calc(50% - 8px);
   position: absolute;
-  top: 50%;
-  transition: none 86ms ease-out;
-  transition-property: background, left, opacity, transform;
-  width: 15px;
+  transform-origin: center;
+  transition-duration: 86ms;
+  transition-property: background-color, opacity, transform;
+  transition-timing-function: ease-out;
+  width: 16px;
 }
 
 .bulma-navbar-burger span:nth-child(1) {
-  margin-top: -6px;
+  top: calc(50% - 6px);
 }
 
 .bulma-navbar-burger span:nth-child(2) {
-  margin-top: -1px;
+  top: calc(50% - 1px);
 }
 
 .bulma-navbar-burger span:nth-child(3) {
-  margin-top: 4px;
+  top: calc(50% + 4px);
 }
 
 .bulma-navbar-burger:hover {
@@ -6340,9 +6586,7 @@ a.bulma-dropdown-item.bulma-is-active {
 }
 
 .bulma-navbar-burger.bulma-is-active span:nth-child(1) {
-  margin-left: -5px;
-  transform: rotate(45deg);
-  transform-origin: left top;
+  transform: translateY(5px) rotate(45deg);
 }
 
 .bulma-navbar-burger.bulma-is-active span:nth-child(2) {
@@ -6350,9 +6594,7 @@ a.bulma-dropdown-item.bulma-is-active {
 }
 
 .bulma-navbar-burger.bulma-is-active span:nth-child(3) {
-  margin-left: -5px;
-  transform: rotate(-45deg);
-  transform-origin: left bottom;
+  transform: translateY(-5px) rotate(-45deg);
 }
 
 .bulma-navbar-menu {
@@ -6369,10 +6611,10 @@ a.bulma-dropdown-item.bulma-is-active {
 }
 
 a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
-.bulma-navbar-link:hover,
-.bulma-navbar-link.bulma-is-active {
+a.bulma-navbar-link:hover,
+a.bulma-navbar-link.bulma-is-active {
   background-color: whitesmoke;
-  color: #0a0a0a;
+  color: #3273dc;
 }
 
 .bulma-navbar-item {
@@ -6386,6 +6628,11 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
 
 .bulma-navbar-item.bulma-has-dropdown {
   padding: 0;
+}
+
+.bulma-navbar-item.bulma-is-expanded {
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .bulma-navbar-item.bulma-is-tab {
@@ -6453,6 +6700,32 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
   .bulma-navbar-menu.bulma-is-active {
     display: block;
   }
+  .bulma-navbar.bulma-is-fixed-bottom-touch, .bulma-navbar.bulma-is-fixed-top-touch {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+  }
+  .bulma-navbar.bulma-is-fixed-bottom-touch {
+    bottom: 0;
+  }
+  .bulma-navbar.bulma-is-fixed-bottom-touch.bulma-has-shadow {
+    box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1);
+  }
+  .bulma-navbar.bulma-is-fixed-top-touch {
+    top: 0;
+  }
+  .bulma-navbar.bulma-is-fixed-top .bulma-navbar-menu, .bulma-navbar.bulma-is-fixed-top-touch .bulma-navbar-menu {
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 3.25rem);
+    overflow: auto;
+  }
+  html.bulma-has-navbar-fixed-top-touch {
+    padding-top: 3.25rem;
+  }
+  html.bulma-has-navbar-fixed-bottom-touch {
+    padding-bottom: 3.25rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -6467,8 +6740,8 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
     min-height: 3.25rem;
   }
   .bulma-navbar.bulma-is-transparent a.bulma-navbar-item:hover, .bulma-navbar.bulma-is-transparent a.bulma-navbar-item.bulma-is-active,
-  .bulma-navbar.bulma-is-transparent .bulma-navbar-link:hover,
-  .bulma-navbar.bulma-is-transparent .bulma-navbar-link.bulma-is-active {
+  .bulma-navbar.bulma-is-transparent a.bulma-navbar-link:hover,
+  .bulma-navbar.bulma-is-transparent a.bulma-navbar-link.bulma-is-active {
     background-color: transparent !important;
   }
   .bulma-navbar.bulma-is-transparent .bulma-navbar-item.bulma-has-dropdown.bulma-is-active .bulma-navbar-link, .bulma-navbar.bulma-is-transparent .bulma-navbar-item.bulma-has-dropdown.bulma-is-hoverable:hover .bulma-navbar-link {
@@ -6493,6 +6766,17 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
   .bulma-navbar-item.bulma-has-dropdown {
     align-items: stretch;
   }
+  .bulma-navbar-item.bulma-has-dropdown-up .bulma-navbar-link::after {
+    transform: rotate(135deg) translate(0.25em, -0.25em);
+  }
+  .bulma-navbar-item.bulma-has-dropdown-up .bulma-navbar-dropdown {
+    border-bottom: 1px solid #dbdbdb;
+    border-radius: 5px 5px 0 0;
+    border-top: none;
+    bottom: 100%;
+    box-shadow: 0 -8px 8px rgba(10, 10, 10, 0.1);
+    top: auto;
+  }
   .bulma-navbar-item.bulma-is-active .bulma-navbar-dropdown, .bulma-navbar-item.bulma-is-hoverable:hover .bulma-navbar-dropdown {
     display: block;
   }
@@ -6511,6 +6795,7 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
     pointer-events: none;
     position: absolute;
     transform: rotate(-45deg);
+    transform-origin: center;
     width: 0.5em;
     margin-top: -0.375em;
     right: 1.125em;
@@ -6576,18 +6861,41 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
   .bulma-navbar-divider {
     display: block;
   }
+  .bulma-navbar > .bulma-container .bulma-navbar-brand,
   .bulma-container > .bulma-navbar .bulma-navbar-brand {
     margin-left: -1rem;
   }
+  .bulma-navbar > .bulma-container .bulma-navbar-menu,
   .bulma-container > .bulma-navbar .bulma-navbar-menu {
     margin-right: -1rem;
   }
+  .bulma-navbar.bulma-is-fixed-bottom-desktop, .bulma-navbar.bulma-is-fixed-top-desktop {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+  }
+  .bulma-navbar.bulma-is-fixed-bottom-desktop {
+    bottom: 0;
+  }
+  .bulma-navbar.bulma-is-fixed-bottom-desktop.bulma-has-shadow {
+    box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1);
+  }
+  .bulma-navbar.bulma-is-fixed-top-desktop {
+    top: 0;
+  }
+  html.bulma-has-navbar-fixed-top-desktop {
+    padding-top: 3.25rem;
+  }
+  html.bulma-has-navbar-fixed-bottom-desktop {
+    padding-bottom: 3.25rem;
+  }
   a.bulma-navbar-item.bulma-is-active,
-  .bulma-navbar-link.bulma-is-active {
+  a.bulma-navbar-link.bulma-is-active {
     color: #0a0a0a;
   }
   a.bulma-navbar-item.bulma-is-active:not(:hover),
-  .bulma-navbar-link.bulma-is-active:not(:hover) {
+  a.bulma-navbar-link.bulma-is-active:not(:hover) {
     background-color: transparent;
   }
   .bulma-navbar-item.bulma-has-dropdown:hover .bulma-navbar-link, .bulma-navbar-item.bulma-has-dropdown.bulma-is-active .bulma-navbar-link {
@@ -7106,6 +7414,26 @@ label.bulma-panel-block:hover {
   width: 25%;
 }
 
+.bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-one-fifth {
+  flex: none;
+  width: 20%;
+}
+
+.bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-two-fifths {
+  flex: none;
+  width: 40%;
+}
+
+.bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-three-fifths {
+  flex: none;
+  width: 60%;
+}
+
+.bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-four-fifths {
+  flex: none;
+  width: 80%;
+}
+
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-three-quarters {
   margin-left: 75%;
 }
@@ -7124,6 +7452,22 @@ label.bulma-panel-block:hover {
 
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-one-quarter {
   margin-left: 25%;
+}
+
+.bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-one-fifth {
+  margin-left: 20%;
+}
+
+.bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-two-fifths {
+  margin-left: 40%;
+}
+
+.bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-three-fifths {
+  margin-left: 60%;
+}
+
+.bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-four-fifths {
+  margin-left: 80%;
 }
 
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-1 {
@@ -7262,6 +7606,22 @@ label.bulma-panel-block:hover {
     flex: none;
     width: 25%;
   }
+  .bulma-column.bulma-is-one-fifth-mobile {
+    flex: none;
+    width: 20%;
+  }
+  .bulma-column.bulma-is-two-fifths-mobile {
+    flex: none;
+    width: 40%;
+  }
+  .bulma-column.bulma-is-three-fifths-mobile {
+    flex: none;
+    width: 60%;
+  }
+  .bulma-column.bulma-is-four-fifths-mobile {
+    flex: none;
+    width: 80%;
+  }
   .bulma-column.bulma-is-offset-three-quarters-mobile {
     margin-left: 75%;
   }
@@ -7276,6 +7636,18 @@ label.bulma-panel-block:hover {
   }
   .bulma-column.bulma-is-offset-one-quarter-mobile {
     margin-left: 25%;
+  }
+  .bulma-column.bulma-is-offset-one-fifth-mobile {
+    margin-left: 20%;
+  }
+  .bulma-column.bulma-is-offset-two-fifths-mobile {
+    margin-left: 40%;
+  }
+  .bulma-column.bulma-is-offset-three-fifths-mobile {
+    margin-left: 60%;
+  }
+  .bulma-column.bulma-is-offset-four-fifths-mobile {
+    margin-left: 80%;
   }
   .bulma-column.bulma-is-1-mobile {
     flex: none;
@@ -7391,6 +7763,22 @@ label.bulma-panel-block:hover {
     flex: none;
     width: 25%;
   }
+  .bulma-column.bulma-is-one-fifth, .bulma-column.bulma-is-one-fifth-tablet {
+    flex: none;
+    width: 20%;
+  }
+  .bulma-column.bulma-is-two-fifths, .bulma-column.bulma-is-two-fifths-tablet {
+    flex: none;
+    width: 40%;
+  }
+  .bulma-column.bulma-is-three-fifths, .bulma-column.bulma-is-three-fifths-tablet {
+    flex: none;
+    width: 60%;
+  }
+  .bulma-column.bulma-is-four-fifths, .bulma-column.bulma-is-four-fifths-tablet {
+    flex: none;
+    width: 80%;
+  }
   .bulma-column.bulma-is-offset-three-quarters, .bulma-column.bulma-is-offset-three-quarters-tablet {
     margin-left: 75%;
   }
@@ -7405,6 +7793,18 @@ label.bulma-panel-block:hover {
   }
   .bulma-column.bulma-is-offset-one-quarter, .bulma-column.bulma-is-offset-one-quarter-tablet {
     margin-left: 25%;
+  }
+  .bulma-column.bulma-is-offset-one-fifth, .bulma-column.bulma-is-offset-one-fifth-tablet {
+    margin-left: 20%;
+  }
+  .bulma-column.bulma-is-offset-two-fifths, .bulma-column.bulma-is-offset-two-fifths-tablet {
+    margin-left: 40%;
+  }
+  .bulma-column.bulma-is-offset-three-fifths, .bulma-column.bulma-is-offset-three-fifths-tablet {
+    margin-left: 60%;
+  }
+  .bulma-column.bulma-is-offset-four-fifths, .bulma-column.bulma-is-offset-four-fifths-tablet {
+    margin-left: 80%;
   }
   .bulma-column.bulma-is-1, .bulma-column.bulma-is-1-tablet {
     flex: none;
@@ -7520,6 +7920,22 @@ label.bulma-panel-block:hover {
     flex: none;
     width: 25%;
   }
+  .bulma-column.bulma-is-one-fifth-touch {
+    flex: none;
+    width: 20%;
+  }
+  .bulma-column.bulma-is-two-fifths-touch {
+    flex: none;
+    width: 40%;
+  }
+  .bulma-column.bulma-is-three-fifths-touch {
+    flex: none;
+    width: 60%;
+  }
+  .bulma-column.bulma-is-four-fifths-touch {
+    flex: none;
+    width: 80%;
+  }
   .bulma-column.bulma-is-offset-three-quarters-touch {
     margin-left: 75%;
   }
@@ -7534,6 +7950,18 @@ label.bulma-panel-block:hover {
   }
   .bulma-column.bulma-is-offset-one-quarter-touch {
     margin-left: 25%;
+  }
+  .bulma-column.bulma-is-offset-one-fifth-touch {
+    margin-left: 20%;
+  }
+  .bulma-column.bulma-is-offset-two-fifths-touch {
+    margin-left: 40%;
+  }
+  .bulma-column.bulma-is-offset-three-fifths-touch {
+    margin-left: 60%;
+  }
+  .bulma-column.bulma-is-offset-four-fifths-touch {
+    margin-left: 80%;
   }
   .bulma-column.bulma-is-1-touch {
     flex: none;
@@ -7649,6 +8077,22 @@ label.bulma-panel-block:hover {
     flex: none;
     width: 25%;
   }
+  .bulma-column.bulma-is-one-fifth-desktop {
+    flex: none;
+    width: 20%;
+  }
+  .bulma-column.bulma-is-two-fifths-desktop {
+    flex: none;
+    width: 40%;
+  }
+  .bulma-column.bulma-is-three-fifths-desktop {
+    flex: none;
+    width: 60%;
+  }
+  .bulma-column.bulma-is-four-fifths-desktop {
+    flex: none;
+    width: 80%;
+  }
   .bulma-column.bulma-is-offset-three-quarters-desktop {
     margin-left: 75%;
   }
@@ -7663,6 +8107,18 @@ label.bulma-panel-block:hover {
   }
   .bulma-column.bulma-is-offset-one-quarter-desktop {
     margin-left: 25%;
+  }
+  .bulma-column.bulma-is-offset-one-fifth-desktop {
+    margin-left: 20%;
+  }
+  .bulma-column.bulma-is-offset-two-fifths-desktop {
+    margin-left: 40%;
+  }
+  .bulma-column.bulma-is-offset-three-fifths-desktop {
+    margin-left: 60%;
+  }
+  .bulma-column.bulma-is-offset-four-fifths-desktop {
+    margin-left: 80%;
   }
   .bulma-column.bulma-is-1-desktop {
     flex: none;
@@ -7778,6 +8234,22 @@ label.bulma-panel-block:hover {
     flex: none;
     width: 25%;
   }
+  .bulma-column.bulma-is-one-fifth-widescreen {
+    flex: none;
+    width: 20%;
+  }
+  .bulma-column.bulma-is-two-fifths-widescreen {
+    flex: none;
+    width: 40%;
+  }
+  .bulma-column.bulma-is-three-fifths-widescreen {
+    flex: none;
+    width: 60%;
+  }
+  .bulma-column.bulma-is-four-fifths-widescreen {
+    flex: none;
+    width: 80%;
+  }
   .bulma-column.bulma-is-offset-three-quarters-widescreen {
     margin-left: 75%;
   }
@@ -7792,6 +8264,18 @@ label.bulma-panel-block:hover {
   }
   .bulma-column.bulma-is-offset-one-quarter-widescreen {
     margin-left: 25%;
+  }
+  .bulma-column.bulma-is-offset-one-fifth-widescreen {
+    margin-left: 20%;
+  }
+  .bulma-column.bulma-is-offset-two-fifths-widescreen {
+    margin-left: 40%;
+  }
+  .bulma-column.bulma-is-offset-three-fifths-widescreen {
+    margin-left: 60%;
+  }
+  .bulma-column.bulma-is-offset-four-fifths-widescreen {
+    margin-left: 80%;
   }
   .bulma-column.bulma-is-1-widescreen {
     flex: none;
@@ -7907,6 +8391,22 @@ label.bulma-panel-block:hover {
     flex: none;
     width: 25%;
   }
+  .bulma-column.bulma-is-one-fifth-fullhd {
+    flex: none;
+    width: 20%;
+  }
+  .bulma-column.bulma-is-two-fifths-fullhd {
+    flex: none;
+    width: 40%;
+  }
+  .bulma-column.bulma-is-three-fifths-fullhd {
+    flex: none;
+    width: 60%;
+  }
+  .bulma-column.bulma-is-four-fifths-fullhd {
+    flex: none;
+    width: 80%;
+  }
   .bulma-column.bulma-is-offset-three-quarters-fullhd {
     margin-left: 75%;
   }
@@ -7921,6 +8421,18 @@ label.bulma-panel-block:hover {
   }
   .bulma-column.bulma-is-offset-one-quarter-fullhd {
     margin-left: 25%;
+  }
+  .bulma-column.bulma-is-offset-one-fifth-fullhd {
+    margin-left: 20%;
+  }
+  .bulma-column.bulma-is-offset-two-fifths-fullhd {
+    margin-left: 40%;
+  }
+  .bulma-column.bulma-is-offset-three-fifths-fullhd {
+    margin-left: 60%;
+  }
+  .bulma-column.bulma-is-offset-four-fifths-fullhd {
+    margin-left: 80%;
   }
   .bulma-column.bulma-is-1-fullhd {
     flex: none;
@@ -8081,39 +8593,39 @@ label.bulma-panel-block:hover {
 }
 
 .bulma-columns.bulma-is-variable.bulma-is-0 {
-  --columnGap: $i * 0.25rem;
+  --columnGap: 0rem;
 }
 
 .bulma-columns.bulma-is-variable.bulma-is-1 {
-  --columnGap: $i * 0.25rem;
+  --columnGap: 0.25rem;
 }
 
 .bulma-columns.bulma-is-variable.bulma-is-2 {
-  --columnGap: $i * 0.25rem;
+  --columnGap: 0.5rem;
 }
 
 .bulma-columns.bulma-is-variable.bulma-is-3 {
-  --columnGap: $i * 0.25rem;
+  --columnGap: 0.75rem;
 }
 
 .bulma-columns.bulma-is-variable.bulma-is-4 {
-  --columnGap: $i * 0.25rem;
+  --columnGap: 1rem;
 }
 
 .bulma-columns.bulma-is-variable.bulma-is-5 {
-  --columnGap: $i * 0.25rem;
+  --columnGap: 1.25rem;
 }
 
 .bulma-columns.bulma-is-variable.bulma-is-6 {
-  --columnGap: $i * 0.25rem;
+  --columnGap: 1.5rem;
 }
 
 .bulma-columns.bulma-is-variable.bulma-is-7 {
-  --columnGap: $i * 0.25rem;
+  --columnGap: 1.75rem;
 }
 
 .bulma-columns.bulma-is-variable.bulma-is-8 {
-  --columnGap: $i * 0.25rem;
+  --columnGap: 2rem;
 }
 
 .bulma-tile {
