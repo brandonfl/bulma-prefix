@@ -1,4 +1,4 @@
-/*! bulma.io v0.5.2 | MIT License | github.com/jgthms/bulma */
+/*! bulma.io v0.5.3 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -201,21 +201,21 @@ strong {
 }
 
 pre {
+  -webkit-overflow-scrolling: touch;
   background-color: whitesmoke;
   color: #4a4a4a;
   font-size: 0.875em;
+  overflow-x: auto;
+  padding: 1.25rem 1.5rem;
   white-space: pre;
   word-wrap: normal;
 }
 
 pre code {
-  -webkit-overflow-scrolling: touch;
-  background: none;
-  color: inherit;
-  display: block;
+  background-color: transparent;
+  color: currentColor;
   font-size: 1em;
-  overflow-x: auto;
-  padding: 1.25rem 1.5rem;
+  padding: 0;
 }
 
 table td,
@@ -481,6 +481,64 @@ table th {
 @media screen and (min-width: 1408px) {
   .bulma-has-text-centered-fullhd {
     text-align: center !important;
+  }
+}
+
+.bulma-has-text-justified {
+  text-align: justify !important;
+}
+
+@media screen and (max-width: 768px) {
+  .bulma-has-text-justified-mobile {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (min-width: 769px), print {
+  .bulma-has-text-justified-tablet {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .bulma-has-text-justified-tablet-only {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .bulma-has-text-justified-touch {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bulma-has-text-justified-desktop {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .bulma-has-text-justified-desktop-only {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .bulma-has-text-justified-widescreen {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+  .bulma-has-text-justified-widescreen-only {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  .bulma-has-text-justified-fullhd {
+    text-align: justify !important;
   }
 }
 
@@ -2460,6 +2518,11 @@ a.bulma-box:active {
   border-radius: 290486px;
 }
 
+.bulma-input[readonly],
+.bulma-textarea[readonly] {
+  box-shadow: none;
+}
+
 .bulma-input.bulma-is-white,
 .bulma-textarea.bulma-is-white {
   border-color: white;
@@ -2603,6 +2666,14 @@ a.bulma-box:active {
 .bulma-textarea.bulma-is-inline {
   display: inline;
   width: auto;
+}
+
+.bulma-input.bulma-is-static {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .bulma-textarea {
@@ -4614,6 +4685,10 @@ a.bulma-tag:hover {
   display: flex;
 }
 
+.bulma-breadcrumb li:first-child a {
+  padding-left: 0;
+}
+
 .bulma-breadcrumb li.bulma-is-active a {
   color: #363636;
   cursor: default;
@@ -4698,6 +4773,10 @@ a.bulma-tag:hover {
   flex-grow: 1;
   font-weight: 700;
   padding: 0.75rem;
+}
+
+.bulma-card-header-title.bulma-is-centered {
+  justify-content: center;
 }
 
 .bulma-card-header-icon {
@@ -5051,6 +5130,15 @@ a.bulma-dropdown-item.bulma-is-active {
   margin-bottom: 1.5rem;
 }
 
+.bulma-message strong {
+  color: currentColor;
+}
+
+.bulma-message a:not(.bulma-button):not(.bulma-tag) {
+  color: currentColor;
+  text-decoration: underline;
+}
+
 .bulma-message.bulma-is-small {
   font-size: 0.75rem;
 }
@@ -5201,15 +5289,6 @@ a.bulma-dropdown-item.bulma-is-active {
   position: relative;
 }
 
-.bulma-message-header a:not(.bulma-button),
-.bulma-message-header strong {
-  color: currentColor;
-}
-
-.bulma-message-header a:not(.bulma-button) {
-  text-decoration: underline;
-}
-
 .bulma-message-header .bulma-delete {
   flex-grow: 0;
   flex-shrink: 0;
@@ -5227,15 +5306,6 @@ a.bulma-dropdown-item.bulma-is-active {
   border-radius: 3px;
   color: #4a4a4a;
   padding: 1em 1.25em;
-}
-
-.bulma-message-body a:not(.bulma-button),
-.bulma-message-body strong {
-  color: currentColor;
-}
-
-.bulma-message-body a:not(.bulma-button) {
-  text-decoration: underline;
 }
 
 .bulma-message-body code,
