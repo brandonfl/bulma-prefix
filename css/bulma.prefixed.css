@@ -1,4 +1,4 @@
-/*! bulma.io v0.5.3 | MIT License | github.com/jgthms/bulma */
+/*! bulma.io v0.6.0 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -147,7 +147,7 @@ body {
 }
 
 a {
-  color: #00d1b2;
+  color: #3273dc;
   cursor: pointer;
   text-decoration: none;
 }
@@ -710,12 +710,20 @@ a.bulma-has-text-primary:hover, a.bulma-has-text-primary:focus {
   color: #009e86 !important;
 }
 
-.bulma-has-text-info {
+.bulma-has-text-link {
   color: #3273dc !important;
 }
 
-a.bulma-has-text-info:hover, a.bulma-has-text-info:focus {
+a.bulma-has-text-link:hover, a.bulma-has-text-link:focus {
   color: #205bbc !important;
+}
+
+.bulma-has-text-info {
+  color: #209cee !important;
+}
+
+a.bulma-has-text-info:hover, a.bulma-has-text-info:focus {
+  color: #0f81cc !important;
 }
 
 .bulma-has-text-success {
@@ -1180,11 +1188,11 @@ a.bulma-has-text-danger:hover, a.bulma-has-text-danger:focus {
 }
 
 a.bulma-box:hover, a.bulma-box:focus {
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px #00d1b2;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px #3273dc;
 }
 
 a.bulma-box:active {
-  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #00d1b2;
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #3273dc;
 }
 
 .bulma-button {
@@ -1259,12 +1267,12 @@ a.bulma-box:active {
 }
 
 .bulma-button:focus, .bulma-button.bulma-is-focused {
-  border-color: #00d1b2;
+  border-color: #3273dc;
   color: #363636;
 }
 
 .bulma-button:focus:not(:active), .bulma-button.bulma-is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
 }
 
 .bulma-button:active, .bulma-button.bulma-is-active {
@@ -1272,24 +1280,24 @@ a.bulma-box:active {
   color: #363636;
 }
 
-.bulma-button.bulma-is-link {
+.bulma-button.bulma-is-text {
   background-color: transparent;
   border-color: transparent;
   color: #4a4a4a;
   text-decoration: underline;
 }
 
-.bulma-button.bulma-is-link:hover, .bulma-button.bulma-is-link.bulma-is-hovered, .bulma-button.bulma-is-link:focus, .bulma-button.bulma-is-link.bulma-is-focused {
+.bulma-button.bulma-is-text:hover, .bulma-button.bulma-is-text.bulma-is-hovered, .bulma-button.bulma-is-text:focus, .bulma-button.bulma-is-text.bulma-is-focused {
   background-color: whitesmoke;
   color: #363636;
 }
 
-.bulma-button.bulma-is-link:active, .bulma-button.bulma-is-link.bulma-is-active {
+.bulma-button.bulma-is-text:active, .bulma-button.bulma-is-text.bulma-is-active {
   background-color: #e8e8e8;
   color: #363636;
 }
 
-.bulma-button.bulma-is-link[disabled] {
+.bulma-button.bulma-is-text[disabled] {
   background-color: transparent;
   border-color: transparent;
   box-shadow: none;
@@ -1765,14 +1773,108 @@ a.bulma-box:active {
   color: #fff;
 }
 
-.bulma-button.bulma-is-info {
+.bulma-button.bulma-is-link {
   background-color: #3273dc;
   border-color: transparent;
   color: #fff;
 }
 
-.bulma-button.bulma-is-info:hover, .bulma-button.bulma-is-info.bulma-is-hovered {
+.bulma-button.bulma-is-link:hover, .bulma-button.bulma-is-link.bulma-is-hovered {
   background-color: #276cda;
+  border-color: transparent;
+  color: #fff;
+}
+
+.bulma-button.bulma-is-link:focus, .bulma-button.bulma-is-link.bulma-is-focused {
+  border-color: transparent;
+  color: #fff;
+}
+
+.bulma-button.bulma-is-link:focus:not(:active), .bulma-button.bulma-is-link.bulma-is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}
+
+.bulma-button.bulma-is-link:active, .bulma-button.bulma-is-link.bulma-is-active {
+  background-color: #2366d1;
+  border-color: transparent;
+  color: #fff;
+}
+
+.bulma-button.bulma-is-link[disabled] {
+  background-color: #3273dc;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.bulma-button.bulma-is-link.bulma-is-inverted {
+  background-color: #fff;
+  color: #3273dc;
+}
+
+.bulma-button.bulma-is-link.bulma-is-inverted:hover {
+  background-color: #f2f2f2;
+}
+
+.bulma-button.bulma-is-link.bulma-is-inverted[disabled] {
+  background-color: #fff;
+  border-color: transparent;
+  box-shadow: none;
+  color: #3273dc;
+}
+
+.bulma-button.bulma-is-link.bulma-is-loading:after {
+  border-color: transparent transparent #fff #fff !important;
+}
+
+.bulma-button.bulma-is-link.bulma-is-outlined {
+  background-color: transparent;
+  border-color: #3273dc;
+  color: #3273dc;
+}
+
+.bulma-button.bulma-is-link.bulma-is-outlined:hover, .bulma-button.bulma-is-link.bulma-is-outlined:focus {
+  background-color: #3273dc;
+  border-color: #3273dc;
+  color: #fff;
+}
+
+.bulma-button.bulma-is-link.bulma-is-outlined.bulma-is-loading:after {
+  border-color: transparent transparent #3273dc #3273dc !important;
+}
+
+.bulma-button.bulma-is-link.bulma-is-outlined[disabled] {
+  background-color: transparent;
+  border-color: #3273dc;
+  box-shadow: none;
+  color: #3273dc;
+}
+
+.bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined:hover, .bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined:focus {
+  background-color: #fff;
+  color: #3273dc;
+}
+
+.bulma-button.bulma-is-link.bulma-is-inverted.bulma-is-outlined[disabled] {
+  background-color: transparent;
+  border-color: #fff;
+  box-shadow: none;
+  color: #fff;
+}
+
+.bulma-button.bulma-is-info {
+  background-color: #209cee;
+  border-color: transparent;
+  color: #fff;
+}
+
+.bulma-button.bulma-is-info:hover, .bulma-button.bulma-is-info.bulma-is-hovered {
+  background-color: #1496ed;
   border-color: transparent;
   color: #fff;
 }
@@ -1783,24 +1885,24 @@ a.bulma-box:active {
 }
 
 .bulma-button.bulma-is-info:focus:not(:active), .bulma-button.bulma-is-info.bulma-is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25);
 }
 
 .bulma-button.bulma-is-info:active, .bulma-button.bulma-is-info.bulma-is-active {
-  background-color: #2366d1;
+  background-color: #118fe4;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-button.bulma-is-info[disabled] {
-  background-color: #3273dc;
+  background-color: #209cee;
   border-color: transparent;
   box-shadow: none;
 }
 
 .bulma-button.bulma-is-info.bulma-is-inverted {
   background-color: #fff;
-  color: #3273dc;
+  color: #209cee;
 }
 
 .bulma-button.bulma-is-info.bulma-is-inverted:hover {
@@ -1811,7 +1913,7 @@ a.bulma-box:active {
   background-color: #fff;
   border-color: transparent;
   box-shadow: none;
-  color: #3273dc;
+  color: #209cee;
 }
 
 .bulma-button.bulma-is-info.bulma-is-loading:after {
@@ -1820,25 +1922,25 @@ a.bulma-box:active {
 
 .bulma-button.bulma-is-info.bulma-is-outlined {
   background-color: transparent;
-  border-color: #3273dc;
-  color: #3273dc;
+  border-color: #209cee;
+  color: #209cee;
 }
 
 .bulma-button.bulma-is-info.bulma-is-outlined:hover, .bulma-button.bulma-is-info.bulma-is-outlined:focus {
-  background-color: #3273dc;
-  border-color: #3273dc;
+  background-color: #209cee;
+  border-color: #209cee;
   color: #fff;
 }
 
 .bulma-button.bulma-is-info.bulma-is-outlined.bulma-is-loading:after {
-  border-color: transparent transparent #3273dc #3273dc !important;
+  border-color: transparent transparent #209cee #209cee !important;
 }
 
 .bulma-button.bulma-is-info.bulma-is-outlined[disabled] {
   background-color: transparent;
-  border-color: #3273dc;
+  border-color: #209cee;
   box-shadow: none;
-  color: #3273dc;
+  color: #209cee;
 }
 
 .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined {
@@ -1849,7 +1951,7 @@ a.bulma-box:active {
 
 .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined:hover, .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined:focus {
   background-color: #fff;
-  color: #3273dc;
+  color: #209cee;
 }
 
 .bulma-button.bulma-is-info.bulma-is-inverted.bulma-is-outlined[disabled] {
@@ -2470,6 +2572,26 @@ a.bulma-box:active {
   cursor: not-allowed;
 }
 
+.bulma-input::-moz-placeholder,
+.bulma-textarea::-moz-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.bulma-input::-webkit-input-placeholder,
+.bulma-textarea::-webkit-input-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.bulma-input:-moz-placeholder,
+.bulma-textarea:-moz-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.bulma-input:-ms-input-placeholder,
+.bulma-textarea:-ms-input-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
 .bulma-input:hover, .bulma-input.bulma-is-hovered,
 .bulma-textarea:hover,
 .bulma-textarea.bulma-is-hovered {
@@ -2481,8 +2603,8 @@ a.bulma-box:active {
 .bulma-textarea.bulma-is-focused,
 .bulma-textarea:active,
 .bulma-textarea.bulma-is-active {
-  border-color: #00d1b2;
-  box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
+  border-color: #3273dc;
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
 }
 
 .bulma-input[disabled],
@@ -2588,9 +2710,22 @@ a.bulma-box:active {
   box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
 }
 
+.bulma-input.bulma-is-link,
+.bulma-textarea.bulma-is-link {
+  border-color: #3273dc;
+}
+
+.bulma-input.bulma-is-link:focus, .bulma-input.bulma-is-link.bulma-is-focused, .bulma-input.bulma-is-link:active, .bulma-input.bulma-is-link.bulma-is-active,
+.bulma-textarea.bulma-is-link:focus,
+.bulma-textarea.bulma-is-link.bulma-is-focused,
+.bulma-textarea.bulma-is-link:active,
+.bulma-textarea.bulma-is-link.bulma-is-active {
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}
+
 .bulma-input.bulma-is-info,
 .bulma-textarea.bulma-is-info {
-  border-color: #3273dc;
+  border-color: #209cee;
 }
 
 .bulma-input.bulma-is-info:focus, .bulma-input.bulma-is-info.bulma-is-focused, .bulma-input.bulma-is-info:active, .bulma-input.bulma-is-info.bulma-is-active,
@@ -2598,7 +2733,7 @@ a.bulma-box:active {
 .bulma-textarea.bulma-is-info.bulma-is-focused,
 .bulma-textarea.bulma-is-info:active,
 .bulma-textarea.bulma-is-info.bulma-is-active {
-  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25);
 }
 
 .bulma-input.bulma-is-success,
@@ -2737,7 +2872,7 @@ a.bulma-box:active {
 }
 
 .bulma-select:not(.bulma-is-multiple)::after {
-  border: 1px solid #00d1b2;
+  border: 1px solid #3273dc;
   border-right: 0;
   border-top: 0;
   content: " ";
@@ -2789,13 +2924,29 @@ a.bulma-box:active {
   cursor: not-allowed;
 }
 
+.bulma-select select::-moz-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.bulma-select select::-webkit-input-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.bulma-select select:-moz-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.bulma-select select:-ms-input-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
 .bulma-select select:hover, .bulma-select select.bulma-is-hovered {
   border-color: #b5b5b5;
 }
 
 .bulma-select select:focus, .bulma-select select.bulma-is-focused, .bulma-select select:active, .bulma-select select.bulma-is-active {
-  border-color: #00d1b2;
-  box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
+  border-color: #3273dc;
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
 }
 
 .bulma-select select[disabled] {
@@ -2886,12 +3037,20 @@ a.bulma-box:active {
   box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
 }
 
-.bulma-select.bulma-is-info select {
+.bulma-select.bulma-is-link select {
   border-color: #3273dc;
 }
 
-.bulma-select.bulma-is-info select:focus, .bulma-select.bulma-is-info select.bulma-is-focused, .bulma-select.bulma-is-info select:active, .bulma-select.bulma-is-info select.bulma-is-active {
+.bulma-select.bulma-is-link select:focus, .bulma-select.bulma-is-link select.bulma-is-focused, .bulma-select.bulma-is-link select:active, .bulma-select.bulma-is-link select.bulma-is-active {
   box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}
+
+.bulma-select.bulma-is-info select {
+  border-color: #209cee;
+}
+
+.bulma-select.bulma-is-info select:focus, .bulma-select.bulma-is-info select.bulma-is-focused, .bulma-select.bulma-is-info select:active, .bulma-select.bulma-is-info select.bulma-is-active {
+  box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25);
 }
 
 .bulma-select.bulma-is-success select {
@@ -3106,26 +3265,50 @@ a.bulma-box:active {
   color: #fff;
 }
 
-.bulma-file.bulma-is-info .bulma-file-cta {
+.bulma-file.bulma-is-link .bulma-file-cta {
   background-color: #3273dc;
   border-color: transparent;
   color: #fff;
 }
 
-.bulma-file.bulma-is-info:hover .bulma-file-cta, .bulma-file.bulma-is-info.bulma-is-hovered .bulma-file-cta {
+.bulma-file.bulma-is-link:hover .bulma-file-cta, .bulma-file.bulma-is-link.bulma-is-hovered .bulma-file-cta {
   background-color: #276cda;
+  border-color: transparent;
+  color: #fff;
+}
+
+.bulma-file.bulma-is-link:focus .bulma-file-cta, .bulma-file.bulma-is-link.bulma-is-focused .bulma-file-cta {
+  border-color: transparent;
+  box-shadow: 0 0 0.5em rgba(50, 115, 220, 0.25);
+  color: #fff;
+}
+
+.bulma-file.bulma-is-link:active .bulma-file-cta, .bulma-file.bulma-is-link.bulma-is-active .bulma-file-cta {
+  background-color: #2366d1;
+  border-color: transparent;
+  color: #fff;
+}
+
+.bulma-file.bulma-is-info .bulma-file-cta {
+  background-color: #209cee;
+  border-color: transparent;
+  color: #fff;
+}
+
+.bulma-file.bulma-is-info:hover .bulma-file-cta, .bulma-file.bulma-is-info.bulma-is-hovered .bulma-file-cta {
+  background-color: #1496ed;
   border-color: transparent;
   color: #fff;
 }
 
 .bulma-file.bulma-is-info:focus .bulma-file-cta, .bulma-file.bulma-is-info.bulma-is-focused .bulma-file-cta {
   border-color: transparent;
-  box-shadow: 0 0 0.5em rgba(50, 115, 220, 0.25);
+  box-shadow: 0 0 0.5em rgba(32, 156, 238, 0.25);
   color: #fff;
 }
 
 .bulma-file.bulma-is-info:active .bulma-file-cta, .bulma-file.bulma-is-info.bulma-is-active .bulma-file-cta {
-  background-color: #2366d1;
+  background-color: #118fe4;
   border-color: transparent;
   color: #fff;
 }
@@ -3457,8 +3640,12 @@ a.bulma-box:active {
   color: #00d1b2;
 }
 
-.bulma-help.bulma-is-info {
+.bulma-help.bulma-is-link {
   color: #3273dc;
+}
+
+.bulma-help.bulma-is-info {
+  color: #209cee;
 }
 
 .bulma-help.bulma-is-success {
@@ -3958,8 +4145,13 @@ a.bulma-box:active {
   color: #fff;
 }
 
-.bulma-notification.bulma-is-info {
+.bulma-notification.bulma-is-link {
   background-color: #3273dc;
+  color: #fff;
+}
+
+.bulma-notification.bulma-is-info {
+  background-color: #209cee;
   color: #fff;
 }
 
@@ -4046,12 +4238,20 @@ a.bulma-box:active {
   background-color: #00d1b2;
 }
 
-.bulma-progress.bulma-is-info::-webkit-progress-value {
+.bulma-progress.bulma-is-link::-webkit-progress-value {
   background-color: #3273dc;
 }
 
-.bulma-progress.bulma-is-info::-moz-progress-bar {
+.bulma-progress.bulma-is-link::-moz-progress-bar {
   background-color: #3273dc;
+}
+
+.bulma-progress.bulma-is-info::-webkit-progress-value {
+  background-color: #209cee;
+}
+
+.bulma-progress.bulma-is-info::-moz-progress-bar {
+  background-color: #209cee;
 }
 
 .bulma-progress.bulma-is-success::-webkit-progress-value {
@@ -4139,10 +4339,17 @@ a.bulma-box:active {
   color: #fff;
 }
 
-.bulma-table td.bulma-is-info,
-.bulma-table th.bulma-is-info {
+.bulma-table td.bulma-is-link,
+.bulma-table th.bulma-is-link {
   background-color: #3273dc;
   border-color: #3273dc;
+  color: #fff;
+}
+
+.bulma-table td.bulma-is-info,
+.bulma-table th.bulma-is-info {
+  background-color: #209cee;
+  border-color: #209cee;
   color: #fff;
 }
 
@@ -4176,10 +4383,6 @@ a.bulma-box:active {
 .bulma-table th {
   color: #363636;
   text-align: left;
-}
-
-.bulma-table tr:hover {
-  background-color: #fafafa;
 }
 
 .bulma-table tr.bulma-is-selected {
@@ -4229,6 +4432,14 @@ a.bulma-box:active {
   width: 100%;
 }
 
+.bulma-table.bulma-is-hoverable tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.bulma-table.bulma-is-hoverable.bulma-is-striped tbody tr:not(.bulma-is-selected):hover {
+  background-color: whitesmoke;
+}
+
 .bulma-table.bulma-is-narrow td,
 .bulma-table.bulma-is-narrow th {
   padding: 0.25em 0.5em;
@@ -4236,10 +4447,6 @@ a.bulma-box:active {
 
 .bulma-table.bulma-is-striped tbody tr:not(.bulma-is-selected):nth-child(even) {
   background-color: #fafafa;
-}
-
-.bulma-table.bulma-is-striped tbody tr:not(.bulma-is-selected):nth-child(even):hover {
-  background-color: whitesmoke;
 }
 
 .bulma-tags {
@@ -4324,8 +4531,13 @@ a.bulma-box:active {
   color: #fff;
 }
 
-.bulma-tag:not(body).bulma-is-info {
+.bulma-tag:not(body).bulma-is-link {
   background-color: #3273dc;
+  color: #fff;
+}
+
+.bulma-tag:not(body).bulma-is-info {
+  background-color: #209cee;
   color: #fff;
 }
 
@@ -4670,7 +4882,7 @@ a.bulma-tag:hover {
 
 .bulma-breadcrumb a {
   align-items: center;
-  color: #7a7a7a;
+  color: #3273dc;
   display: flex;
   justify-content: center;
   padding: 0.5em 0.75em;
@@ -4835,6 +5047,13 @@ a.bulma-tag:hover {
   right: 0;
 }
 
+.bulma-dropdown.bulma-is-up .bulma-dropdown-menu {
+  bottom: 100%;
+  padding-bottom: 4px;
+  padding-top: unset;
+  top: auto;
+}
+
 .bulma-dropdown-menu {
   display: none;
   left: 0;
@@ -4873,7 +5092,7 @@ a.bulma-dropdown-item:hover {
 }
 
 a.bulma-dropdown-item.bulma-is-active {
-  background-color: #00d1b2;
+  background-color: #3273dc;
   color: #fff;
 }
 
@@ -4914,6 +5133,10 @@ a.bulma-dropdown-item.bulma-is-active {
 
 .bulma-level.bulma-is-mobile .bulma-level-left + .bulma-level-right {
   margin-top: 0;
+}
+
+.bulma-level.bulma-is-mobile .bulma-level-item {
+  margin-right: 0.75rem;
 }
 
 .bulma-level.bulma-is-mobile .bulma-level-item:not(:last-child) {
@@ -5095,7 +5318,7 @@ a.bulma-dropdown-item.bulma-is-active {
 }
 
 .bulma-menu-list a.bulma-is-active {
-  background-color: #00d1b2;
+  background-color: #3273dc;
   color: #fff;
 }
 
@@ -5221,18 +5444,32 @@ a.bulma-dropdown-item.bulma-is-active {
   color: #021310;
 }
 
-.bulma-message.bulma-is-info {
+.bulma-message.bulma-is-link {
   background-color: #f6f9fe;
 }
 
-.bulma-message.bulma-is-info .bulma-message-header {
+.bulma-message.bulma-is-link .bulma-message-header {
   background-color: #3273dc;
   color: #fff;
 }
 
-.bulma-message.bulma-is-info .bulma-message-body {
+.bulma-message.bulma-is-link .bulma-message-body {
   border-color: #3273dc;
   color: #22509a;
+}
+
+.bulma-message.bulma-is-info {
+  background-color: #f6fbfe;
+}
+
+.bulma-message.bulma-is-info .bulma-message-header {
+  background-color: #209cee;
+  color: #fff;
+}
+
+.bulma-message.bulma-is-info .bulma-message-body {
+  border-color: #209cee;
+  color: #12537e;
 }
 
 .bulma-message.bulma-is-success {
@@ -5500,221 +5737,6 @@ a.bulma-dropdown-item.bulma-is-active {
   flex-shrink: 1;
   overflow: auto;
   padding: 20px;
-}
-
-.bulma-nav-toggle {
-  cursor: pointer;
-  display: block;
-  height: 3.25rem;
-  position: relative;
-  width: 3.25rem;
-}
-
-.bulma-nav-toggle span {
-  background-color: currentColor;
-  display: block;
-  height: 1px;
-  left: 50%;
-  margin-left: -7px;
-  position: absolute;
-  top: 50%;
-  transition: none 86ms ease-out;
-  transition-property: background, left, opacity, transform;
-  width: 15px;
-}
-
-.bulma-nav-toggle span:nth-child(1) {
-  margin-top: -6px;
-}
-
-.bulma-nav-toggle span:nth-child(2) {
-  margin-top: -1px;
-}
-
-.bulma-nav-toggle span:nth-child(3) {
-  margin-top: 4px;
-}
-
-.bulma-nav-toggle:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.bulma-nav-toggle.bulma-is-active span:nth-child(1) {
-  margin-left: -5px;
-  transform: rotate(45deg);
-  transform-origin: left top;
-}
-
-.bulma-nav-toggle.bulma-is-active span:nth-child(2) {
-  opacity: 0;
-}
-
-.bulma-nav-toggle.bulma-is-active span:nth-child(3) {
-  margin-left: -5px;
-  transform: rotate(-45deg);
-  transform-origin: left bottom;
-}
-
-@media screen and (min-width: 769px), print {
-  .bulma-nav-toggle {
-    display: none;
-  }
-}
-
-.bulma-nav-item {
-  align-items: center;
-  display: flex;
-  flex-grow: 0;
-  flex-shrink: 0;
-  font-size: 1rem;
-  justify-content: center;
-  line-height: 1.5;
-  padding: 0.5rem 0.75rem;
-}
-
-.bulma-nav-item a {
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.bulma-nav-item img {
-  max-height: 1.75rem;
-}
-
-.bulma-nav-item .bulma-tag:first-child:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
-.bulma-nav-item .bulma-tag:last-child:not(:first-child) {
-  margin-left: 0.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-nav-item {
-    justify-content: flex-start;
-  }
-}
-
-.bulma-nav-item a:not(.bulma-button),
-a.bulma-nav-item:not(.bulma-button) {
-  color: #7a7a7a;
-}
-
-.bulma-nav-item a:not(.bulma-button):hover,
-a.bulma-nav-item:not(.bulma-button):hover {
-  color: #363636;
-}
-
-.bulma-nav-item a:not(.bulma-button).bulma-is-active,
-a.bulma-nav-item:not(.bulma-button).bulma-is-active {
-  color: #363636;
-}
-
-.bulma-nav-item a:not(.bulma-button).bulma-is-tab,
-a.bulma-nav-item:not(.bulma-button).bulma-is-tab {
-  border-bottom: 1px solid transparent;
-  border-top: 1px solid transparent;
-  padding-bottom: calc(0.75rem - 1px);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: calc(0.75rem - 1px);
-}
-
-.bulma-nav-item a:not(.bulma-button).bulma-is-tab:hover,
-a.bulma-nav-item:not(.bulma-button).bulma-is-tab:hover {
-  border-bottom-color: #00d1b2;
-  border-top-color: transparent;
-}
-
-.bulma-nav-item a:not(.bulma-button).bulma-is-tab.bulma-is-active,
-a.bulma-nav-item:not(.bulma-button).bulma-is-tab.bulma-is-active {
-  border-bottom: 3px solid #00d1b2;
-  color: #00d1b2;
-  padding-bottom: calc(0.75rem - 3px);
-}
-
-@media screen and (min-width: 1024px) {
-  .bulma-nav-item a:not(.bulma-button).bulma-is-brand,
-  a.bulma-nav-item:not(.bulma-button).bulma-is-brand {
-    padding-left: 0;
-  }
-}
-
-.bulma-nav-left,
-.bulma-nav-right {
-  -webkit-overflow-scrolling: touch;
-  align-items: stretch;
-  display: flex;
-  flex-grow: 1;
-  flex-shrink: 0;
-  max-width: 100%;
-  overflow: auto;
-}
-
-@media screen and (min-width: 1216px) {
-  .bulma-nav-left,
-  .bulma-nav-right {
-    flex-basis: 0;
-  }
-}
-
-.bulma-nav-left {
-  justify-content: flex-start;
-  white-space: nowrap;
-}
-
-.bulma-nav-right {
-  justify-content: flex-end;
-}
-
-.bulma-nav-center {
-  align-items: stretch;
-  display: flex;
-  flex-grow: 0;
-  flex-shrink: 0;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-nav-menu.bulma-nav-right {
-    background-color: white;
-    box-shadow: 0 4px 7px rgba(10, 10, 10, 0.1);
-    left: 0;
-    display: none;
-    right: 0;
-    top: 100%;
-    position: absolute;
-  }
-  .bulma-nav-menu.bulma-nav-right .bulma-nav-item {
-    border-top: 1px solid rgba(219, 219, 219, 0.5);
-    padding: 0.75rem;
-  }
-  .bulma-nav-menu.bulma-nav-right.bulma-is-active {
-    display: block;
-  }
-}
-
-.bulma-nav {
-  align-items: stretch;
-  background-color: white;
-  display: flex;
-  height: 3.25rem;
-  position: relative;
-  text-align: center;
-  z-index: 10;
-}
-
-.bulma-nav > .bulma-container {
-  align-items: stretch;
-  display: flex;
-  min-height: 3.25rem;
-  width: 100%;
-}
-
-.bulma-nav.bulma-has-shadow {
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
 }
 
 .bulma-navbar {
@@ -5988,8 +6010,61 @@ a.bulma-nav-item:not(.bulma-button).bulma-is-tab.bulma-is-active {
   }
 }
 
-.bulma-navbar.bulma-is-info {
+.bulma-navbar.bulma-is-link {
   background-color: #3273dc;
+  color: #fff;
+}
+
+.bulma-navbar.bulma-is-link .bulma-navbar-brand > .bulma-navbar-item,
+.bulma-navbar.bulma-is-link .bulma-navbar-brand .bulma-navbar-link {
+  color: #fff;
+}
+
+.bulma-navbar.bulma-is-link .bulma-navbar-brand > a.bulma-navbar-item:hover, .bulma-navbar.bulma-is-link .bulma-navbar-brand > a.bulma-navbar-item.bulma-is-active,
+.bulma-navbar.bulma-is-link .bulma-navbar-brand .bulma-navbar-link:hover,
+.bulma-navbar.bulma-is-link .bulma-navbar-brand .bulma-navbar-link.bulma-is-active {
+  background-color: #2366d1;
+  color: #fff;
+}
+
+.bulma-navbar.bulma-is-link .bulma-navbar-brand .bulma-navbar-link::after {
+  border-color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .bulma-navbar.bulma-is-link .bulma-navbar-start > .bulma-navbar-item,
+  .bulma-navbar.bulma-is-link .bulma-navbar-start .bulma-navbar-link,
+  .bulma-navbar.bulma-is-link .bulma-navbar-end > .bulma-navbar-item,
+  .bulma-navbar.bulma-is-link .bulma-navbar-end .bulma-navbar-link {
+    color: #fff;
+  }
+  .bulma-navbar.bulma-is-link .bulma-navbar-start > a.bulma-navbar-item:hover, .bulma-navbar.bulma-is-link .bulma-navbar-start > a.bulma-navbar-item.bulma-is-active,
+  .bulma-navbar.bulma-is-link .bulma-navbar-start .bulma-navbar-link:hover,
+  .bulma-navbar.bulma-is-link .bulma-navbar-start .bulma-navbar-link.bulma-is-active,
+  .bulma-navbar.bulma-is-link .bulma-navbar-end > a.bulma-navbar-item:hover,
+  .bulma-navbar.bulma-is-link .bulma-navbar-end > a.bulma-navbar-item.bulma-is-active,
+  .bulma-navbar.bulma-is-link .bulma-navbar-end .bulma-navbar-link:hover,
+  .bulma-navbar.bulma-is-link .bulma-navbar-end .bulma-navbar-link.bulma-is-active {
+    background-color: #2366d1;
+    color: #fff;
+  }
+  .bulma-navbar.bulma-is-link .bulma-navbar-start .bulma-navbar-link::after,
+  .bulma-navbar.bulma-is-link .bulma-navbar-end .bulma-navbar-link::after {
+    border-color: #fff;
+  }
+  .bulma-navbar.bulma-is-link .bulma-navbar-item.bulma-has-dropdown:hover .bulma-navbar-link,
+  .bulma-navbar.bulma-is-link .bulma-navbar-item.bulma-has-dropdown.bulma-is-active .bulma-navbar-link {
+    background-color: #2366d1;
+    color: #fff;
+  }
+  .bulma-navbar.bulma-is-link .bulma-navbar-dropdown a.bulma-navbar-item.bulma-is-active {
+    background-color: #3273dc;
+    color: #fff;
+  }
+}
+
+.bulma-navbar.bulma-is-info {
+  background-color: #209cee;
   color: #fff;
 }
 
@@ -6001,7 +6076,7 @@ a.bulma-nav-item:not(.bulma-button).bulma-is-tab.bulma-is-active {
 .bulma-navbar.bulma-is-info .bulma-navbar-brand > a.bulma-navbar-item:hover, .bulma-navbar.bulma-is-info .bulma-navbar-brand > a.bulma-navbar-item.bulma-is-active,
 .bulma-navbar.bulma-is-info .bulma-navbar-brand .bulma-navbar-link:hover,
 .bulma-navbar.bulma-is-info .bulma-navbar-brand .bulma-navbar-link.bulma-is-active {
-  background-color: #2366d1;
+  background-color: #118fe4;
   color: #fff;
 }
 
@@ -6023,7 +6098,7 @@ a.bulma-nav-item:not(.bulma-button).bulma-is-tab.bulma-is-active {
   .bulma-navbar.bulma-is-info .bulma-navbar-end > a.bulma-navbar-item.bulma-is-active,
   .bulma-navbar.bulma-is-info .bulma-navbar-end .bulma-navbar-link:hover,
   .bulma-navbar.bulma-is-info .bulma-navbar-end .bulma-navbar-link.bulma-is-active {
-    background-color: #2366d1;
+    background-color: #118fe4;
     color: #fff;
   }
   .bulma-navbar.bulma-is-info .bulma-navbar-start .bulma-navbar-link::after,
@@ -6032,11 +6107,11 @@ a.bulma-nav-item:not(.bulma-button).bulma-is-tab.bulma-is-active {
   }
   .bulma-navbar.bulma-is-info .bulma-navbar-item.bulma-has-dropdown:hover .bulma-navbar-link,
   .bulma-navbar.bulma-is-info .bulma-navbar-item.bulma-has-dropdown.bulma-is-active .bulma-navbar-link {
-    background-color: #2366d1;
+    background-color: #118fe4;
     color: #fff;
   }
   .bulma-navbar.bulma-is-info .bulma-navbar-dropdown a.bulma-navbar-item.bulma-is-active {
-    background-color: #3273dc;
+    background-color: #209cee;
     color: #fff;
   }
 }
@@ -6321,15 +6396,15 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
 
 .bulma-navbar-item.bulma-is-tab:hover {
   background-color: transparent;
-  border-bottom-color: #00d1b2;
+  border-bottom-color: #3273dc;
 }
 
 .bulma-navbar-item.bulma-is-tab.bulma-is-active {
   background-color: transparent;
-  border-bottom-color: #00d1b2;
+  border-bottom-color: #3273dc;
   border-bottom-style: solid;
   border-bottom-width: 3px;
-  color: #00d1b2;
+  color: #3273dc;
   padding-bottom: calc(0.5rem - 3px);
 }
 
@@ -6394,10 +6469,10 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
   .bulma-navbar.bulma-is-transparent a.bulma-navbar-item:hover, .bulma-navbar.bulma-is-transparent a.bulma-navbar-item.bulma-is-active,
   .bulma-navbar.bulma-is-transparent .bulma-navbar-link:hover,
   .bulma-navbar.bulma-is-transparent .bulma-navbar-link.bulma-is-active {
-    background-color: transparent;
+    background-color: transparent !important;
   }
   .bulma-navbar.bulma-is-transparent .bulma-navbar-item.bulma-has-dropdown.bulma-is-active .bulma-navbar-link, .bulma-navbar.bulma-is-transparent .bulma-navbar-item.bulma-has-dropdown.bulma-is-hoverable:hover .bulma-navbar-link {
-    background-color: transparent;
+    background-color: transparent !important;
   }
   .bulma-navbar.bulma-is-transparent .bulma-navbar-dropdown a.bulma-navbar-item:hover {
     background-color: whitesmoke;
@@ -6405,7 +6480,7 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
   }
   .bulma-navbar.bulma-is-transparent .bulma-navbar-dropdown a.bulma-navbar-item.bulma-is-active {
     background-color: whitesmoke;
-    color: #00d1b2;
+    color: #3273dc;
   }
   .bulma-navbar-burger {
     display: none;
@@ -6427,7 +6502,7 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
     transform: translateY(0);
   }
   .bulma-navbar-link::after {
-    border: 1px solid #00d1b2;
+    border: 1px solid #3273dc;
     border-right: 0;
     border-top: 0;
     content: " ";
@@ -6480,7 +6555,7 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
   }
   .bulma-navbar-dropdown a.bulma-navbar-item.bulma-is-active {
     background-color: whitesmoke;
-    color: #00d1b2;
+    color: #3273dc;
   }
   .bulma-navbar-dropdown.bulma-is-boxed {
     border-radius: 5px;
@@ -6619,7 +6694,7 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
 .bulma-pagination-previous:focus,
 .bulma-pagination-next:focus,
 .bulma-pagination-link:focus {
-  border-color: #00d1b2;
+  border-color: #3273dc;
 }
 
 .bulma-pagination-previous:active,
@@ -6646,8 +6721,8 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
 }
 
 .bulma-pagination-link.bulma-is-current {
-  background-color: #00d1b2;
-  border-color: #00d1b2;
+  background-color: #3273dc;
+  border-color: #3273dc;
   color: #fff;
 }
 
@@ -6768,7 +6843,7 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
 }
 
 .bulma-panel-list a:hover {
-  color: #00d1b2;
+  color: #3273dc;
 }
 
 .bulma-panel-block {
@@ -6794,12 +6869,12 @@ a.bulma-navbar-item:hover, a.bulma-navbar-item.bulma-is-active,
 }
 
 .bulma-panel-block.bulma-is-active {
-  border-left-color: #00d1b2;
+  border-left-color: #3273dc;
   color: #363636;
 }
 
 .bulma-panel-block.bulma-is-active .bulma-panel-icon {
-  color: #00d1b2;
+  color: #3273dc;
 }
 
 a.bulma-panel-block,
@@ -6872,8 +6947,8 @@ label.bulma-panel-block:hover {
 }
 
 .bulma-tabs li.bulma-is-active a {
-  border-bottom-color: #00d1b2;
-  color: #00d1b2;
+  border-bottom-color: #3273dc;
+  color: #3273dc;
 }
 
 .bulma-tabs ul {
@@ -6967,8 +7042,8 @@ label.bulma-panel-block:hover {
 }
 
 .bulma-tabs.bulma-is-toggle li.bulma-is-active a {
-  background-color: #00d1b2;
-  border-color: #00d1b2;
+  background-color: #3273dc;
+  border-color: #3273dc;
   color: #fff;
   z-index: 1;
 }
@@ -8143,9 +8218,8 @@ label.bulma-panel-block:hover {
   justify-content: space-between;
 }
 
-.bulma-hero .bulma-nav {
+.bulma-hero .bulma-navbar {
   background: none;
-  box-shadow: 0 1px 0 rgba(219, 219, 219, 0.3);
 }
 
 .bulma-hero .bulma-tabs ul {
@@ -8175,24 +8249,21 @@ label.bulma-panel-block:hover {
   color: #0a0a0a;
 }
 
-.bulma-hero.bulma-is-white .bulma-nav {
-  box-shadow: 0 1px 0 rgba(10, 10, 10, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-white .bulma-nav-menu {
+@media screen and (max-width: 1023px) {
+  .bulma-hero.bulma-is-white .bulma-navbar-menu {
     background-color: white;
   }
 }
 
-.bulma-hero.bulma-is-white a.bulma-nav-item,
-.bulma-hero.bulma-is-white .bulma-nav-item a:not(.bulma-button) {
+.bulma-hero.bulma-is-white .bulma-navbar-item,
+.bulma-hero.bulma-is-white .bulma-navbar-link {
   color: rgba(10, 10, 10, 0.7);
 }
 
-.bulma-hero.bulma-is-white a.bulma-nav-item:hover, .bulma-hero.bulma-is-white a.bulma-nav-item.bulma-is-active,
-.bulma-hero.bulma-is-white .bulma-nav-item a:not(.bulma-button):hover,
-.bulma-hero.bulma-is-white .bulma-nav-item a:not(.bulma-button).bulma-is-active {
+.bulma-hero.bulma-is-white a.bulma-navbar-item:hover, .bulma-hero.bulma-is-white a.bulma-navbar-item.bulma-is-active,
+.bulma-hero.bulma-is-white .bulma-navbar-link:hover,
+.bulma-hero.bulma-is-white .bulma-navbar-link.bulma-is-active {
+  background-color: #f2f2f2;
   color: #0a0a0a;
 }
 
@@ -8228,23 +8299,8 @@ label.bulma-panel-block:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-white.bulma-is-bold .bulma-nav-menu {
+  .bulma-hero.bulma-is-white.bulma-is-bold .bulma-navbar-menu {
     background-image: linear-gradient(141deg, #e6e6e6 0%, white 71%, white 100%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-white .bulma-nav-toggle span {
-    background-color: #0a0a0a;
-  }
-  .bulma-hero.bulma-is-white .bulma-nav-toggle:hover {
-    background-color: rgba(10, 10, 10, 0.1);
-  }
-  .bulma-hero.bulma-is-white .bulma-nav-toggle.bulma-is-active span {
-    background-color: #0a0a0a;
-  }
-  .bulma-hero.bulma-is-white .bulma-nav-menu .bulma-nav-item {
-    border-top-color: rgba(10, 10, 10, 0.2);
   }
 }
 
@@ -8271,24 +8327,21 @@ label.bulma-panel-block:hover {
   color: white;
 }
 
-.bulma-hero.bulma-is-black .bulma-nav {
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-black .bulma-nav-menu {
+@media screen and (max-width: 1023px) {
+  .bulma-hero.bulma-is-black .bulma-navbar-menu {
     background-color: #0a0a0a;
   }
 }
 
-.bulma-hero.bulma-is-black a.bulma-nav-item,
-.bulma-hero.bulma-is-black .bulma-nav-item a:not(.bulma-button) {
+.bulma-hero.bulma-is-black .bulma-navbar-item,
+.bulma-hero.bulma-is-black .bulma-navbar-link {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.bulma-hero.bulma-is-black a.bulma-nav-item:hover, .bulma-hero.bulma-is-black a.bulma-nav-item.bulma-is-active,
-.bulma-hero.bulma-is-black .bulma-nav-item a:not(.bulma-button):hover,
-.bulma-hero.bulma-is-black .bulma-nav-item a:not(.bulma-button).bulma-is-active {
+.bulma-hero.bulma-is-black a.bulma-navbar-item:hover, .bulma-hero.bulma-is-black a.bulma-navbar-item.bulma-is-active,
+.bulma-hero.bulma-is-black .bulma-navbar-link:hover,
+.bulma-hero.bulma-is-black .bulma-navbar-link.bulma-is-active {
+  background-color: black;
   color: white;
 }
 
@@ -8324,23 +8377,8 @@ label.bulma-panel-block:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-black.bulma-is-bold .bulma-nav-menu {
+  .bulma-hero.bulma-is-black.bulma-is-bold .bulma-navbar-menu {
     background-image: linear-gradient(141deg, black 0%, #0a0a0a 71%, #181616 100%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-black .bulma-nav-toggle span {
-    background-color: white;
-  }
-  .bulma-hero.bulma-is-black .bulma-nav-toggle:hover {
-    background-color: rgba(10, 10, 10, 0.1);
-  }
-  .bulma-hero.bulma-is-black .bulma-nav-toggle.bulma-is-active span {
-    background-color: white;
-  }
-  .bulma-hero.bulma-is-black .bulma-nav-menu .bulma-nav-item {
-    border-top-color: rgba(255, 255, 255, 0.2);
   }
 }
 
@@ -8367,24 +8405,21 @@ label.bulma-panel-block:hover {
   color: #363636;
 }
 
-.bulma-hero.bulma-is-light .bulma-nav {
-  box-shadow: 0 1px 0 rgba(54, 54, 54, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-light .bulma-nav-menu {
+@media screen and (max-width: 1023px) {
+  .bulma-hero.bulma-is-light .bulma-navbar-menu {
     background-color: whitesmoke;
   }
 }
 
-.bulma-hero.bulma-is-light a.bulma-nav-item,
-.bulma-hero.bulma-is-light .bulma-nav-item a:not(.bulma-button) {
+.bulma-hero.bulma-is-light .bulma-navbar-item,
+.bulma-hero.bulma-is-light .bulma-navbar-link {
   color: rgba(54, 54, 54, 0.7);
 }
 
-.bulma-hero.bulma-is-light a.bulma-nav-item:hover, .bulma-hero.bulma-is-light a.bulma-nav-item.bulma-is-active,
-.bulma-hero.bulma-is-light .bulma-nav-item a:not(.bulma-button):hover,
-.bulma-hero.bulma-is-light .bulma-nav-item a:not(.bulma-button).bulma-is-active {
+.bulma-hero.bulma-is-light a.bulma-navbar-item:hover, .bulma-hero.bulma-is-light a.bulma-navbar-item.bulma-is-active,
+.bulma-hero.bulma-is-light .bulma-navbar-link:hover,
+.bulma-hero.bulma-is-light .bulma-navbar-link.bulma-is-active {
+  background-color: #e8e8e8;
   color: #363636;
 }
 
@@ -8420,23 +8455,8 @@ label.bulma-panel-block:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-light.bulma-is-bold .bulma-nav-menu {
+  .bulma-hero.bulma-is-light.bulma-is-bold .bulma-navbar-menu {
     background-image: linear-gradient(141deg, #dfd8d9 0%, whitesmoke 71%, white 100%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-light .bulma-nav-toggle span {
-    background-color: #363636;
-  }
-  .bulma-hero.bulma-is-light .bulma-nav-toggle:hover {
-    background-color: rgba(10, 10, 10, 0.1);
-  }
-  .bulma-hero.bulma-is-light .bulma-nav-toggle.bulma-is-active span {
-    background-color: #363636;
-  }
-  .bulma-hero.bulma-is-light .bulma-nav-menu .bulma-nav-item {
-    border-top-color: rgba(54, 54, 54, 0.2);
   }
 }
 
@@ -8463,24 +8483,21 @@ label.bulma-panel-block:hover {
   color: whitesmoke;
 }
 
-.bulma-hero.bulma-is-dark .bulma-nav {
-  box-shadow: 0 1px 0 rgba(245, 245, 245, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-dark .bulma-nav-menu {
+@media screen and (max-width: 1023px) {
+  .bulma-hero.bulma-is-dark .bulma-navbar-menu {
     background-color: #363636;
   }
 }
 
-.bulma-hero.bulma-is-dark a.bulma-nav-item,
-.bulma-hero.bulma-is-dark .bulma-nav-item a:not(.bulma-button) {
+.bulma-hero.bulma-is-dark .bulma-navbar-item,
+.bulma-hero.bulma-is-dark .bulma-navbar-link {
   color: rgba(245, 245, 245, 0.7);
 }
 
-.bulma-hero.bulma-is-dark a.bulma-nav-item:hover, .bulma-hero.bulma-is-dark a.bulma-nav-item.bulma-is-active,
-.bulma-hero.bulma-is-dark .bulma-nav-item a:not(.bulma-button):hover,
-.bulma-hero.bulma-is-dark .bulma-nav-item a:not(.bulma-button).bulma-is-active {
+.bulma-hero.bulma-is-dark a.bulma-navbar-item:hover, .bulma-hero.bulma-is-dark a.bulma-navbar-item.bulma-is-active,
+.bulma-hero.bulma-is-dark .bulma-navbar-link:hover,
+.bulma-hero.bulma-is-dark .bulma-navbar-link.bulma-is-active {
+  background-color: #292929;
   color: whitesmoke;
 }
 
@@ -8516,23 +8533,8 @@ label.bulma-panel-block:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-dark.bulma-is-bold .bulma-nav-menu {
+  .bulma-hero.bulma-is-dark.bulma-is-bold .bulma-navbar-menu {
     background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-dark .bulma-nav-toggle span {
-    background-color: whitesmoke;
-  }
-  .bulma-hero.bulma-is-dark .bulma-nav-toggle:hover {
-    background-color: rgba(10, 10, 10, 0.1);
-  }
-  .bulma-hero.bulma-is-dark .bulma-nav-toggle.bulma-is-active span {
-    background-color: whitesmoke;
-  }
-  .bulma-hero.bulma-is-dark .bulma-nav-menu .bulma-nav-item {
-    border-top-color: rgba(245, 245, 245, 0.2);
   }
 }
 
@@ -8559,24 +8561,21 @@ label.bulma-panel-block:hover {
   color: #fff;
 }
 
-.bulma-hero.bulma-is-primary .bulma-nav {
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-primary .bulma-nav-menu {
+@media screen and (max-width: 1023px) {
+  .bulma-hero.bulma-is-primary .bulma-navbar-menu {
     background-color: #00d1b2;
   }
 }
 
-.bulma-hero.bulma-is-primary a.bulma-nav-item,
-.bulma-hero.bulma-is-primary .bulma-nav-item a:not(.bulma-button) {
+.bulma-hero.bulma-is-primary .bulma-navbar-item,
+.bulma-hero.bulma-is-primary .bulma-navbar-link {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.bulma-hero.bulma-is-primary a.bulma-nav-item:hover, .bulma-hero.bulma-is-primary a.bulma-nav-item.bulma-is-active,
-.bulma-hero.bulma-is-primary .bulma-nav-item a:not(.bulma-button):hover,
-.bulma-hero.bulma-is-primary .bulma-nav-item a:not(.bulma-button).bulma-is-active {
+.bulma-hero.bulma-is-primary a.bulma-navbar-item:hover, .bulma-hero.bulma-is-primary a.bulma-navbar-item.bulma-is-active,
+.bulma-hero.bulma-is-primary .bulma-navbar-link:hover,
+.bulma-hero.bulma-is-primary .bulma-navbar-link.bulma-is-active {
+  background-color: #00b89c;
   color: #fff;
 }
 
@@ -8612,28 +8611,91 @@ label.bulma-panel-block:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-primary.bulma-is-bold .bulma-nav-menu {
+  .bulma-hero.bulma-is-primary.bulma-is-bold .bulma-navbar-menu {
     background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%);
   }
 }
 
+.bulma-hero.bulma-is-link {
+  background-color: #3273dc;
+  color: #fff;
+}
+
+.bulma-hero.bulma-is-link a:not(.bulma-button),
+.bulma-hero.bulma-is-link strong {
+  color: inherit;
+}
+
+.bulma-hero.bulma-is-link .bulma-title {
+  color: #fff;
+}
+
+.bulma-hero.bulma-is-link .bulma-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.bulma-hero.bulma-is-link .bulma-subtitle a:not(.bulma-button),
+.bulma-hero.bulma-is-link .bulma-subtitle strong {
+  color: #fff;
+}
+
+@media screen and (max-width: 1023px) {
+  .bulma-hero.bulma-is-link .bulma-navbar-menu {
+    background-color: #3273dc;
+  }
+}
+
+.bulma-hero.bulma-is-link .bulma-navbar-item,
+.bulma-hero.bulma-is-link .bulma-navbar-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bulma-hero.bulma-is-link a.bulma-navbar-item:hover, .bulma-hero.bulma-is-link a.bulma-navbar-item.bulma-is-active,
+.bulma-hero.bulma-is-link .bulma-navbar-link:hover,
+.bulma-hero.bulma-is-link .bulma-navbar-link.bulma-is-active {
+  background-color: #2366d1;
+  color: #fff;
+}
+
+.bulma-hero.bulma-is-link .bulma-tabs a {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.bulma-hero.bulma-is-link .bulma-tabs a:hover {
+  opacity: 1;
+}
+
+.bulma-hero.bulma-is-link .bulma-tabs li.bulma-is-active a {
+  opacity: 1;
+}
+
+.bulma-hero.bulma-is-link .bulma-tabs.bulma-is-boxed a, .bulma-hero.bulma-is-link .bulma-tabs.bulma-is-toggle a {
+  color: #fff;
+}
+
+.bulma-hero.bulma-is-link .bulma-tabs.bulma-is-boxed a:hover, .bulma-hero.bulma-is-link .bulma-tabs.bulma-is-toggle a:hover {
+  background-color: rgba(10, 10, 10, 0.1);
+}
+
+.bulma-hero.bulma-is-link .bulma-tabs.bulma-is-boxed li.bulma-is-active a, .bulma-hero.bulma-is-link .bulma-tabs.bulma-is-boxed li.bulma-is-active a:hover, .bulma-hero.bulma-is-link .bulma-tabs.bulma-is-toggle li.bulma-is-active a, .bulma-hero.bulma-is-link .bulma-tabs.bulma-is-toggle li.bulma-is-active a:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #3273dc;
+}
+
+.bulma-hero.bulma-is-link.bulma-is-bold {
+  background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%);
+}
+
 @media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-primary .bulma-nav-toggle span {
-    background-color: #fff;
-  }
-  .bulma-hero.bulma-is-primary .bulma-nav-toggle:hover {
-    background-color: rgba(10, 10, 10, 0.1);
-  }
-  .bulma-hero.bulma-is-primary .bulma-nav-toggle.bulma-is-active span {
-    background-color: #fff;
-  }
-  .bulma-hero.bulma-is-primary .bulma-nav-menu .bulma-nav-item {
-    border-top-color: rgba(255, 255, 255, 0.2);
+  .bulma-hero.bulma-is-link.bulma-is-bold .bulma-navbar-menu {
+    background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%);
   }
 }
 
 .bulma-hero.bulma-is-info {
-  background-color: #3273dc;
+  background-color: #209cee;
   color: #fff;
 }
 
@@ -8655,24 +8717,21 @@ label.bulma-panel-block:hover {
   color: #fff;
 }
 
-.bulma-hero.bulma-is-info .bulma-nav {
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-info .bulma-nav-menu {
-    background-color: #3273dc;
+@media screen and (max-width: 1023px) {
+  .bulma-hero.bulma-is-info .bulma-navbar-menu {
+    background-color: #209cee;
   }
 }
 
-.bulma-hero.bulma-is-info a.bulma-nav-item,
-.bulma-hero.bulma-is-info .bulma-nav-item a:not(.bulma-button) {
+.bulma-hero.bulma-is-info .bulma-navbar-item,
+.bulma-hero.bulma-is-info .bulma-navbar-link {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.bulma-hero.bulma-is-info a.bulma-nav-item:hover, .bulma-hero.bulma-is-info a.bulma-nav-item.bulma-is-active,
-.bulma-hero.bulma-is-info .bulma-nav-item a:not(.bulma-button):hover,
-.bulma-hero.bulma-is-info .bulma-nav-item a:not(.bulma-button).bulma-is-active {
+.bulma-hero.bulma-is-info a.bulma-navbar-item:hover, .bulma-hero.bulma-is-info a.bulma-navbar-item.bulma-is-active,
+.bulma-hero.bulma-is-info .bulma-navbar-link:hover,
+.bulma-hero.bulma-is-info .bulma-navbar-link.bulma-is-active {
+  background-color: #118fe4;
   color: #fff;
 }
 
@@ -8700,31 +8759,16 @@ label.bulma-panel-block:hover {
 .bulma-hero.bulma-is-info .bulma-tabs.bulma-is-boxed li.bulma-is-active a, .bulma-hero.bulma-is-info .bulma-tabs.bulma-is-boxed li.bulma-is-active a:hover, .bulma-hero.bulma-is-info .bulma-tabs.bulma-is-toggle li.bulma-is-active a, .bulma-hero.bulma-is-info .bulma-tabs.bulma-is-toggle li.bulma-is-active a:hover {
   background-color: #fff;
   border-color: #fff;
-  color: #3273dc;
+  color: #209cee;
 }
 
 .bulma-hero.bulma-is-info.bulma-is-bold {
-  background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%);
+  background-image: linear-gradient(141deg, #04a6d7 0%, #209cee 71%, #3287f5 100%);
 }
 
 @media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-info.bulma-is-bold .bulma-nav-menu {
-    background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-info .bulma-nav-toggle span {
-    background-color: #fff;
-  }
-  .bulma-hero.bulma-is-info .bulma-nav-toggle:hover {
-    background-color: rgba(10, 10, 10, 0.1);
-  }
-  .bulma-hero.bulma-is-info .bulma-nav-toggle.bulma-is-active span {
-    background-color: #fff;
-  }
-  .bulma-hero.bulma-is-info .bulma-nav-menu .bulma-nav-item {
-    border-top-color: rgba(255, 255, 255, 0.2);
+  .bulma-hero.bulma-is-info.bulma-is-bold .bulma-navbar-menu {
+    background-image: linear-gradient(141deg, #04a6d7 0%, #209cee 71%, #3287f5 100%);
   }
 }
 
@@ -8751,24 +8795,21 @@ label.bulma-panel-block:hover {
   color: #fff;
 }
 
-.bulma-hero.bulma-is-success .bulma-nav {
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-success .bulma-nav-menu {
+@media screen and (max-width: 1023px) {
+  .bulma-hero.bulma-is-success .bulma-navbar-menu {
     background-color: #23d160;
   }
 }
 
-.bulma-hero.bulma-is-success a.bulma-nav-item,
-.bulma-hero.bulma-is-success .bulma-nav-item a:not(.bulma-button) {
+.bulma-hero.bulma-is-success .bulma-navbar-item,
+.bulma-hero.bulma-is-success .bulma-navbar-link {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.bulma-hero.bulma-is-success a.bulma-nav-item:hover, .bulma-hero.bulma-is-success a.bulma-nav-item.bulma-is-active,
-.bulma-hero.bulma-is-success .bulma-nav-item a:not(.bulma-button):hover,
-.bulma-hero.bulma-is-success .bulma-nav-item a:not(.bulma-button).bulma-is-active {
+.bulma-hero.bulma-is-success a.bulma-navbar-item:hover, .bulma-hero.bulma-is-success a.bulma-navbar-item.bulma-is-active,
+.bulma-hero.bulma-is-success .bulma-navbar-link:hover,
+.bulma-hero.bulma-is-success .bulma-navbar-link.bulma-is-active {
+  background-color: #20bc56;
   color: #fff;
 }
 
@@ -8804,23 +8845,8 @@ label.bulma-panel-block:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-success.bulma-is-bold .bulma-nav-menu {
+  .bulma-hero.bulma-is-success.bulma-is-bold .bulma-navbar-menu {
     background-image: linear-gradient(141deg, #12af2f 0%, #23d160 71%, #2ce28a 100%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-success .bulma-nav-toggle span {
-    background-color: #fff;
-  }
-  .bulma-hero.bulma-is-success .bulma-nav-toggle:hover {
-    background-color: rgba(10, 10, 10, 0.1);
-  }
-  .bulma-hero.bulma-is-success .bulma-nav-toggle.bulma-is-active span {
-    background-color: #fff;
-  }
-  .bulma-hero.bulma-is-success .bulma-nav-menu .bulma-nav-item {
-    border-top-color: rgba(255, 255, 255, 0.2);
   }
 }
 
@@ -8847,24 +8873,21 @@ label.bulma-panel-block:hover {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.bulma-hero.bulma-is-warning .bulma-nav {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-warning .bulma-nav-menu {
+@media screen and (max-width: 1023px) {
+  .bulma-hero.bulma-is-warning .bulma-navbar-menu {
     background-color: #ffdd57;
   }
 }
 
-.bulma-hero.bulma-is-warning a.bulma-nav-item,
-.bulma-hero.bulma-is-warning .bulma-nav-item a:not(.bulma-button) {
+.bulma-hero.bulma-is-warning .bulma-navbar-item,
+.bulma-hero.bulma-is-warning .bulma-navbar-link {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.bulma-hero.bulma-is-warning a.bulma-nav-item:hover, .bulma-hero.bulma-is-warning a.bulma-nav-item.bulma-is-active,
-.bulma-hero.bulma-is-warning .bulma-nav-item a:not(.bulma-button):hover,
-.bulma-hero.bulma-is-warning .bulma-nav-item a:not(.bulma-button).bulma-is-active {
+.bulma-hero.bulma-is-warning a.bulma-navbar-item:hover, .bulma-hero.bulma-is-warning a.bulma-navbar-item.bulma-is-active,
+.bulma-hero.bulma-is-warning .bulma-navbar-link:hover,
+.bulma-hero.bulma-is-warning .bulma-navbar-link.bulma-is-active {
+  background-color: #ffd83d;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -8900,23 +8923,8 @@ label.bulma-panel-block:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-warning.bulma-is-bold .bulma-nav-menu {
+  .bulma-hero.bulma-is-warning.bulma-is-bold .bulma-navbar-menu {
     background-image: linear-gradient(141deg, #ffaf24 0%, #ffdd57 71%, #fffa70 100%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-warning .bulma-nav-toggle span {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  .bulma-hero.bulma-is-warning .bulma-nav-toggle:hover {
-    background-color: rgba(10, 10, 10, 0.1);
-  }
-  .bulma-hero.bulma-is-warning .bulma-nav-toggle.bulma-is-active span {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  .bulma-hero.bulma-is-warning .bulma-nav-menu .bulma-nav-item {
-    border-top-color: rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -8943,24 +8951,21 @@ label.bulma-panel-block:hover {
   color: #fff;
 }
 
-.bulma-hero.bulma-is-danger .bulma-nav {
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-danger .bulma-nav-menu {
+@media screen and (max-width: 1023px) {
+  .bulma-hero.bulma-is-danger .bulma-navbar-menu {
     background-color: #ff3860;
   }
 }
 
-.bulma-hero.bulma-is-danger a.bulma-nav-item,
-.bulma-hero.bulma-is-danger .bulma-nav-item a:not(.bulma-button) {
+.bulma-hero.bulma-is-danger .bulma-navbar-item,
+.bulma-hero.bulma-is-danger .bulma-navbar-link {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.bulma-hero.bulma-is-danger a.bulma-nav-item:hover, .bulma-hero.bulma-is-danger a.bulma-nav-item.bulma-is-active,
-.bulma-hero.bulma-is-danger .bulma-nav-item a:not(.bulma-button):hover,
-.bulma-hero.bulma-is-danger .bulma-nav-item a:not(.bulma-button).bulma-is-active {
+.bulma-hero.bulma-is-danger a.bulma-navbar-item:hover, .bulma-hero.bulma-is-danger a.bulma-navbar-item.bulma-is-active,
+.bulma-hero.bulma-is-danger .bulma-navbar-link:hover,
+.bulma-hero.bulma-is-danger .bulma-navbar-link.bulma-is-active {
+  background-color: #ff1f4b;
   color: #fff;
 }
 
@@ -8996,23 +9001,8 @@ label.bulma-panel-block:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-danger.bulma-is-bold .bulma-nav-menu {
+  .bulma-hero.bulma-is-danger.bulma-is-bold .bulma-navbar-menu {
     background-image: linear-gradient(141deg, #ff0561 0%, #ff3860 71%, #ff5257 100%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .bulma-hero.bulma-is-danger .bulma-nav-toggle span {
-    background-color: #fff;
-  }
-  .bulma-hero.bulma-is-danger .bulma-nav-toggle:hover {
-    background-color: rgba(10, 10, 10, 0.1);
-  }
-  .bulma-hero.bulma-is-danger .bulma-nav-toggle.bulma-is-active span {
-    background-color: #fff;
-  }
-  .bulma-hero.bulma-is-danger .bulma-nav-menu .bulma-nav-item {
-    border-top-color: rgba(255, 255, 255, 0.2);
   }
 }
 
