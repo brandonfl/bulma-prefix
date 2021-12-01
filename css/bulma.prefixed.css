@@ -1,23 +1,69 @@
-/*! bulma.io v0.9.1 | MIT License | github.com/jgthms/bulma */
+/*! bulma.io v0.9.2 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
-@-webkit-keyframes spinAround {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-@keyframes spinAround {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
+.bulma-button, .bulma-input, .bulma-textarea, .bulma-select select, .bulma-file-cta,
+.bulma-file-name, .bulma-pagination-previous,
+.bulma-pagination-next,
+.bulma-pagination-link,
+.bulma-pagination-ellipsis {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+  position: relative;
+  vertical-align: top;
 }
 
-.bulma-delete, .bulma-modal-close, .bulma-button, .bulma-file, .bulma-breadcrumb, .bulma-pagination-previous,
+.bulma-button:focus, .bulma-input:focus, .bulma-textarea:focus, .bulma-select select:focus, .bulma-file-cta:focus,
+.bulma-file-name:focus, .bulma-pagination-previous:focus,
+.bulma-pagination-next:focus,
+.bulma-pagination-link:focus,
+.bulma-pagination-ellipsis:focus, .bulma-is-focused.bulma-button, .bulma-is-focused.bulma-input, .bulma-is-focused.bulma-textarea, .bulma-select select.bulma-is-focused, .bulma-is-focused.bulma-file-cta,
+.bulma-is-focused.bulma-file-name, .bulma-is-focused.bulma-pagination-previous,
+.bulma-is-focused.bulma-pagination-next,
+.bulma-is-focused.bulma-pagination-link,
+.bulma-is-focused.bulma-pagination-ellipsis, .bulma-button:active, .bulma-input:active, .bulma-textarea:active, .bulma-select select:active, .bulma-file-cta:active,
+.bulma-file-name:active, .bulma-pagination-previous:active,
+.bulma-pagination-next:active,
+.bulma-pagination-link:active,
+.bulma-pagination-ellipsis:active, .bulma-is-active.bulma-button, .bulma-is-active.bulma-input, .bulma-is-active.bulma-textarea, .bulma-select select.bulma-is-active, .bulma-is-active.bulma-file-cta,
+.bulma-is-active.bulma-file-name, .bulma-is-active.bulma-pagination-previous,
+.bulma-is-active.bulma-pagination-next,
+.bulma-is-active.bulma-pagination-link,
+.bulma-is-active.bulma-pagination-ellipsis {
+  outline: none;
+}
+
+.bulma-button[disabled], .bulma-input[disabled], .bulma-textarea[disabled], .bulma-select select[disabled], .bulma-file-cta[disabled],
+.bulma-file-name[disabled], .bulma-pagination-previous[disabled],
+.bulma-pagination-next[disabled],
+.bulma-pagination-link[disabled],
+.bulma-pagination-ellipsis[disabled],
+fieldset[disabled] .bulma-button,
+fieldset[disabled] .bulma-input,
+fieldset[disabled] .bulma-textarea,
+fieldset[disabled] .bulma-select select,
+.bulma-select fieldset[disabled] select,
+fieldset[disabled] .bulma-file-cta,
+fieldset[disabled] .bulma-file-name,
+fieldset[disabled] .bulma-pagination-previous,
+fieldset[disabled] .bulma-pagination-next,
+fieldset[disabled] .bulma-pagination-link,
+fieldset[disabled] .bulma-pagination-ellipsis {
+  cursor: not-allowed;
+}
+
+.bulma-button, .bulma-file, .bulma-breadcrumb, .bulma-pagination-previous,
 .bulma-pagination-next,
 .bulma-pagination-link,
 .bulma-pagination-ellipsis, .bulma-tabs, .bulma-is-unselectable {
@@ -51,6 +97,11 @@
 }
 
 .bulma-delete, .bulma-modal-close {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   background-color: rgba(10, 10, 10, 0.2);
@@ -165,69 +216,6 @@
   position: absolute;
   right: 0;
   top: 0;
-}
-
-.bulma-button, .bulma-input, .bulma-textarea, .bulma-select select, .bulma-file-cta,
-.bulma-file-name, .bulma-pagination-previous,
-.bulma-pagination-next,
-.bulma-pagination-link,
-.bulma-pagination-ellipsis {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  align-items: center;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  box-shadow: none;
-  display: inline-flex;
-  font-size: 1rem;
-  height: 2.5em;
-  justify-content: flex-start;
-  line-height: 1.5;
-  padding-bottom: calc(0.5em - 1px);
-  padding-left: calc(0.75em - 1px);
-  padding-right: calc(0.75em - 1px);
-  padding-top: calc(0.5em - 1px);
-  position: relative;
-  vertical-align: top;
-}
-
-.bulma-button:focus, .bulma-input:focus, .bulma-textarea:focus, .bulma-select select:focus, .bulma-file-cta:focus,
-.bulma-file-name:focus, .bulma-pagination-previous:focus,
-.bulma-pagination-next:focus,
-.bulma-pagination-link:focus,
-.bulma-pagination-ellipsis:focus, .bulma-is-focused.bulma-button, .bulma-is-focused.bulma-input, .bulma-is-focused.bulma-textarea, .bulma-select select.bulma-is-focused, .bulma-is-focused.bulma-file-cta,
-.bulma-is-focused.bulma-file-name, .bulma-is-focused.bulma-pagination-previous,
-.bulma-is-focused.bulma-pagination-next,
-.bulma-is-focused.bulma-pagination-link,
-.bulma-is-focused.bulma-pagination-ellipsis, .bulma-button:active, .bulma-input:active, .bulma-textarea:active, .bulma-select select:active, .bulma-file-cta:active,
-.bulma-file-name:active, .bulma-pagination-previous:active,
-.bulma-pagination-next:active,
-.bulma-pagination-link:active,
-.bulma-pagination-ellipsis:active, .bulma-is-active.bulma-button, .bulma-is-active.bulma-input, .bulma-is-active.bulma-textarea, .bulma-select select.bulma-is-active, .bulma-is-active.bulma-file-cta,
-.bulma-is-active.bulma-file-name, .bulma-is-active.bulma-pagination-previous,
-.bulma-is-active.bulma-pagination-next,
-.bulma-is-active.bulma-pagination-link,
-.bulma-is-active.bulma-pagination-ellipsis {
-  outline: none;
-}
-
-.bulma-button[disabled], .bulma-input[disabled], .bulma-textarea[disabled], .bulma-select select[disabled], .bulma-file-cta[disabled],
-.bulma-file-name[disabled], .bulma-pagination-previous[disabled],
-.bulma-pagination-next[disabled],
-.bulma-pagination-link[disabled],
-.bulma-pagination-ellipsis[disabled],
-fieldset[disabled] .bulma-button,
-fieldset[disabled] .bulma-input,
-fieldset[disabled] .bulma-textarea,
-fieldset[disabled] .bulma-select select,
-.bulma-select fieldset[disabled] select,
-fieldset[disabled] .bulma-file-cta,
-fieldset[disabled] .bulma-file-name,
-fieldset[disabled] .bulma-pagination-previous,
-fieldset[disabled] .bulma-pagination-next,
-fieldset[disabled] .bulma-pagination-link,
-fieldset[disabled] .bulma-pagination-ellipsis {
-  cursor: not-allowed;
 }
 
 /* Bulma Base */
@@ -450,6 +438,24 @@ table th {
   color: #363636;
 }
 
+@-webkit-keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 /* Bulma Elements */
 .bulma-box {
   background-color: white;
@@ -548,6 +554,18 @@ fieldset[disabled] .bulma-button.bulma-is-text {
   background-color: transparent;
   border-color: transparent;
   box-shadow: none;
+}
+
+.bulma-button.bulma-is-ghost {
+  background: none;
+  border-color: transparent;
+  color: #3273dc;
+  text-decoration: none;
+}
+
+.bulma-button.bulma-is-ghost:hover, .bulma-button.bulma-is-ghost.bulma-is-hovered {
+  color: #3273dc;
+  text-decoration: underline;
 }
 
 .bulma-button.bulma-is-white {
@@ -1713,8 +1731,11 @@ fieldset[disabled] .bulma-button.bulma-is-danger.bulma-is-inverted.bulma-is-outl
 }
 
 .bulma-button.bulma-is-small {
-  border-radius: 2px;
   font-size: 0.75rem;
+}
+
+.bulma-button.bulma-is-small:not(.bulma-is-rounded) {
+  border-radius: 2px;
 }
 
 .bulma-button.bulma-is-normal {
@@ -1792,8 +1813,11 @@ fieldset[disabled] .bulma-button {
 }
 
 .bulma-buttons.bulma-are-small .bulma-button:not(.bulma-is-normal):not(.bulma-is-medium):not(.bulma-is-large) {
-  border-radius: 2px;
   font-size: 0.75rem;
+}
+
+.bulma-buttons.bulma-are-small .bulma-button:not(.bulma-is-normal):not(.bulma-is-medium):not(.bulma-is-large):not(.bulma-is-rounded) {
+  border-radius: 2px;
 }
 
 .bulma-buttons.bulma-are-medium .bulma-button:not(.bulma-is-small):not(.bulma-is-normal):not(.bulma-is-large) {
@@ -2125,6 +2149,32 @@ fieldset[disabled] .bulma-button {
 .bulma-icon.bulma-is-large {
   height: 3rem;
   width: 3rem;
+}
+
+.bulma-icon-text {
+  align-items: flex-start;
+  color: inherit;
+  display: inline-flex;
+  flex-wrap: wrap;
+  line-height: 1.5rem;
+  vertical-align: top;
+}
+
+.bulma-icon-text .bulma-icon {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.bulma-icon-text .bulma-icon:not(:last-child) {
+  margin-right: 0.25em;
+}
+
+.bulma-icon-text .bulma-icon:not(:first-child) {
+  margin-left: 0.25em;
+}
+
+div.bulma-icon-text {
+  display: flex;
 }
 
 .bulma-image {
@@ -4603,8 +4653,17 @@ fieldset[disabled] .bulma-select select:hover {
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   color: #4a4a4a;
   max-width: 100%;
-  overflow: hidden;
   position: relative;
+}
+
+.bulma-card-header:first-child, .bulma-card-content:first-child, .bulma-card-footer:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.bulma-card-header:last-child, .bulma-card-content:last-child, .bulma-card-footer:last-child {
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
 
 .bulma-card-header {
@@ -4638,6 +4697,16 @@ fieldset[disabled] .bulma-select select:hover {
 .bulma-card-image {
   display: block;
   position: relative;
+}
+
+.bulma-card-image:first-child img {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.bulma-card-image:last-child img {
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
 
 .bulma-card-content {
@@ -6472,6 +6541,10 @@ a.bulma-navbar-item:focus, a.bulma-navbar-item:focus-within, a.bulma-navbar-item
   flex-wrap: wrap;
 }
 
+.bulma-pagination-list li {
+  list-style: none;
+}
+
 @media screen and (max-width: 768px) {
   .bulma-pagination {
     flex-wrap: wrap;
@@ -6945,6 +7018,7 @@ label.bulma-panel-block:hover {
 
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-narrow {
   flex: none;
+  width: unset;
 }
 
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-full {
@@ -7153,6 +7227,7 @@ label.bulma-panel-block:hover {
 @media screen and (max-width: 768px) {
   .bulma-column.bulma-is-narrow-mobile {
     flex: none;
+    width: unset;
   }
   .bulma-column.bulma-is-full-mobile {
     flex: none;
@@ -7317,6 +7392,7 @@ label.bulma-panel-block:hover {
 @media screen and (min-width: 769px), print {
   .bulma-column.bulma-is-narrow, .bulma-column.bulma-is-narrow-tablet {
     flex: none;
+    width: unset;
   }
   .bulma-column.bulma-is-full, .bulma-column.bulma-is-full-tablet {
     flex: none;
@@ -7481,6 +7557,7 @@ label.bulma-panel-block:hover {
 @media screen and (max-width: 1023px) {
   .bulma-column.bulma-is-narrow-touch {
     flex: none;
+    width: unset;
   }
   .bulma-column.bulma-is-full-touch {
     flex: none;
@@ -7645,6 +7722,7 @@ label.bulma-panel-block:hover {
 @media screen and (min-width: 1024px) {
   .bulma-column.bulma-is-narrow-desktop {
     flex: none;
+    width: unset;
   }
   .bulma-column.bulma-is-full-desktop {
     flex: none;
@@ -7809,6 +7887,7 @@ label.bulma-panel-block:hover {
 @media screen and (min-width: 1216px) {
   .bulma-column.bulma-is-narrow-widescreen {
     flex: none;
+    width: unset;
   }
   .bulma-column.bulma-is-full-widescreen {
     flex: none;
@@ -7973,6 +8052,7 @@ label.bulma-panel-block:hover {
 @media screen and (min-width: 1408px) {
   .bulma-column.bulma-is-narrow-fullhd {
     flex: none;
+    width: unset;
   }
   .bulma-column.bulma-is-full-fullhd {
     flex: none;
@@ -8201,7 +8281,7 @@ label.bulma-panel-block:hover {
   margin-right: calc(-1 * var(--columnGap));
 }
 
-.bulma-columns.bulma-is-variable .bulma-column {
+.bulma-columns.bulma-is-variable > .bulma-column {
   padding-left: var(--columnGap);
   padding-right: var(--columnGap);
 }
@@ -9400,6 +9480,7 @@ a.bulma-has-text-danger-dark:hover, a.bulma-has-text-danger-dark:focus {
 
 .bulma-is-clickable {
   cursor: pointer !important;
+  pointer-events: all !important;
 }
 
 .bulma-is-clipped {
