@@ -1,4 +1,4 @@
-/*! bulma.io v0.7.0 | MIT License | github.com/jgthms/bulma */
+/*! bulma.io v0.7.1 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -976,36 +976,72 @@ a.bulma-has-text-danger:hover, a.bulma-has-text-danger:focus {
   color: #121212 !important;
 }
 
+.bulma-has-background-black-bis {
+  background-color: #121212 !important;
+}
+
 .bulma-has-text-black-ter {
   color: #242424 !important;
+}
+
+.bulma-has-background-black-ter {
+  background-color: #242424 !important;
 }
 
 .bulma-has-text-grey-darker {
   color: #363636 !important;
 }
 
+.bulma-has-background-grey-darker {
+  background-color: #363636 !important;
+}
+
 .bulma-has-text-grey-dark {
   color: #4a4a4a !important;
+}
+
+.bulma-has-background-grey-dark {
+  background-color: #4a4a4a !important;
 }
 
 .bulma-has-text-grey {
   color: #7a7a7a !important;
 }
 
+.bulma-has-background-grey {
+  background-color: #7a7a7a !important;
+}
+
 .bulma-has-text-grey-light {
   color: #b5b5b5 !important;
+}
+
+.bulma-has-background-grey-light {
+  background-color: #b5b5b5 !important;
 }
 
 .bulma-has-text-grey-lighter {
   color: #dbdbdb !important;
 }
 
+.bulma-has-background-grey-lighter {
+  background-color: #dbdbdb !important;
+}
+
 .bulma-has-text-white-ter {
   color: whitesmoke !important;
 }
 
+.bulma-has-background-white-ter {
+  background-color: whitesmoke !important;
+}
+
 .bulma-has-text-white-bis {
   color: #fafafa !important;
+}
+
+.bulma-has-background-white-bis {
+  background-color: #fafafa !important;
 }
 
 .bulma-has-text-weight-light {
@@ -5931,7 +5967,6 @@ a.bulma-dropdown-item.bulma-is-active {
 
 .bulma-navbar {
   background-color: white;
-  box-shadow: 0 2px 0 0 whitesmoke;
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
@@ -6475,7 +6510,7 @@ a.bulma-dropdown-item.bulma-is-active {
 }
 
 .bulma-navbar.bulma-has-shadow {
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 2px 0 0 whitesmoke;
 }
 
 .bulma-navbar.bulma-is-fixed-bottom, .bulma-navbar.bulma-is-fixed-top {
@@ -6490,7 +6525,7 @@ a.bulma-dropdown-item.bulma-is-active {
 }
 
 .bulma-navbar.bulma-is-fixed-bottom.bulma-has-shadow {
-  box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 -2px 0 0 whitesmoke;
 }
 
 .bulma-navbar.bulma-is-fixed-top {
