@@ -1,4 +1,4 @@
-/*! bulma.io v0.6.1 | MIT License | github.com/jgthms/bulma */
+/*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -668,6 +668,10 @@ table th {
 
 .bulma-is-uppercase {
   text-transform: uppercase !important;
+}
+
+.bulma-is-italic {
+  font-style: italic !important;
 }
 
 .bulma-has-text-white {
@@ -2357,6 +2361,12 @@ a.bulma-box:active {
   pointer-events: none;
 }
 
+.bulma-button.bulma-is-rounded {
+  border-radius: 290486px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .bulma-buttons {
   align-items: center;
   display: flex;
@@ -2751,11 +2761,6 @@ a.bulma-box:active {
   color: rgba(122, 122, 122, 0.3);
 }
 
-.bulma-input[type="search"],
-.bulma-textarea[type="search"] {
-  border-radius: 290486px;
-}
-
 .bulma-input[readonly],
 .bulma-textarea[readonly] {
   box-shadow: none;
@@ -2919,6 +2924,12 @@ a.bulma-box:active {
   width: auto;
 }
 
+.bulma-input.bulma-is-rounded {
+  border-radius: 290486px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .bulma-input.bulma-is-static {
   background-color: transparent;
   border-color: transparent;
@@ -3003,6 +3014,11 @@ a.bulma-box:active {
   right: 1.125em;
   top: 50%;
   z-index: 4;
+}
+
+.bulma-select.bulma-is-rounded select {
+  border-radius: 290486px;
+  padding-left: 1em;
 }
 
 .bulma-select select {
@@ -3540,14 +3556,6 @@ a.bulma-box:active {
   display: none;
 }
 
-.bulma-file.bulma-is-centered {
-  justify-content: center;
-}
-
-.bulma-file.bulma-is-right {
-  justify-content: flex-end;
-}
-
 .bulma-file.bulma-is-boxed .bulma-file-label {
   flex-direction: column;
 }
@@ -3592,14 +3600,8 @@ a.bulma-box:active {
   border-width: 0 1px 1px;
 }
 
-.bulma-file.bulma-is-right .bulma-file-cta {
-  border-radius: 0 3px 3px 0;
-}
-
-.bulma-file.bulma-is-right .bulma-file-name {
-  border-radius: 3px 0 0 3px;
-  border-width: 1px 0 1px 1px;
-  order: -1;
+.bulma-file.bulma-is-centered {
+  justify-content: center;
 }
 
 .bulma-file.bulma-is-fullwidth .bulma-file-label {
@@ -3609,6 +3611,20 @@ a.bulma-box:active {
 .bulma-file.bulma-is-fullwidth .bulma-file-name {
   flex-grow: 1;
   max-width: none;
+}
+
+.bulma-file.bulma-is-right {
+  justify-content: flex-end;
+}
+
+.bulma-file.bulma-is-right .bulma-file-cta {
+  border-radius: 0 3px 3px 0;
+}
+
+.bulma-file.bulma-is-right .bulma-file-name {
+  border-radius: 3px 0 0 3px;
+  border-width: 1px 0 1px 1px;
+  order: -1;
 }
 
 .bulma-file-label {
@@ -3798,24 +3814,24 @@ a.bulma-box:active {
   margin-right: -1px;
 }
 
+.bulma-field.bulma-has-addons .bulma-control:not(:first-child):not(:last-child) .bulma-button,
+.bulma-field.bulma-has-addons .bulma-control:not(:first-child):not(:last-child) .bulma-input,
+.bulma-field.bulma-has-addons .bulma-control:not(:first-child):not(:last-child) .bulma-select select {
+  border-radius: 0;
+}
+
 .bulma-field.bulma-has-addons .bulma-control:first-child .bulma-button,
 .bulma-field.bulma-has-addons .bulma-control:first-child .bulma-input,
 .bulma-field.bulma-has-addons .bulma-control:first-child .bulma-select select {
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .bulma-field.bulma-has-addons .bulma-control:last-child .bulma-button,
 .bulma-field.bulma-has-addons .bulma-control:last-child .bulma-input,
 .bulma-field.bulma-has-addons .bulma-control:last-child .bulma-select select {
-  border-bottom-right-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
-.bulma-field.bulma-has-addons .bulma-control .bulma-button,
-.bulma-field.bulma-has-addons .bulma-control .bulma-input,
-.bulma-field.bulma-has-addons .bulma-control .bulma-select select {
-  border-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .bulma-field.bulma-has-addons .bulma-control .bulma-button:hover, .bulma-field.bulma-has-addons .bulma-control .bulma-button.bulma-is-hovered,
@@ -4091,6 +4107,7 @@ a.bulma-box:active {
   position: absolute !important;
   right: 0.625em;
   top: 0.625em;
+  z-index: 4;
 }
 
 .bulma-control.bulma-is-loading.bulma-is-small:after {
@@ -4137,6 +4154,10 @@ a.bulma-box:active {
   display: block;
   height: auto;
   width: 100%;
+}
+
+.bulma-image img.bulma-is-rounded {
+  border-radius: 290486px;
 }
 
 .bulma-image.bulma-is-square img, .bulma-image.bulma-is-1by1 img, .bulma-image.bulma-is-4by3 img, .bulma-image.bulma-is-3by2 img, .bulma-image.bulma-is-16by9 img, .bulma-image.bulma-is-2by1 img {
@@ -4235,8 +4256,8 @@ a.bulma-box:active {
 
 .bulma-notification > .bulma-delete {
   position: absolute;
-  right: 0.5em;
-  top: 0.5em;
+  right: 0.5rem;
+  top: 0.5rem;
 }
 
 .bulma-notification .bulma-title,
@@ -4842,6 +4863,16 @@ a.bulma-tag:hover {
 .bulma-subtitle em,
 .bulma-subtitle span {
   font-weight: inherit;
+}
+
+.bulma-title sub,
+.bulma-subtitle sub {
+  font-size: 0.75em;
+}
+
+.bulma-title sup,
+.bulma-subtitle sup {
+  font-size: 0.75em;
 }
 
 .bulma-title .bulma-tag,
@@ -5501,6 +5532,7 @@ a.bulma-dropdown-item.bulma-is-active {
   flex-basis: auto;
   flex-grow: 1;
   flex-shrink: 1;
+  overflow: auto;
   text-align: left;
 }
 
@@ -5784,7 +5816,7 @@ a.bulma-dropdown-item.bulma-is-active {
   justify-content: center;
   overflow: hidden;
   position: fixed;
-  z-index: 20;
+  z-index: 40;
 }
 
 .bulma-modal.bulma-is-active {
@@ -6920,6 +6952,17 @@ a.bulma-navbar-link.bulma-is-active {
   font-size: 1.5rem;
 }
 
+.bulma-pagination.bulma-is-rounded .bulma-pagination-previous,
+.bulma-pagination.bulma-is-rounded .bulma-pagination-next {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 290486px;
+}
+
+.bulma-pagination.bulma-is-rounded .bulma-pagination-link {
+  border-radius: 290486px;
+}
+
 .bulma-pagination,
 .bulma-pagination-list {
   align-items: center;
@@ -6989,6 +7032,7 @@ a.bulma-navbar-link.bulma-is-active {
 .bulma-pagination-next,
 .bulma-pagination-link {
   border-color: #dbdbdb;
+  color: #363636;
   min-width: 2.25em;
 }
 
@@ -7358,6 +7402,18 @@ label.bulma-panel-block:hover {
 
 .bulma-tabs.bulma-is-toggle ul {
   border-bottom: none;
+}
+
+.bulma-tabs.bulma-is-toggle.bulma-is-toggle-rounded li:first-child a {
+  border-bottom-left-radius: 290486px;
+  border-top-left-radius: 290486px;
+  padding-left: 1.25em;
+}
+
+.bulma-tabs.bulma-is-toggle.bulma-is-toggle-rounded li:last-child a {
+  border-bottom-right-radius: 290486px;
+  border-top-right-radius: 290486px;
+  padding-right: 1.25em;
 }
 
 .bulma-tabs.bulma-is-small {
@@ -8743,7 +8799,7 @@ label.bulma-panel-block:hover {
   color: #0a0a0a;
 }
 
-.bulma-hero.bulma-is-white a:not(.bulma-button),
+.bulma-hero.bulma-is-white a:not(.bulma-button):not(.bulma-dropdown-item):not(.bulma-tag),
 .bulma-hero.bulma-is-white strong {
   color: inherit;
 }
@@ -8821,7 +8877,7 @@ label.bulma-panel-block:hover {
   color: white;
 }
 
-.bulma-hero.bulma-is-black a:not(.bulma-button),
+.bulma-hero.bulma-is-black a:not(.bulma-button):not(.bulma-dropdown-item):not(.bulma-tag),
 .bulma-hero.bulma-is-black strong {
   color: inherit;
 }
@@ -8899,7 +8955,7 @@ label.bulma-panel-block:hover {
   color: #363636;
 }
 
-.bulma-hero.bulma-is-light a:not(.bulma-button),
+.bulma-hero.bulma-is-light a:not(.bulma-button):not(.bulma-dropdown-item):not(.bulma-tag),
 .bulma-hero.bulma-is-light strong {
   color: inherit;
 }
@@ -8977,7 +9033,7 @@ label.bulma-panel-block:hover {
   color: whitesmoke;
 }
 
-.bulma-hero.bulma-is-dark a:not(.bulma-button),
+.bulma-hero.bulma-is-dark a:not(.bulma-button):not(.bulma-dropdown-item):not(.bulma-tag),
 .bulma-hero.bulma-is-dark strong {
   color: inherit;
 }
@@ -9055,7 +9111,7 @@ label.bulma-panel-block:hover {
   color: #fff;
 }
 
-.bulma-hero.bulma-is-primary a:not(.bulma-button),
+.bulma-hero.bulma-is-primary a:not(.bulma-button):not(.bulma-dropdown-item):not(.bulma-tag),
 .bulma-hero.bulma-is-primary strong {
   color: inherit;
 }
@@ -9133,7 +9189,7 @@ label.bulma-panel-block:hover {
   color: #fff;
 }
 
-.bulma-hero.bulma-is-link a:not(.bulma-button),
+.bulma-hero.bulma-is-link a:not(.bulma-button):not(.bulma-dropdown-item):not(.bulma-tag),
 .bulma-hero.bulma-is-link strong {
   color: inherit;
 }
@@ -9211,7 +9267,7 @@ label.bulma-panel-block:hover {
   color: #fff;
 }
 
-.bulma-hero.bulma-is-info a:not(.bulma-button),
+.bulma-hero.bulma-is-info a:not(.bulma-button):not(.bulma-dropdown-item):not(.bulma-tag),
 .bulma-hero.bulma-is-info strong {
   color: inherit;
 }
@@ -9289,7 +9345,7 @@ label.bulma-panel-block:hover {
   color: #fff;
 }
 
-.bulma-hero.bulma-is-success a:not(.bulma-button),
+.bulma-hero.bulma-is-success a:not(.bulma-button):not(.bulma-dropdown-item):not(.bulma-tag),
 .bulma-hero.bulma-is-success strong {
   color: inherit;
 }
@@ -9367,7 +9423,7 @@ label.bulma-panel-block:hover {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.bulma-hero.bulma-is-warning a:not(.bulma-button),
+.bulma-hero.bulma-is-warning a:not(.bulma-button):not(.bulma-dropdown-item):not(.bulma-tag),
 .bulma-hero.bulma-is-warning strong {
   color: inherit;
 }
@@ -9445,7 +9501,7 @@ label.bulma-panel-block:hover {
   color: #fff;
 }
 
-.bulma-hero.bulma-is-danger a:not(.bulma-button),
+.bulma-hero.bulma-is-danger a:not(.bulma-button):not(.bulma-dropdown-item):not(.bulma-tag),
 .bulma-hero.bulma-is-danger strong {
   color: inherit;
 }
