@@ -1,0 +1,14 @@
+addReviewers: true
+reviewers:
+  - reviewerA
+  - reviewerB
+  - reviewerC
+
+# Set 0 to add all the reviewers (default: 0)
+numberOfReviewers: 0
+
+# Set the PR creator as the assignee.
+addAssignees: author
+
+skipKeywords:
+  - dependabot
