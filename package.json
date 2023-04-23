@@ -39,7 +39,7 @@
     "autoprefixer": "^10.4.0",
     "bulma": "0.9.4",
     "clean-css-cli": "^5.4.2",
-    "node-sass": "^6.0.1",
+    "sass":"^1.57.1",
     "postcss": "^8.4.4",
     "postcss-cli": "^9.0.2",
     "postcss-prefixer": "^2.1.3",
@@ -48,7 +48,7 @@
   "scripts": {
     "build": "npm run clean && npm run sass && npm run autoprefix && npm run cleancss && npm run prefix && npm run prefix-cleancss && npm run prefix-sourcemap",
     "clean": "rimraf css",
-    "sass": "node-sass --output-style expanded --source-map true node_modules/bulma/bulma.sass css/bulma.css",
+    "sass": "sass --style=expanded --source-map node_modules/bulma/bulma.sass css/bulma.css",
     "autoprefix": "postcss --use autoprefixer --map false --output css/bulma.css css/bulma.css --verbose",
     "cleancss": "cleancss -o css/bulma.min.css css/bulma.css",
     "prefix": "postcss --no-map --output css/bulma.prefixed.css css/bulma.css --verbose",
