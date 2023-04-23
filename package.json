@@ -1,6 +1,6 @@
 {
   "name": "bulma-prefix",
-  "version": "0.9.4",
+  "version": "0.9.4-1",
   "description": "Bulma CSS framework with bulma as css prefix",
   "homepage": "https://github.com/brandonfl/bulma-prefix",
   "main": "css/bulma.prefixed.css",
@@ -14,8 +14,17 @@
     "url": "https://brandon.fontany-legall.xyz/"
   },
   "contributors": [
-    {"name":"Arjan","url":"https://github.com/creativesuspects"},
-    {"name":"Lucian Last"}
+    {
+      "name": "Arjan",
+      "url": "https://github.com/creativesuspects"
+    },
+    {
+      "name": "Lucian Last"
+    },
+    {
+      "name": "gtusar",
+      "url": "https://github.com/gtusar"
+    }
   ],
   "repository": {
     "type": "git",
@@ -39,7 +48,7 @@
     "autoprefixer": "^10.4.14",
     "bulma": "0.9.4",
     "clean-css-cli": "^5.6.2",
-    "sass":"^1.57.1",
+    "sass": "^1.57.1",
     "postcss": "^8.4.23",
     "postcss-cli": "^10.1.0",
     "postcss-prefixer": "^2.1.3",
