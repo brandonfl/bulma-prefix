@@ -9,7 +9,6 @@
 
 <p align="center">
   <a href="https://github.com/brandonfl/bulma-prefix/releases"><img src="https://img.shields.io/github/v/release/brandonfl/bulma-prefix" alt="release"></a>
-  <a href="https://github.com/brandonfl/bulma-prefix/actions/workflows/publish.yml"><img src="https://github.com/brandonfl/bulma-prefix/actions/workflows/publish.yml/badge.svg" alt="publish"></a>
   <a href="https://www.npmjs.com/package/bulma-prefix"><img src="https://img.shields.io/npm/v/bulma-prefix.svg" alt="npm"></a>
   <a href="https://www.npmjs.com/package/bulma-prefix"><img src="https://img.shields.io/npm/dt/bulma-prefix.svg" alt="npm"></a>
   <a href="https://www.jsdelivr.com/package/npm/bulma-prefix"><img src="https://data.jsdelivr.com/v1/package/npm/bulma-prefix/badge" alt="jsdelivr"></a>
