@@ -1,8 +1,6 @@
 addReviewers: true
 reviewers:
-  - reviewerA
-  - reviewerB
-  - reviewerC
+  - brandonfl
 
 # Set 0 to add all the reviewers (default: 0)
 numberOfReviewers: 0
