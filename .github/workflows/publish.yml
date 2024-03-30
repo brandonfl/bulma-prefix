@@ -6,17 +6,48 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      packages: write
+      contents: write
+      id-token: write
+    env:
+      BRANCH_NAME: ${{ github.event.release.target_commitish || github.ref_name }}
+      VERSION_NUMBER: ${{ github.ref_name }}
     steps:
       - uses: actions/checkout@v2
-      # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v2
+
+      - uses: actions/setup-node@v4
         with:
           node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm install
-      # Publish to npm
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Install dependencies
+        shell: bash
+        run: npm install
+
+      - name: Config Git
+        shell: bash
+        continue-on-error: true
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Update version
+        shell: bash
+        run: npm version ${{ env.VERSION_NUMBER }} || true
+
+      - name: Update git with the new version
+        shell: bash
+        continue-on-error: true
+        run: |
+          git push origin HEAD:$BRANCH_NAME || true
+          git tag -fa $VERSION_NUMBER -m "Update version to $VERSION_NUMBER" || true
+          git push origin $VERSION_NUMBER --force || true
+
+      - name: Publish
+        uses: brandonfl-archives/npm-publish@v3.1.1 # backup of the action JS-DevTools/npm-publish@v3.1.1
+        with:
+          package: ./package.json
+          registry: ${{ vars.NPM_REGISTRY }}
+          token: ${{ secrets.NPM_TOKEN }}
+          tag: ${{ vars.NPM_TAG }}
+          access: ${{ vars.NPM_ACCESS }}
+          provenance: ${{ vars.NPM_PROVENANCE_ENABLED }}
+          strategy: ${{ vars.NPM_STRATEGY }}
