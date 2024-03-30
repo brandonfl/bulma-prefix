@@ -9,4 +9,4 @@ updates:
     reviewers:
       - "brandonfl"
     allow:
-      - "bulma"
+      - dependency-name: "bulma"
