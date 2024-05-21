@@ -1,6 +1,6 @@
 {
   "name": "bulma-prefix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bulma CSS framework with bulma as css prefix",
   "homepage": "https://github.com/brandonfl/bulma-prefix",
   "main": "css/bulma.prefixed.css",
