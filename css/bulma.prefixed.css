@@ -89,7 +89,7 @@
   --bulma-white-on-scheme: hsla(var(--bulma-white-h), var(--bulma-white-s), var(--bulma-white-on-scheme-l), 1);
   --bulma-black: hsla(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-l), 1);
   --bulma-black-base: hsla(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-l), 1);
-  --bulma-black-rgb: 9, 10, 12;
+  --bulma-black-rgb: 8.772, 9.6764, 11.628;
   --bulma-black-h: 221deg;
   --bulma-black-s: 14%;
   --bulma-black-l: 4%;
@@ -99,7 +99,7 @@
   --bulma-black-on-scheme: hsla(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-on-scheme-l), 1);
   --bulma-light: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-l), 1);
   --bulma-light-base: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-l), 1);
-  --bulma-light-rgb: 243, 244, 246;
+  --bulma-light-rgb: 243.372, 244.2764, 246.228;
   --bulma-light-h: 221deg;
   --bulma-light-s: 14%;
   --bulma-light-l: 96%;
@@ -109,7 +109,7 @@
   --bulma-light-on-scheme: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-on-scheme-l), 1);
   --bulma-dark: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-l), 1);
   --bulma-dark-base: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-l), 1);
-  --bulma-dark-rgb: 46, 51, 61;
+  --bulma-dark-rgb: 46.053, 50.8011, 61.047;
   --bulma-dark-h: 221deg;
   --bulma-dark-s: 14%;
   --bulma-dark-l: 21%;
@@ -119,7 +119,7 @@
   --bulma-dark-on-scheme: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-on-scheme-l), 1);
   --bulma-text: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
   --bulma-text-base: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
-  --bulma-text-rgb: 64, 70, 84;
+  --bulma-text-rgb: 63.597, 70.1539, 84.303;
   --bulma-text-h: 221deg;
   --bulma-text-s: 14%;
   --bulma-text-l: 29%;
@@ -225,7 +225,7 @@
   --bulma-text-on-scheme: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-on-scheme-l), 1);
   --bulma-primary: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
   --bulma-primary-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
-  --bulma-primary-rgb: 0, 209, 178;
+  --bulma-primary-rgb: 0, 209.1, 177.735;
   --bulma-primary-h: 171deg;
   --bulma-primary-s: 100%;
   --bulma-primary-l: 41%;
@@ -331,7 +331,7 @@
   --bulma-primary-on-scheme: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-on-scheme-l), 1);
   --bulma-link: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l), 1);
   --bulma-link-base: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l), 1);
-  --bulma-link-rgb: 66, 88, 255;
+  --bulma-link-rgb: 66.3, 88.315, 255;
   --bulma-link-h: 233deg;
   --bulma-link-s: 100%;
   --bulma-link-l: 63%;
@@ -384,7 +384,7 @@
   --bulma-link-40-invert-l: var(--bulma-link-95-l);
   --bulma-link-40-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-40-invert-l), 1);
   --bulma-link-45: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-45-l), 1);
-  --bulma-link-45-invert-l: var(--bulma-link-100-l);
+  --bulma-link-45-invert-l: var(--bulma-link-95-l);
   --bulma-link-45-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-45-invert-l), 1);
   --bulma-link-50: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-50-l), 1);
   --bulma-link-50-invert-l: var(--bulma-link-100-l);
@@ -414,7 +414,7 @@
   --bulma-link-90-invert-l: var(--bulma-link-35-l);
   --bulma-link-90-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-90-invert-l), 1);
   --bulma-link-95: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-95-l), 1);
-  --bulma-link-95-invert-l: var(--bulma-link-40-l);
+  --bulma-link-95-invert-l: var(--bulma-link-45-l);
   --bulma-link-95-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-95-invert-l), 1);
   --bulma-link-100: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-100-l), 1);
   --bulma-link-100-invert-l: var(--bulma-link-50-l);
@@ -437,7 +437,7 @@
   --bulma-link-on-scheme: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-on-scheme-l), 1);
   --bulma-info: hsla(var(--bulma-info-h), var(--bulma-info-s), var(--bulma-info-l), 1);
   --bulma-info-base: hsla(var(--bulma-info-h), var(--bulma-info-s), var(--bulma-info-l), 1);
-  --bulma-info-rgb: 102, 209, 255;
+  --bulma-info-rgb: 102, 209.1, 255;
   --bulma-info-h: 198deg;
   --bulma-info-s: 100%;
   --bulma-info-l: 70%;
@@ -543,7 +543,7 @@
   --bulma-info-on-scheme: hsla(var(--bulma-info-h), var(--bulma-info-s), var(--bulma-info-on-scheme-l), 1);
   --bulma-success: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l), 1);
   --bulma-success-base: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l), 1);
-  --bulma-success-rgb: 72, 199, 142;
+  --bulma-success-rgb: 71.6295, 198.6705, 141.50205;
   --bulma-success-h: 153deg;
   --bulma-success-s: 53%;
   --bulma-success-l: 53%;
@@ -581,7 +581,7 @@
   --bulma-success-15-invert-l: var(--bulma-success-75-l);
   --bulma-success-15-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-15-invert-l), 1);
   --bulma-success-20: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-20-l), 1);
-  --bulma-success-20-invert-l: var(--bulma-success-90-l);
+  --bulma-success-20-invert-l: var(--bulma-success-95-l);
   --bulma-success-20-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-20-invert-l), 1);
   --bulma-success-25: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-25-l), 1);
   --bulma-success-25-invert-l: var(--bulma-success-100-l);
@@ -623,7 +623,7 @@
   --bulma-success-85-invert-l: var(--bulma-success-15-l);
   --bulma-success-85-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-85-invert-l), 1);
   --bulma-success-90: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-90-l), 1);
-  --bulma-success-90-invert-l: var(--bulma-success-20-l);
+  --bulma-success-90-invert-l: var(--bulma-success-15-l);
   --bulma-success-90-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-90-invert-l), 1);
   --bulma-success-95: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-95-l), 1);
   --bulma-success-95-invert-l: var(--bulma-success-20-l);
@@ -635,7 +635,7 @@
   --bulma-success-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-invert-l), 1);
   --bulma-success-light-l: var(--bulma-success-90-l);
   --bulma-success-light: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-light-l), 1);
-  --bulma-success-light-invert-l: var(--bulma-success-20-l);
+  --bulma-success-light-invert-l: var(--bulma-success-15-l);
   --bulma-success-light-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-light-invert-l), 1);
   --bulma-success-dark-l: var(--bulma-success-10-l);
   --bulma-success-dark: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-dark-l), 1);
@@ -649,7 +649,7 @@
   --bulma-success-on-scheme: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-on-scheme-l), 1);
   --bulma-warning: hsla(var(--bulma-warning-h), var(--bulma-warning-s), var(--bulma-warning-l), 1);
   --bulma-warning-base: hsla(var(--bulma-warning-h), var(--bulma-warning-s), var(--bulma-warning-l), 1);
-  --bulma-warning-rgb: 255, 183, 15;
+  --bulma-warning-rgb: 255, 183.09, 15.3;
   --bulma-warning-h: 42deg;
   --bulma-warning-s: 100%;
   --bulma-warning-l: 53%;
@@ -755,7 +755,7 @@
   --bulma-warning-on-scheme: hsla(var(--bulma-warning-h), var(--bulma-warning-s), var(--bulma-warning-on-scheme-l), 1);
   --bulma-danger: hsla(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l), 1);
   --bulma-danger-base: hsla(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l), 1);
-  --bulma-danger-rgb: 255, 102, 133;
+  --bulma-danger-rgb: 255, 102, 132.6;
   --bulma-danger-h: 348deg;
   --bulma-danger-s: 100%;
   --bulma-danger-l: 70%;
@@ -990,7 +990,7 @@
     --bulma-white-on-scheme: hsla(var(--bulma-white-h), var(--bulma-white-s), var(--bulma-white-on-scheme-l), 1);
     --bulma-black: hsla(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-l), 1);
     --bulma-black-base: hsla(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-l), 1);
-    --bulma-black-rgb: 9, 10, 12;
+    --bulma-black-rgb: 8.772, 9.6764, 11.628;
     --bulma-black-h: 221deg;
     --bulma-black-s: 14%;
     --bulma-black-l: 4%;
@@ -1000,7 +1000,7 @@
     --bulma-black-on-scheme: hsla(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-on-scheme-l), 1);
     --bulma-light: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-l), 1);
     --bulma-light-base: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-l), 1);
-    --bulma-light-rgb: 243, 244, 246;
+    --bulma-light-rgb: 243.372, 244.2764, 246.228;
     --bulma-light-h: 221deg;
     --bulma-light-s: 14%;
     --bulma-light-l: 96%;
@@ -1010,7 +1010,7 @@
     --bulma-light-on-scheme: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-on-scheme-l), 1);
     --bulma-dark: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-l), 1);
     --bulma-dark-base: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-l), 1);
-    --bulma-dark-rgb: 46, 51, 61;
+    --bulma-dark-rgb: 46.053, 50.8011, 61.047;
     --bulma-dark-h: 221deg;
     --bulma-dark-s: 14%;
     --bulma-dark-l: 21%;
@@ -1020,7 +1020,7 @@
     --bulma-dark-on-scheme: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-on-scheme-l), 1);
     --bulma-text: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
     --bulma-text-base: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
-    --bulma-text-rgb: 64, 70, 84;
+    --bulma-text-rgb: 63.597, 70.1539, 84.303;
     --bulma-text-h: 221deg;
     --bulma-text-s: 14%;
     --bulma-text-l: 29%;
@@ -1126,7 +1126,7 @@
     --bulma-text-on-scheme: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-on-scheme-l), 1);
     --bulma-primary: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
     --bulma-primary-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
-    --bulma-primary-rgb: 0, 209, 178;
+    --bulma-primary-rgb: 0, 209.1, 177.735;
     --bulma-primary-h: 171deg;
     --bulma-primary-s: 100%;
     --bulma-primary-l: 41%;
@@ -1232,7 +1232,7 @@
     --bulma-primary-on-scheme: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-on-scheme-l), 1);
     --bulma-link: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l), 1);
     --bulma-link-base: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l), 1);
-    --bulma-link-rgb: 66, 88, 255;
+    --bulma-link-rgb: 66.3, 88.315, 255;
     --bulma-link-h: 233deg;
     --bulma-link-s: 100%;
     --bulma-link-l: 63%;
@@ -1285,7 +1285,7 @@
     --bulma-link-40-invert-l: var(--bulma-link-95-l);
     --bulma-link-40-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-40-invert-l), 1);
     --bulma-link-45: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-45-l), 1);
-    --bulma-link-45-invert-l: var(--bulma-link-100-l);
+    --bulma-link-45-invert-l: var(--bulma-link-95-l);
     --bulma-link-45-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-45-invert-l), 1);
     --bulma-link-50: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-50-l), 1);
     --bulma-link-50-invert-l: var(--bulma-link-100-l);
@@ -1315,7 +1315,7 @@
     --bulma-link-90-invert-l: var(--bulma-link-35-l);
     --bulma-link-90-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-90-invert-l), 1);
     --bulma-link-95: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-95-l), 1);
-    --bulma-link-95-invert-l: var(--bulma-link-40-l);
+    --bulma-link-95-invert-l: var(--bulma-link-45-l);
     --bulma-link-95-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-95-invert-l), 1);
     --bulma-link-100: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-100-l), 1);
     --bulma-link-100-invert-l: var(--bulma-link-50-l);
@@ -1338,7 +1338,7 @@
     --bulma-link-on-scheme: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-on-scheme-l), 1);
     --bulma-info: hsla(var(--bulma-info-h), var(--bulma-info-s), var(--bulma-info-l), 1);
     --bulma-info-base: hsla(var(--bulma-info-h), var(--bulma-info-s), var(--bulma-info-l), 1);
-    --bulma-info-rgb: 102, 209, 255;
+    --bulma-info-rgb: 102, 209.1, 255;
     --bulma-info-h: 198deg;
     --bulma-info-s: 100%;
     --bulma-info-l: 70%;
@@ -1444,7 +1444,7 @@
     --bulma-info-on-scheme: hsla(var(--bulma-info-h), var(--bulma-info-s), var(--bulma-info-on-scheme-l), 1);
     --bulma-success: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l), 1);
     --bulma-success-base: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l), 1);
-    --bulma-success-rgb: 72, 199, 142;
+    --bulma-success-rgb: 71.6295, 198.6705, 141.50205;
     --bulma-success-h: 153deg;
     --bulma-success-s: 53%;
     --bulma-success-l: 53%;
@@ -1482,7 +1482,7 @@
     --bulma-success-15-invert-l: var(--bulma-success-75-l);
     --bulma-success-15-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-15-invert-l), 1);
     --bulma-success-20: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-20-l), 1);
-    --bulma-success-20-invert-l: var(--bulma-success-90-l);
+    --bulma-success-20-invert-l: var(--bulma-success-95-l);
     --bulma-success-20-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-20-invert-l), 1);
     --bulma-success-25: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-25-l), 1);
     --bulma-success-25-invert-l: var(--bulma-success-100-l);
@@ -1524,7 +1524,7 @@
     --bulma-success-85-invert-l: var(--bulma-success-15-l);
     --bulma-success-85-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-85-invert-l), 1);
     --bulma-success-90: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-90-l), 1);
-    --bulma-success-90-invert-l: var(--bulma-success-20-l);
+    --bulma-success-90-invert-l: var(--bulma-success-15-l);
     --bulma-success-90-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-90-invert-l), 1);
     --bulma-success-95: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-95-l), 1);
     --bulma-success-95-invert-l: var(--bulma-success-20-l);
@@ -1536,7 +1536,7 @@
     --bulma-success-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-invert-l), 1);
     --bulma-success-light-l: var(--bulma-success-90-l);
     --bulma-success-light: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-light-l), 1);
-    --bulma-success-light-invert-l: var(--bulma-success-20-l);
+    --bulma-success-light-invert-l: var(--bulma-success-15-l);
     --bulma-success-light-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-light-invert-l), 1);
     --bulma-success-dark-l: var(--bulma-success-10-l);
     --bulma-success-dark: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-dark-l), 1);
@@ -1550,7 +1550,7 @@
     --bulma-success-on-scheme: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-on-scheme-l), 1);
     --bulma-warning: hsla(var(--bulma-warning-h), var(--bulma-warning-s), var(--bulma-warning-l), 1);
     --bulma-warning-base: hsla(var(--bulma-warning-h), var(--bulma-warning-s), var(--bulma-warning-l), 1);
-    --bulma-warning-rgb: 255, 183, 15;
+    --bulma-warning-rgb: 255, 183.09, 15.3;
     --bulma-warning-h: 42deg;
     --bulma-warning-s: 100%;
     --bulma-warning-l: 53%;
@@ -1656,7 +1656,7 @@
     --bulma-warning-on-scheme: hsla(var(--bulma-warning-h), var(--bulma-warning-s), var(--bulma-warning-on-scheme-l), 1);
     --bulma-danger: hsla(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l), 1);
     --bulma-danger-base: hsla(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l), 1);
-    --bulma-danger-rgb: 255, 102, 133;
+    --bulma-danger-rgb: 255, 102, 132.6;
     --bulma-danger-h: 348deg;
     --bulma-danger-s: 100%;
     --bulma-danger-l: 70%;
@@ -1785,7 +1785,7 @@
   :root {
     --bulma-white-on-scheme-l: 100%;
     --bulma-white-on-scheme: hsla(var(--bulma-white-h), var(--bulma-white-s), var(--bulma-white-on-scheme-l), 1);
-    --bulma-black-on-scheme-l: 0%;
+    --bulma-black-on-scheme-l: -51%;
     --bulma-black-on-scheme: hsla(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-on-scheme-l), 1);
     --bulma-light-on-scheme-l: 96%;
     --bulma-light-on-scheme: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-on-scheme-l), 1);
@@ -1908,7 +1908,7 @@
   --bulma-white-on-scheme: hsla(var(--bulma-white-h), var(--bulma-white-s), var(--bulma-white-on-scheme-l), 1);
   --bulma-black: hsla(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-l), 1);
   --bulma-black-base: hsla(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-l), 1);
-  --bulma-black-rgb: 9, 10, 12;
+  --bulma-black-rgb: 8.772, 9.6764, 11.628;
   --bulma-black-h: 221deg;
   --bulma-black-s: 14%;
   --bulma-black-l: 4%;
@@ -1918,7 +1918,7 @@
   --bulma-black-on-scheme: hsla(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-on-scheme-l), 1);
   --bulma-light: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-l), 1);
   --bulma-light-base: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-l), 1);
-  --bulma-light-rgb: 243, 244, 246;
+  --bulma-light-rgb: 243.372, 244.2764, 246.228;
   --bulma-light-h: 221deg;
   --bulma-light-s: 14%;
   --bulma-light-l: 96%;
@@ -1928,7 +1928,7 @@
   --bulma-light-on-scheme: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-on-scheme-l), 1);
   --bulma-dark: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-l), 1);
   --bulma-dark-base: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-l), 1);
-  --bulma-dark-rgb: 46, 51, 61;
+  --bulma-dark-rgb: 46.053, 50.8011, 61.047;
   --bulma-dark-h: 221deg;
   --bulma-dark-s: 14%;
   --bulma-dark-l: 21%;
@@ -1938,7 +1938,7 @@
   --bulma-dark-on-scheme: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-on-scheme-l), 1);
   --bulma-text: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
   --bulma-text-base: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
-  --bulma-text-rgb: 64, 70, 84;
+  --bulma-text-rgb: 63.597, 70.1539, 84.303;
   --bulma-text-h: 221deg;
   --bulma-text-s: 14%;
   --bulma-text-l: 29%;
@@ -2044,7 +2044,7 @@
   --bulma-text-on-scheme: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-on-scheme-l), 1);
   --bulma-primary: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
   --bulma-primary-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
-  --bulma-primary-rgb: 0, 209, 178;
+  --bulma-primary-rgb: 0, 209.1, 177.735;
   --bulma-primary-h: 171deg;
   --bulma-primary-s: 100%;
   --bulma-primary-l: 41%;
@@ -2150,7 +2150,7 @@
   --bulma-primary-on-scheme: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-on-scheme-l), 1);
   --bulma-link: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l), 1);
   --bulma-link-base: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l), 1);
-  --bulma-link-rgb: 66, 88, 255;
+  --bulma-link-rgb: 66.3, 88.315, 255;
   --bulma-link-h: 233deg;
   --bulma-link-s: 100%;
   --bulma-link-l: 63%;
@@ -2203,7 +2203,7 @@
   --bulma-link-40-invert-l: var(--bulma-link-95-l);
   --bulma-link-40-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-40-invert-l), 1);
   --bulma-link-45: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-45-l), 1);
-  --bulma-link-45-invert-l: var(--bulma-link-100-l);
+  --bulma-link-45-invert-l: var(--bulma-link-95-l);
   --bulma-link-45-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-45-invert-l), 1);
   --bulma-link-50: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-50-l), 1);
   --bulma-link-50-invert-l: var(--bulma-link-100-l);
@@ -2233,7 +2233,7 @@
   --bulma-link-90-invert-l: var(--bulma-link-35-l);
   --bulma-link-90-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-90-invert-l), 1);
   --bulma-link-95: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-95-l), 1);
-  --bulma-link-95-invert-l: var(--bulma-link-40-l);
+  --bulma-link-95-invert-l: var(--bulma-link-45-l);
   --bulma-link-95-invert: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-95-invert-l), 1);
   --bulma-link-100: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-100-l), 1);
   --bulma-link-100-invert-l: var(--bulma-link-50-l);
@@ -2256,7 +2256,7 @@
   --bulma-link-on-scheme: hsla(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-on-scheme-l), 1);
   --bulma-info: hsla(var(--bulma-info-h), var(--bulma-info-s), var(--bulma-info-l), 1);
   --bulma-info-base: hsla(var(--bulma-info-h), var(--bulma-info-s), var(--bulma-info-l), 1);
-  --bulma-info-rgb: 102, 209, 255;
+  --bulma-info-rgb: 102, 209.1, 255;
   --bulma-info-h: 198deg;
   --bulma-info-s: 100%;
   --bulma-info-l: 70%;
@@ -2362,7 +2362,7 @@
   --bulma-info-on-scheme: hsla(var(--bulma-info-h), var(--bulma-info-s), var(--bulma-info-on-scheme-l), 1);
   --bulma-success: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l), 1);
   --bulma-success-base: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l), 1);
-  --bulma-success-rgb: 72, 199, 142;
+  --bulma-success-rgb: 71.6295, 198.6705, 141.50205;
   --bulma-success-h: 153deg;
   --bulma-success-s: 53%;
   --bulma-success-l: 53%;
@@ -2400,7 +2400,7 @@
   --bulma-success-15-invert-l: var(--bulma-success-75-l);
   --bulma-success-15-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-15-invert-l), 1);
   --bulma-success-20: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-20-l), 1);
-  --bulma-success-20-invert-l: var(--bulma-success-90-l);
+  --bulma-success-20-invert-l: var(--bulma-success-95-l);
   --bulma-success-20-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-20-invert-l), 1);
   --bulma-success-25: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-25-l), 1);
   --bulma-success-25-invert-l: var(--bulma-success-100-l);
@@ -2442,7 +2442,7 @@
   --bulma-success-85-invert-l: var(--bulma-success-15-l);
   --bulma-success-85-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-85-invert-l), 1);
   --bulma-success-90: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-90-l), 1);
-  --bulma-success-90-invert-l: var(--bulma-success-20-l);
+  --bulma-success-90-invert-l: var(--bulma-success-15-l);
   --bulma-success-90-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-90-invert-l), 1);
   --bulma-success-95: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-95-l), 1);
   --bulma-success-95-invert-l: var(--bulma-success-20-l);
@@ -2454,7 +2454,7 @@
   --bulma-success-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-invert-l), 1);
   --bulma-success-light-l: var(--bulma-success-90-l);
   --bulma-success-light: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-light-l), 1);
-  --bulma-success-light-invert-l: var(--bulma-success-20-l);
+  --bulma-success-light-invert-l: var(--bulma-success-15-l);
   --bulma-success-light-invert: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-light-invert-l), 1);
   --bulma-success-dark-l: var(--bulma-success-10-l);
   --bulma-success-dark: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-dark-l), 1);
@@ -2468,7 +2468,7 @@
   --bulma-success-on-scheme: hsla(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-on-scheme-l), 1);
   --bulma-warning: hsla(var(--bulma-warning-h), var(--bulma-warning-s), var(--bulma-warning-l), 1);
   --bulma-warning-base: hsla(var(--bulma-warning-h), var(--bulma-warning-s), var(--bulma-warning-l), 1);
-  --bulma-warning-rgb: 255, 183, 15;
+  --bulma-warning-rgb: 255, 183.09, 15.3;
   --bulma-warning-h: 42deg;
   --bulma-warning-s: 100%;
   --bulma-warning-l: 53%;
@@ -2574,7 +2574,7 @@
   --bulma-warning-on-scheme: hsla(var(--bulma-warning-h), var(--bulma-warning-s), var(--bulma-warning-on-scheme-l), 1);
   --bulma-danger: hsla(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l), 1);
   --bulma-danger-base: hsla(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l), 1);
-  --bulma-danger-rgb: 255, 102, 133;
+  --bulma-danger-rgb: 255, 102, 132.6;
   --bulma-danger-h: 348deg;
   --bulma-danger-s: 100%;
   --bulma-danger-l: 70%;
@@ -2736,7 +2736,7 @@
 .bulma-theme-dark {
   --bulma-white-on-scheme-l: 100%;
   --bulma-white-on-scheme: hsla(var(--bulma-white-h), var(--bulma-white-s), var(--bulma-white-on-scheme-l), 1);
-  --bulma-black-on-scheme-l: 0%;
+  --bulma-black-on-scheme-l: -51%;
   --bulma-black-on-scheme: hsla(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-on-scheme-l), 1);
   --bulma-light-on-scheme-l: 96%;
   --bulma-light-on-scheme: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-on-scheme-l), 1);
@@ -3409,22 +3409,16 @@ a.bulma-box:active {
   width: 1.5em;
 }
 .bulma-button .bulma-icon:first-child:not(:last-child) {
-  -webkit-margin-start: calc(-0.5 * var(--bulma-button-padding-horizontal));
-          margin-inline-start: calc(-0.5 * var(--bulma-button-padding-horizontal));
-  -webkit-margin-end: calc(var(--bulma-button-padding-horizontal) * 0.25);
-          margin-inline-end: calc(var(--bulma-button-padding-horizontal) * 0.25);
+  margin-inline-start: calc(-0.5 * var(--bulma-button-padding-horizontal));
+  margin-inline-end: calc(var(--bulma-button-padding-horizontal) * 0.25);
 }
 .bulma-button .bulma-icon:last-child:not(:first-child) {
-  -webkit-margin-start: calc(var(--bulma-button-padding-horizontal) * 0.25);
-          margin-inline-start: calc(var(--bulma-button-padding-horizontal) * 0.25);
-  -webkit-margin-end: calc(-0.5 * var(--bulma-button-padding-horizontal));
-          margin-inline-end: calc(-0.5 * var(--bulma-button-padding-horizontal));
+  margin-inline-start: calc(var(--bulma-button-padding-horizontal) * 0.25);
+  margin-inline-end: calc(-0.5 * var(--bulma-button-padding-horizontal));
 }
 .bulma-button .bulma-icon:first-child:last-child {
-  -webkit-margin-start: calc(-0.5 * var(--bulma-button-padding-horizontal));
-          margin-inline-start: calc(-0.5 * var(--bulma-button-padding-horizontal));
-  -webkit-margin-end: calc(-0.5 * var(--bulma-button-padding-horizontal));
-          margin-inline-end: calc(-0.5 * var(--bulma-button-padding-horizontal));
+  margin-inline-start: calc(-0.5 * var(--bulma-button-padding-horizontal));
+  margin-inline-end: calc(-0.5 * var(--bulma-button-padding-horizontal));
 }
 .bulma-button:hover, .bulma-button.bulma-is-hovered {
   --bulma-button-background-l-delta: var(--bulma-button-hover-background-l-delta);
@@ -3798,6 +3792,10 @@ a.bulma-box:active {
   --bulma-button-border-width: max(2px, 0.125em);
   --bulma-button-outer-shadow-alpha: 1;
 }
+.bulma-button.bulma-is-outlined[disabled], fieldset[disabled] .bulma-button.bulma-is-outlined {
+  background-color: transparent;
+  box-shadow: none;
+}
 .bulma-button.bulma-is-inverted {
   background-color: hsl(var(--bulma-button-h), var(--bulma-button-s), calc(var(--bulma-button-color-l) + var(--bulma-button-background-l-delta)));
   color: hsl(var(--bulma-button-h), var(--bulma-button-s), var(--bulma-button-background-l));
@@ -3907,8 +3905,7 @@ a.bulma-box:active {
 .bulma-buttons.bulma-has-addons .bulma-button:not(:last-child) {
   border-end-end-radius: 0;
   border-start-end-radius: 0;
-  -webkit-margin-end: -1px;
-          margin-inline-end: -1px;
+  margin-inline-end: -1px;
 }
 .bulma-buttons.bulma-has-addons .bulma-button:hover, .bulma-buttons.bulma-has-addons .bulma-button.bulma-is-hovered {
   z-index: 2;
@@ -4037,14 +4034,12 @@ a.bulma-box:active {
 }
 .bulma-content blockquote {
   background-color: var(--bulma-content-blockquote-background-color);
-  -webkit-border-start: var(--bulma-content-blockquote-border-left);
-          border-inline-start: var(--bulma-content-blockquote-border-left);
+  border-inline-start: var(--bulma-content-blockquote-border-left);
   padding: var(--bulma-content-blockquote-padding);
 }
 .bulma-content ol {
   list-style-position: outside;
-  -webkit-margin-start: 2em;
-          margin-inline-start: 2em;
+  margin-inline-start: 2em;
 }
 .bulma-content ol:not(:first-child) {
   margin-top: 1em;
@@ -4066,8 +4061,7 @@ a.bulma-box:active {
 }
 .bulma-content ul {
   list-style: disc outside;
-  -webkit-margin-start: 2em;
-          margin-inline-start: 2em;
+  margin-inline-start: 2em;
 }
 .bulma-content ul:not(:first-child) {
   margin-top: 1em;
@@ -4081,8 +4075,7 @@ a.bulma-box:active {
   list-style-type: square;
 }
 .bulma-content dd {
-  -webkit-margin-start: 2em;
-          margin-inline-start: 2em;
+  margin-inline-start: 2em;
 }
 .bulma-content figure:not([class]) {
   margin-left: 2em;
@@ -5164,10 +5157,8 @@ div.bulma-icon-text {
   white-space: nowrap;
 }
 .bulma-tag .bulma-delete {
-  -webkit-margin-start: 0.25rem;
-          margin-inline-start: 0.25rem;
-  -webkit-margin-end: -0.375rem;
-          margin-inline-end: -0.375rem;
+  margin-inline-start: 0.25rem;
+  margin-inline-end: -0.375rem;
 }
 .bulma-tag.bulma-is-white {
   --bulma-tag-h: var(--bulma-white-h);
@@ -5289,26 +5280,19 @@ div.bulma-icon-text {
   font-size: var(--bulma-size-medium);
 }
 .bulma-tag .bulma-icon:first-child:not(:last-child) {
-  -webkit-margin-start: -0.375em;
-          margin-inline-start: -0.375em;
-  -webkit-margin-end: 0.1875em;
-          margin-inline-end: 0.1875em;
+  margin-inline-start: -0.375em;
+  margin-inline-end: 0.1875em;
 }
 .bulma-tag .bulma-icon:last-child:not(:first-child) {
-  -webkit-margin-start: 0.1875em;
-          margin-inline-start: 0.1875em;
-  -webkit-margin-end: -0.375em;
-          margin-inline-end: -0.375em;
+  margin-inline-start: 0.1875em;
+  margin-inline-end: -0.375em;
 }
 .bulma-tag .bulma-icon:first-child:last-child {
-  -webkit-margin-start: -0.375em;
-          margin-inline-start: -0.375em;
-  -webkit-margin-end: -0.375em;
-          margin-inline-end: -0.375em;
+  margin-inline-start: -0.375em;
+  margin-inline-end: -0.375em;
 }
 .bulma-tag.bulma-is-delete {
-  -webkit-margin-start: var(--bulma-tag-delete-margin);
-          margin-inline-start: var(--bulma-tag-delete-margin);
+  margin-inline-start: var(--bulma-tag-delete-margin);
   padding: 0;
   position: relative;
   width: 2em;
@@ -5476,6 +5460,7 @@ button.bulma-tag:active,
   --bulma-input-border-width: var(--bulma-control-border-width);
   --bulma-input-border-l: var(--bulma-border-l);
   --bulma-input-border-l-delta: 0%;
+  --bulma-input-border-color: hsl(var(--bulma-input-h), var(--bulma-input-s), calc(var(--bulma-input-border-l) + var(--bulma-input-border-l-delta)));
   --bulma-input-hover-border-l-delta: var(--bulma-hover-border-l-delta);
   --bulma-input-active-border-l-delta: var(--bulma-active-border-l-delta);
   --bulma-input-focus-h: var(--bulma-focus-h);
@@ -5502,7 +5487,7 @@ button.bulma-tag:active,
 
 .bulma-select select, .bulma-input, .bulma-textarea {
   background-color: hsl(var(--bulma-input-h), var(--bulma-input-s), calc(var(--bulma-input-background-l) + var(--bulma-input-background-l-delta)));
-  border-color: hsl(var(--bulma-input-h), var(--bulma-input-s), calc(var(--bulma-input-border-l) + var(--bulma-input-border-l-delta)));
+  border-color: var(--bulma-input-border-color);
   border-radius: var(--bulma-input-radius);
   color: hsl(var(--bulma-input-h), var(--bulma-input-s), var(--bulma-input-color-l));
 }
@@ -5755,8 +5740,7 @@ button.bulma-tag:active,
 }
 .bulma-select.bulma-is-rounded select {
   border-radius: var(--bulma-radius-rounded);
-  -webkit-padding-start: 1em;
-          padding-inline-start: 1em;
+  padding-inline-start: 1em;
 }
 .bulma-select select {
   cursor: pointer;
@@ -5772,8 +5756,7 @@ button.bulma-tag:active,
   border-color: var(--bulma-background);
 }
 .bulma-select select:not([multiple]) {
-  -webkit-padding-end: 2.5em;
-          padding-inline-end: 2.5em;
+  padding-inline-end: 2.5em;
 }
 .bulma-select select[multiple] {
   height: auto;
@@ -6199,8 +6182,7 @@ button.bulma-tag:active,
   display: flex;
   height: 1em;
   justify-content: center;
-  -webkit-margin-end: 0.5em;
-          margin-inline-end: 0.5em;
+  margin-inline-end: 0.5em;
   width: 1em;
 }
 .bulma-file-icon .bulma-fa {
@@ -6282,8 +6264,7 @@ button.bulma-tag:active,
   justify-content: flex-start;
 }
 .bulma-field.bulma-has-addons .bulma-control:not(:last-child) {
-  -webkit-margin-end: -1px;
-          margin-inline-end: -1px;
+  margin-inline-end: -1px;
 }
 .bulma-field.bulma-has-addons .bulma-control:not(:first-child):not(:last-child) .bulma-button,
 .bulma-field.bulma-has-addons .bulma-control:not(:first-child):not(:last-child) .bulma-input,
@@ -6385,8 +6366,7 @@ button.bulma-tag:active,
     flex-basis: 0;
     flex-grow: 1;
     flex-shrink: 0;
-    -webkit-margin-end: 1.5rem;
-            margin-inline-end: 1.5rem;
+    margin-inline-end: 1.5rem;
     text-align: right;
   }
   .bulma-field-label.bulma-is-small {
@@ -6426,8 +6406,7 @@ button.bulma-tag:active,
     flex-grow: 1;
   }
   .bulma-field-body > .bulma-field:not(:last-child) {
-    -webkit-margin-end: 0.75rem;
-            margin-inline-end: 0.75rem;
+    margin-inline-end: 0.75rem;
   }
 }
 
@@ -6531,8 +6510,7 @@ button.bulma-tag:active,
   display: flex;
 }
 .bulma-breadcrumb li:first-child a {
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
+  padding-inline-start: 0;
 }
 .bulma-breadcrumb li.bulma-is-active a {
   color: var(--bulma-breadcrumb-item-active-color);
@@ -6551,12 +6529,10 @@ button.bulma-tag:active,
   justify-content: flex-start;
 }
 .bulma-breadcrumb .bulma-icon:first-child {
-  -webkit-margin-end: 0.5em;
-          margin-inline-end: 0.5em;
+  margin-inline-end: 0.5em;
 }
 .bulma-breadcrumb .bulma-icon:last-child {
-  -webkit-margin-start: 0.5em;
-          margin-inline-start: 0.5em;
+  margin-inline-start: 0.5em;
 }
 .bulma-breadcrumb.bulma-is-centered ol,
 .bulma-breadcrumb.bulma-is-centered ul {
@@ -6696,8 +6672,7 @@ button.bulma-tag:active,
   padding: var(--bulma-card-footer-padding);
 }
 .bulma-card-footer-item:not(:last-child) {
-  -webkit-border-end: var(--bulma-card-footer-border-top);
-          border-inline-end: var(--bulma-card-footer-border-top);
+  border-inline-end: var(--bulma-card-footer-border-top);
 }
 
 .bulma-card .bulma-media:not(:last-child) {
@@ -6777,8 +6752,7 @@ button.bulma-tag:active,
 a.bulma-dropdown-item,
 button.bulma-dropdown-item {
   background-color: hsl(var(--bulma-dropdown-item-h), var(--bulma-dropdown-item-s), calc(var(--bulma-dropdown-item-background-l) + var(--bulma-dropdown-item-background-l-delta)));
-  -webkit-padding-end: 3rem;
-          padding-inline-end: 3rem;
+  padding-inline-end: 3rem;
   text-align: inherit;
   white-space: nowrap;
   width: 100%;
@@ -6886,11 +6860,9 @@ button.bulma-dropdown-item.bulma-is-selected {
   --bulma-menu-item-color-l: var(--bulma-menu-item-selected-color-l);
 }
 .bulma-menu-list li ul {
-  -webkit-border-start: var(--bulma-menu-list-border-left);
-          border-inline-start: var(--bulma-menu-list-border-left);
+  border-inline-start: var(--bulma-menu-list-border-left);
   margin: var(--bulma-menu-nested-list-margin);
-  -webkit-padding-start: var(--bulma-menu-nested-list-padding-left);
-          padding-inline-start: var(--bulma-menu-nested-list-padding-left);
+  padding-inline-start: var(--bulma-menu-nested-list-padding-left);
 }
 
 .bulma-menu-label {
@@ -7055,8 +7027,7 @@ button.bulma-dropdown-item.bulma-is-selected {
 .bulma-message-header .bulma-delete {
   flex-grow: 0;
   flex-shrink: 0;
-  -webkit-margin-start: 0.75em;
-          margin-inline-start: 0.75em;
+  margin-inline-start: 0.75em;
 }
 .bulma-message-header + .bulma-message-body {
   border-width: var(--bulma-message-header-body-border-width);
@@ -7585,10 +7556,8 @@ body.bulma-has-navbar-fixed-bottom {
 .bulma-navbar-burger {
   align-self: center;
   color: var(--bulma-navbar-burger-color);
-  -webkit-margin-start: auto;
-          margin-inline-start: auto;
-  -webkit-margin-end: 0.375rem;
-          margin-inline-end: 0.375rem;
+  margin-inline-start: auto;
+  margin-inline-end: 0.375rem;
 }
 
 .bulma-navbar-menu {
@@ -7677,8 +7646,7 @@ a.bulma-navbar-item.bulma-is-active, a.bulma-navbar-item.bulma-is-selected,
 }
 
 .bulma-navbar-link:not(.bulma-is-arrowless) {
-  -webkit-padding-end: 2.5em;
-          padding-inline-end: 2.5em;
+  padding-inline-end: 2.5em;
 }
 .bulma-navbar-link:not(.bulma-is-arrowless)::after {
   border-color: var(--bulma-navbar-dropdown-arrow);
@@ -7830,13 +7798,11 @@ a.bulma-navbar-item.bulma-is-active, a.bulma-navbar-item.bulma-is-selected,
   }
   .bulma-navbar-start {
     justify-content: flex-start;
-    -webkit-margin-end: auto;
-            margin-inline-end: auto;
+    margin-inline-end: auto;
   }
   .bulma-navbar-end {
     justify-content: flex-end;
-    -webkit-margin-start: auto;
-            margin-inline-start: auto;
+    margin-inline-start: auto;
   }
   .bulma-navbar-dropdown {
     background-color: var(--bulma-navbar-dropdown-background-color);
@@ -7859,8 +7825,7 @@ a.bulma-navbar-item.bulma-is-active, a.bulma-navbar-item.bulma-is-selected,
     white-space: nowrap;
   }
   .bulma-navbar-dropdown a.bulma-navbar-item {
-    -webkit-padding-end: 3rem;
-            padding-inline-end: 3rem;
+    padding-inline-end: 3rem;
   }
   .bulma-navbar-dropdown a.bulma-navbar-item:not(.bulma-is-active, .bulma-is-selected) {
     background-color: hsl(var(--bulma-navbar-dropdown-item-h), var(--bulma-navbar-dropdown-item-s), calc(var(--bulma-navbar-dropdown-item-background-l) + var(--bulma-navbar-item-background-l-delta)));
@@ -7887,13 +7852,11 @@ a.bulma-navbar-item.bulma-is-active, a.bulma-navbar-item.bulma-is-selected,
   }
   .bulma-navbar > .bulma-container .bulma-navbar-brand,
   .bulma-container > .bulma-navbar .bulma-navbar-brand {
-    -webkit-margin-start: -0.75rem;
-            margin-inline-start: -0.75rem;
+    margin-inline-start: -0.75rem;
   }
   .bulma-navbar > .bulma-container .bulma-navbar-menu,
   .bulma-container > .bulma-navbar .bulma-navbar-menu {
-    -webkit-margin-end: -0.75rem;
-            margin-inline-end: -0.75rem;
+    margin-inline-end: -0.75rem;
   }
   .bulma-navbar.bulma-is-fixed-bottom-desktop, .bulma-navbar.bulma-is-fixed-top-desktop {
     left: 0;
@@ -8312,8 +8275,7 @@ a.bulma-navbar-item.bulma-is-active, a.bulma-navbar-item.bulma-is-selected,
   padding: 0.75em 1em;
 }
 .bulma-panel-block input[type=checkbox] {
-  -webkit-margin-end: 0.75em;
-          margin-inline-end: 0.75em;
+  margin-inline-end: 0.75em;
 }
 .bulma-panel-block > .bulma-control {
   flex-grow: 1;
@@ -8353,8 +8315,7 @@ label.bulma-panel-block:hover {
   vertical-align: top;
   width: 1em;
   color: var(--bulma-panel-icon-color);
-  -webkit-margin-end: 0.75em;
-          margin-inline-end: 0.75em;
+  margin-inline-end: 0.75em;
 }
 .bulma-panel-icon .bulma-fa {
   font-size: inherit;
@@ -8447,12 +8408,10 @@ label.bulma-panel-block:hover {
   padding-left: 0.75em;
 }
 .bulma-tabs .bulma-icon:first-child {
-  -webkit-margin-end: 0.5em;
-          margin-inline-end: 0.5em;
+  margin-inline-end: 0.5em;
 }
 .bulma-tabs .bulma-icon:last-child {
-  -webkit-margin-start: 0.5em;
-          margin-inline-start: 0.5em;
+  margin-inline-start: 0.5em;
 }
 .bulma-tabs.bulma-is-centered ul {
   justify-content: center;
@@ -8491,8 +8450,7 @@ label.bulma-panel-block:hover {
   z-index: 2;
 }
 .bulma-tabs.bulma-is-toggle li + li {
-  -webkit-margin-start: calc(-1 * var(--bulma-tabs-toggle-link-border-width));
-          margin-inline-start: calc(-1 * var(--bulma-tabs-toggle-link-border-width));
+  margin-inline-start: calc(-1 * var(--bulma-tabs-toggle-link-border-width));
 }
 .bulma-tabs.bulma-is-toggle li:first-child a {
   border-start-start-radius: var(--bulma-tabs-toggle-link-radius);
@@ -8514,14 +8472,12 @@ label.bulma-panel-block:hover {
 .bulma-tabs.bulma-is-toggle.bulma-is-toggle-rounded li:first-child a {
   border-start-start-radius: var(--bulma-radius-rounded);
   border-end-start-radius: var(--bulma-radius-rounded);
-  -webkit-padding-start: 1.25em;
-          padding-inline-start: 1.25em;
+  padding-inline-start: 1.25em;
 }
 .bulma-tabs.bulma-is-toggle.bulma-is-toggle-rounded li:last-child a {
   border-start-end-radius: var(--bulma-radius-rounded);
   border-end-end-radius: var(--bulma-radius-rounded);
-  -webkit-padding-end: 1.25em;
-          padding-inline-end: 1.25em;
+  padding-inline-end: 1.25em;
 }
 .bulma-tabs.bulma-is-small {
   font-size: var(--bulma-size-small);
@@ -8590,144 +8546,122 @@ label.bulma-panel-block:hover {
   width: 80%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-three-quarters {
-  -webkit-margin-start: 75%;
-          margin-inline-start: 75%;
+  margin-inline-start: 75%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-two-thirds {
-  -webkit-margin-start: 66.6666%;
-          margin-inline-start: 66.6666%;
+  margin-inline-start: 66.6666%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-half {
-  -webkit-margin-start: 50%;
-          margin-inline-start: 50%;
+  margin-inline-start: 50%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-one-third {
-  -webkit-margin-start: 0.3333%;
-          margin-inline-start: 0.3333%;
+  margin-inline-start: 0.3333%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-one-quarter {
-  -webkit-margin-start: 25%;
-          margin-inline-start: 25%;
+  margin-inline-start: 25%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-one-fifth {
-  -webkit-margin-start: 20%;
-          margin-inline-start: 20%;
+  margin-inline-start: 20%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-two-fifths {
-  -webkit-margin-start: 40%;
-          margin-inline-start: 40%;
+  margin-inline-start: 40%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-three-fifths {
-  -webkit-margin-start: 60%;
-          margin-inline-start: 60%;
+  margin-inline-start: 60%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-four-fifths {
-  -webkit-margin-start: 80%;
-          margin-inline-start: 80%;
+  margin-inline-start: 80%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-0 {
   flex: none;
   width: 0%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-0 {
-  -webkit-margin-start: 0%;
-          margin-inline-start: 0%;
+  margin-inline-start: 0%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-1 {
   flex: none;
   width: 8.3333333333%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-1 {
-  -webkit-margin-start: 8.3333333333%;
-          margin-inline-start: 8.3333333333%;
+  margin-inline-start: 8.3333333333%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-2 {
   flex: none;
   width: 16.6666666667%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-2 {
-  -webkit-margin-start: 16.6666666667%;
-          margin-inline-start: 16.6666666667%;
+  margin-inline-start: 16.6666666667%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-3 {
   flex: none;
   width: 25%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-3 {
-  -webkit-margin-start: 25%;
-          margin-inline-start: 25%;
+  margin-inline-start: 25%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-4 {
   flex: none;
   width: 33.3333333333%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-4 {
-  -webkit-margin-start: 33.3333333333%;
-          margin-inline-start: 33.3333333333%;
+  margin-inline-start: 33.3333333333%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-5 {
   flex: none;
   width: 41.6666666667%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-5 {
-  -webkit-margin-start: 41.6666666667%;
-          margin-inline-start: 41.6666666667%;
+  margin-inline-start: 41.6666666667%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-6 {
   flex: none;
   width: 50%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-6 {
-  -webkit-margin-start: 50%;
-          margin-inline-start: 50%;
+  margin-inline-start: 50%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-7 {
   flex: none;
   width: 58.3333333333%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-7 {
-  -webkit-margin-start: 58.3333333333%;
-          margin-inline-start: 58.3333333333%;
+  margin-inline-start: 58.3333333333%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-8 {
   flex: none;
   width: 66.6666666667%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-8 {
-  -webkit-margin-start: 66.6666666667%;
-          margin-inline-start: 66.6666666667%;
+  margin-inline-start: 66.6666666667%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-9 {
   flex: none;
   width: 75%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-9 {
-  -webkit-margin-start: 75%;
-          margin-inline-start: 75%;
+  margin-inline-start: 75%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-10 {
   flex: none;
   width: 83.3333333333%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-10 {
-  -webkit-margin-start: 83.3333333333%;
-          margin-inline-start: 83.3333333333%;
+  margin-inline-start: 83.3333333333%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-11 {
   flex: none;
   width: 91.6666666667%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-11 {
-  -webkit-margin-start: 91.6666666667%;
-          margin-inline-start: 91.6666666667%;
+  margin-inline-start: 91.6666666667%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-12 {
   flex: none;
   width: 100%;
 }
 .bulma-columns.bulma-is-mobile > .bulma-column.bulma-is-offset-12 {
-  -webkit-margin-start: 100%;
-          margin-inline-start: 100%;
+  margin-inline-start: 100%;
 }
 @media screen and (max-width: 768px) {
   .bulma-column.bulma-is-narrow-mobile {
@@ -8775,144 +8709,122 @@ label.bulma-panel-block:hover {
     width: 80%;
   }
   .bulma-column.bulma-is-offset-three-quarters-mobile {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-offset-two-thirds-mobile {
-    -webkit-margin-start: 66.6666%;
-            margin-inline-start: 66.6666%;
+    margin-inline-start: 66.6666%;
   }
   .bulma-column.bulma-is-offset-half-mobile {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-offset-one-third-mobile {
-    -webkit-margin-start: 0.3333%;
-            margin-inline-start: 0.3333%;
+    margin-inline-start: 0.3333%;
   }
   .bulma-column.bulma-is-offset-one-quarter-mobile {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-offset-one-fifth-mobile {
-    -webkit-margin-start: 20%;
-            margin-inline-start: 20%;
+    margin-inline-start: 20%;
   }
   .bulma-column.bulma-is-offset-two-fifths-mobile {
-    -webkit-margin-start: 40%;
-            margin-inline-start: 40%;
+    margin-inline-start: 40%;
   }
   .bulma-column.bulma-is-offset-three-fifths-mobile {
-    -webkit-margin-start: 60%;
-            margin-inline-start: 60%;
+    margin-inline-start: 60%;
   }
   .bulma-column.bulma-is-offset-four-fifths-mobile {
-    -webkit-margin-start: 80%;
-            margin-inline-start: 80%;
+    margin-inline-start: 80%;
   }
   .bulma-column.bulma-is-0-mobile {
     flex: none;
     width: 0%;
   }
   .bulma-column.bulma-is-offset-0-mobile {
-    -webkit-margin-start: 0%;
-            margin-inline-start: 0%;
+    margin-inline-start: 0%;
   }
   .bulma-column.bulma-is-1-mobile {
     flex: none;
     width: 8.3333333333%;
   }
   .bulma-column.bulma-is-offset-1-mobile {
-    -webkit-margin-start: 8.3333333333%;
-            margin-inline-start: 8.3333333333%;
+    margin-inline-start: 8.3333333333%;
   }
   .bulma-column.bulma-is-2-mobile {
     flex: none;
     width: 16.6666666667%;
   }
   .bulma-column.bulma-is-offset-2-mobile {
-    -webkit-margin-start: 16.6666666667%;
-            margin-inline-start: 16.6666666667%;
+    margin-inline-start: 16.6666666667%;
   }
   .bulma-column.bulma-is-3-mobile {
     flex: none;
     width: 25%;
   }
   .bulma-column.bulma-is-offset-3-mobile {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-4-mobile {
     flex: none;
     width: 33.3333333333%;
   }
   .bulma-column.bulma-is-offset-4-mobile {
-    -webkit-margin-start: 33.3333333333%;
-            margin-inline-start: 33.3333333333%;
+    margin-inline-start: 33.3333333333%;
   }
   .bulma-column.bulma-is-5-mobile {
     flex: none;
     width: 41.6666666667%;
   }
   .bulma-column.bulma-is-offset-5-mobile {
-    -webkit-margin-start: 41.6666666667%;
-            margin-inline-start: 41.6666666667%;
+    margin-inline-start: 41.6666666667%;
   }
   .bulma-column.bulma-is-6-mobile {
     flex: none;
     width: 50%;
   }
   .bulma-column.bulma-is-offset-6-mobile {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-7-mobile {
     flex: none;
     width: 58.3333333333%;
   }
   .bulma-column.bulma-is-offset-7-mobile {
-    -webkit-margin-start: 58.3333333333%;
-            margin-inline-start: 58.3333333333%;
+    margin-inline-start: 58.3333333333%;
   }
   .bulma-column.bulma-is-8-mobile {
     flex: none;
     width: 66.6666666667%;
   }
   .bulma-column.bulma-is-offset-8-mobile {
-    -webkit-margin-start: 66.6666666667%;
-            margin-inline-start: 66.6666666667%;
+    margin-inline-start: 66.6666666667%;
   }
   .bulma-column.bulma-is-9-mobile {
     flex: none;
     width: 75%;
   }
   .bulma-column.bulma-is-offset-9-mobile {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-10-mobile {
     flex: none;
     width: 83.3333333333%;
   }
   .bulma-column.bulma-is-offset-10-mobile {
-    -webkit-margin-start: 83.3333333333%;
-            margin-inline-start: 83.3333333333%;
+    margin-inline-start: 83.3333333333%;
   }
   .bulma-column.bulma-is-11-mobile {
     flex: none;
     width: 91.6666666667%;
   }
   .bulma-column.bulma-is-offset-11-mobile {
-    -webkit-margin-start: 91.6666666667%;
-            margin-inline-start: 91.6666666667%;
+    margin-inline-start: 91.6666666667%;
   }
   .bulma-column.bulma-is-12-mobile {
     flex: none;
     width: 100%;
   }
   .bulma-column.bulma-is-offset-12-mobile {
-    -webkit-margin-start: 100%;
-            margin-inline-start: 100%;
+    margin-inline-start: 100%;
   }
 }
 @media screen and (min-width: 769px), print {
@@ -8961,144 +8873,122 @@ label.bulma-panel-block:hover {
     width: 80%;
   }
   .bulma-column.bulma-is-offset-three-quarters, .bulma-column.bulma-is-offset-three-quarters-tablet {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-offset-two-thirds, .bulma-column.bulma-is-offset-two-thirds-tablet {
-    -webkit-margin-start: 66.6666%;
-            margin-inline-start: 66.6666%;
+    margin-inline-start: 66.6666%;
   }
   .bulma-column.bulma-is-offset-half, .bulma-column.bulma-is-offset-half-tablet {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-offset-one-third, .bulma-column.bulma-is-offset-one-third-tablet {
-    -webkit-margin-start: 0.3333%;
-            margin-inline-start: 0.3333%;
+    margin-inline-start: 0.3333%;
   }
   .bulma-column.bulma-is-offset-one-quarter, .bulma-column.bulma-is-offset-one-quarter-tablet {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-offset-one-fifth, .bulma-column.bulma-is-offset-one-fifth-tablet {
-    -webkit-margin-start: 20%;
-            margin-inline-start: 20%;
+    margin-inline-start: 20%;
   }
   .bulma-column.bulma-is-offset-two-fifths, .bulma-column.bulma-is-offset-two-fifths-tablet {
-    -webkit-margin-start: 40%;
-            margin-inline-start: 40%;
+    margin-inline-start: 40%;
   }
   .bulma-column.bulma-is-offset-three-fifths, .bulma-column.bulma-is-offset-three-fifths-tablet {
-    -webkit-margin-start: 60%;
-            margin-inline-start: 60%;
+    margin-inline-start: 60%;
   }
   .bulma-column.bulma-is-offset-four-fifths, .bulma-column.bulma-is-offset-four-fifths-tablet {
-    -webkit-margin-start: 80%;
-            margin-inline-start: 80%;
+    margin-inline-start: 80%;
   }
   .bulma-column.bulma-is-0, .bulma-column.bulma-is-0-tablet {
     flex: none;
     width: 0%;
   }
   .bulma-column.bulma-is-offset-0, .bulma-column.bulma-is-offset-0-tablet {
-    -webkit-margin-start: 0%;
-            margin-inline-start: 0%;
+    margin-inline-start: 0%;
   }
   .bulma-column.bulma-is-1, .bulma-column.bulma-is-1-tablet {
     flex: none;
     width: 8.3333333333%;
   }
   .bulma-column.bulma-is-offset-1, .bulma-column.bulma-is-offset-1-tablet {
-    -webkit-margin-start: 8.3333333333%;
-            margin-inline-start: 8.3333333333%;
+    margin-inline-start: 8.3333333333%;
   }
   .bulma-column.bulma-is-2, .bulma-column.bulma-is-2-tablet {
     flex: none;
     width: 16.6666666667%;
   }
   .bulma-column.bulma-is-offset-2, .bulma-column.bulma-is-offset-2-tablet {
-    -webkit-margin-start: 16.6666666667%;
-            margin-inline-start: 16.6666666667%;
+    margin-inline-start: 16.6666666667%;
   }
   .bulma-column.bulma-is-3, .bulma-column.bulma-is-3-tablet {
     flex: none;
     width: 25%;
   }
   .bulma-column.bulma-is-offset-3, .bulma-column.bulma-is-offset-3-tablet {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-4, .bulma-column.bulma-is-4-tablet {
     flex: none;
     width: 33.3333333333%;
   }
   .bulma-column.bulma-is-offset-4, .bulma-column.bulma-is-offset-4-tablet {
-    -webkit-margin-start: 33.3333333333%;
-            margin-inline-start: 33.3333333333%;
+    margin-inline-start: 33.3333333333%;
   }
   .bulma-column.bulma-is-5, .bulma-column.bulma-is-5-tablet {
     flex: none;
     width: 41.6666666667%;
   }
   .bulma-column.bulma-is-offset-5, .bulma-column.bulma-is-offset-5-tablet {
-    -webkit-margin-start: 41.6666666667%;
-            margin-inline-start: 41.6666666667%;
+    margin-inline-start: 41.6666666667%;
   }
   .bulma-column.bulma-is-6, .bulma-column.bulma-is-6-tablet {
     flex: none;
     width: 50%;
   }
   .bulma-column.bulma-is-offset-6, .bulma-column.bulma-is-offset-6-tablet {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-7, .bulma-column.bulma-is-7-tablet {
     flex: none;
     width: 58.3333333333%;
   }
   .bulma-column.bulma-is-offset-7, .bulma-column.bulma-is-offset-7-tablet {
-    -webkit-margin-start: 58.3333333333%;
-            margin-inline-start: 58.3333333333%;
+    margin-inline-start: 58.3333333333%;
   }
   .bulma-column.bulma-is-8, .bulma-column.bulma-is-8-tablet {
     flex: none;
     width: 66.6666666667%;
   }
   .bulma-column.bulma-is-offset-8, .bulma-column.bulma-is-offset-8-tablet {
-    -webkit-margin-start: 66.6666666667%;
-            margin-inline-start: 66.6666666667%;
+    margin-inline-start: 66.6666666667%;
   }
   .bulma-column.bulma-is-9, .bulma-column.bulma-is-9-tablet {
     flex: none;
     width: 75%;
   }
   .bulma-column.bulma-is-offset-9, .bulma-column.bulma-is-offset-9-tablet {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-10, .bulma-column.bulma-is-10-tablet {
     flex: none;
     width: 83.3333333333%;
   }
   .bulma-column.bulma-is-offset-10, .bulma-column.bulma-is-offset-10-tablet {
-    -webkit-margin-start: 83.3333333333%;
-            margin-inline-start: 83.3333333333%;
+    margin-inline-start: 83.3333333333%;
   }
   .bulma-column.bulma-is-11, .bulma-column.bulma-is-11-tablet {
     flex: none;
     width: 91.6666666667%;
   }
   .bulma-column.bulma-is-offset-11, .bulma-column.bulma-is-offset-11-tablet {
-    -webkit-margin-start: 91.6666666667%;
-            margin-inline-start: 91.6666666667%;
+    margin-inline-start: 91.6666666667%;
   }
   .bulma-column.bulma-is-12, .bulma-column.bulma-is-12-tablet {
     flex: none;
     width: 100%;
   }
   .bulma-column.bulma-is-offset-12, .bulma-column.bulma-is-offset-12-tablet {
-    -webkit-margin-start: 100%;
-            margin-inline-start: 100%;
+    margin-inline-start: 100%;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -9147,144 +9037,122 @@ label.bulma-panel-block:hover {
     width: 80%;
   }
   .bulma-column.bulma-is-offset-three-quarters-touch {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-offset-two-thirds-touch {
-    -webkit-margin-start: 66.6666%;
-            margin-inline-start: 66.6666%;
+    margin-inline-start: 66.6666%;
   }
   .bulma-column.bulma-is-offset-half-touch {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-offset-one-third-touch {
-    -webkit-margin-start: 0.3333%;
-            margin-inline-start: 0.3333%;
+    margin-inline-start: 0.3333%;
   }
   .bulma-column.bulma-is-offset-one-quarter-touch {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-offset-one-fifth-touch {
-    -webkit-margin-start: 20%;
-            margin-inline-start: 20%;
+    margin-inline-start: 20%;
   }
   .bulma-column.bulma-is-offset-two-fifths-touch {
-    -webkit-margin-start: 40%;
-            margin-inline-start: 40%;
+    margin-inline-start: 40%;
   }
   .bulma-column.bulma-is-offset-three-fifths-touch {
-    -webkit-margin-start: 60%;
-            margin-inline-start: 60%;
+    margin-inline-start: 60%;
   }
   .bulma-column.bulma-is-offset-four-fifths-touch {
-    -webkit-margin-start: 80%;
-            margin-inline-start: 80%;
+    margin-inline-start: 80%;
   }
   .bulma-column.bulma-is-0-touch {
     flex: none;
     width: 0%;
   }
   .bulma-column.bulma-is-offset-0-touch {
-    -webkit-margin-start: 0%;
-            margin-inline-start: 0%;
+    margin-inline-start: 0%;
   }
   .bulma-column.bulma-is-1-touch {
     flex: none;
     width: 8.3333333333%;
   }
   .bulma-column.bulma-is-offset-1-touch {
-    -webkit-margin-start: 8.3333333333%;
-            margin-inline-start: 8.3333333333%;
+    margin-inline-start: 8.3333333333%;
   }
   .bulma-column.bulma-is-2-touch {
     flex: none;
     width: 16.6666666667%;
   }
   .bulma-column.bulma-is-offset-2-touch {
-    -webkit-margin-start: 16.6666666667%;
-            margin-inline-start: 16.6666666667%;
+    margin-inline-start: 16.6666666667%;
   }
   .bulma-column.bulma-is-3-touch {
     flex: none;
     width: 25%;
   }
   .bulma-column.bulma-is-offset-3-touch {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-4-touch {
     flex: none;
     width: 33.3333333333%;
   }
   .bulma-column.bulma-is-offset-4-touch {
-    -webkit-margin-start: 33.3333333333%;
-            margin-inline-start: 33.3333333333%;
+    margin-inline-start: 33.3333333333%;
   }
   .bulma-column.bulma-is-5-touch {
     flex: none;
     width: 41.6666666667%;
   }
   .bulma-column.bulma-is-offset-5-touch {
-    -webkit-margin-start: 41.6666666667%;
-            margin-inline-start: 41.6666666667%;
+    margin-inline-start: 41.6666666667%;
   }
   .bulma-column.bulma-is-6-touch {
     flex: none;
     width: 50%;
   }
   .bulma-column.bulma-is-offset-6-touch {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-7-touch {
     flex: none;
     width: 58.3333333333%;
   }
   .bulma-column.bulma-is-offset-7-touch {
-    -webkit-margin-start: 58.3333333333%;
-            margin-inline-start: 58.3333333333%;
+    margin-inline-start: 58.3333333333%;
   }
   .bulma-column.bulma-is-8-touch {
     flex: none;
     width: 66.6666666667%;
   }
   .bulma-column.bulma-is-offset-8-touch {
-    -webkit-margin-start: 66.6666666667%;
-            margin-inline-start: 66.6666666667%;
+    margin-inline-start: 66.6666666667%;
   }
   .bulma-column.bulma-is-9-touch {
     flex: none;
     width: 75%;
   }
   .bulma-column.bulma-is-offset-9-touch {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-10-touch {
     flex: none;
     width: 83.3333333333%;
   }
   .bulma-column.bulma-is-offset-10-touch {
-    -webkit-margin-start: 83.3333333333%;
-            margin-inline-start: 83.3333333333%;
+    margin-inline-start: 83.3333333333%;
   }
   .bulma-column.bulma-is-11-touch {
     flex: none;
     width: 91.6666666667%;
   }
   .bulma-column.bulma-is-offset-11-touch {
-    -webkit-margin-start: 91.6666666667%;
-            margin-inline-start: 91.6666666667%;
+    margin-inline-start: 91.6666666667%;
   }
   .bulma-column.bulma-is-12-touch {
     flex: none;
     width: 100%;
   }
   .bulma-column.bulma-is-offset-12-touch {
-    -webkit-margin-start: 100%;
-            margin-inline-start: 100%;
+    margin-inline-start: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -9333,144 +9201,122 @@ label.bulma-panel-block:hover {
     width: 80%;
   }
   .bulma-column.bulma-is-offset-three-quarters-desktop {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-offset-two-thirds-desktop {
-    -webkit-margin-start: 66.6666%;
-            margin-inline-start: 66.6666%;
+    margin-inline-start: 66.6666%;
   }
   .bulma-column.bulma-is-offset-half-desktop {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-offset-one-third-desktop {
-    -webkit-margin-start: 0.3333%;
-            margin-inline-start: 0.3333%;
+    margin-inline-start: 0.3333%;
   }
   .bulma-column.bulma-is-offset-one-quarter-desktop {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-offset-one-fifth-desktop {
-    -webkit-margin-start: 20%;
-            margin-inline-start: 20%;
+    margin-inline-start: 20%;
   }
   .bulma-column.bulma-is-offset-two-fifths-desktop {
-    -webkit-margin-start: 40%;
-            margin-inline-start: 40%;
+    margin-inline-start: 40%;
   }
   .bulma-column.bulma-is-offset-three-fifths-desktop {
-    -webkit-margin-start: 60%;
-            margin-inline-start: 60%;
+    margin-inline-start: 60%;
   }
   .bulma-column.bulma-is-offset-four-fifths-desktop {
-    -webkit-margin-start: 80%;
-            margin-inline-start: 80%;
+    margin-inline-start: 80%;
   }
   .bulma-column.bulma-is-0-desktop {
     flex: none;
     width: 0%;
   }
   .bulma-column.bulma-is-offset-0-desktop {
-    -webkit-margin-start: 0%;
-            margin-inline-start: 0%;
+    margin-inline-start: 0%;
   }
   .bulma-column.bulma-is-1-desktop {
     flex: none;
     width: 8.3333333333%;
   }
   .bulma-column.bulma-is-offset-1-desktop {
-    -webkit-margin-start: 8.3333333333%;
-            margin-inline-start: 8.3333333333%;
+    margin-inline-start: 8.3333333333%;
   }
   .bulma-column.bulma-is-2-desktop {
     flex: none;
     width: 16.6666666667%;
   }
   .bulma-column.bulma-is-offset-2-desktop {
-    -webkit-margin-start: 16.6666666667%;
-            margin-inline-start: 16.6666666667%;
+    margin-inline-start: 16.6666666667%;
   }
   .bulma-column.bulma-is-3-desktop {
     flex: none;
     width: 25%;
   }
   .bulma-column.bulma-is-offset-3-desktop {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-4-desktop {
     flex: none;
     width: 33.3333333333%;
   }
   .bulma-column.bulma-is-offset-4-desktop {
-    -webkit-margin-start: 33.3333333333%;
-            margin-inline-start: 33.3333333333%;
+    margin-inline-start: 33.3333333333%;
   }
   .bulma-column.bulma-is-5-desktop {
     flex: none;
     width: 41.6666666667%;
   }
   .bulma-column.bulma-is-offset-5-desktop {
-    -webkit-margin-start: 41.6666666667%;
-            margin-inline-start: 41.6666666667%;
+    margin-inline-start: 41.6666666667%;
   }
   .bulma-column.bulma-is-6-desktop {
     flex: none;
     width: 50%;
   }
   .bulma-column.bulma-is-offset-6-desktop {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-7-desktop {
     flex: none;
     width: 58.3333333333%;
   }
   .bulma-column.bulma-is-offset-7-desktop {
-    -webkit-margin-start: 58.3333333333%;
-            margin-inline-start: 58.3333333333%;
+    margin-inline-start: 58.3333333333%;
   }
   .bulma-column.bulma-is-8-desktop {
     flex: none;
     width: 66.6666666667%;
   }
   .bulma-column.bulma-is-offset-8-desktop {
-    -webkit-margin-start: 66.6666666667%;
-            margin-inline-start: 66.6666666667%;
+    margin-inline-start: 66.6666666667%;
   }
   .bulma-column.bulma-is-9-desktop {
     flex: none;
     width: 75%;
   }
   .bulma-column.bulma-is-offset-9-desktop {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-10-desktop {
     flex: none;
     width: 83.3333333333%;
   }
   .bulma-column.bulma-is-offset-10-desktop {
-    -webkit-margin-start: 83.3333333333%;
-            margin-inline-start: 83.3333333333%;
+    margin-inline-start: 83.3333333333%;
   }
   .bulma-column.bulma-is-11-desktop {
     flex: none;
     width: 91.6666666667%;
   }
   .bulma-column.bulma-is-offset-11-desktop {
-    -webkit-margin-start: 91.6666666667%;
-            margin-inline-start: 91.6666666667%;
+    margin-inline-start: 91.6666666667%;
   }
   .bulma-column.bulma-is-12-desktop {
     flex: none;
     width: 100%;
   }
   .bulma-column.bulma-is-offset-12-desktop {
-    -webkit-margin-start: 100%;
-            margin-inline-start: 100%;
+    margin-inline-start: 100%;
   }
 }
 @media screen and (min-width: 1216px) {
@@ -9519,144 +9365,122 @@ label.bulma-panel-block:hover {
     width: 80%;
   }
   .bulma-column.bulma-is-offset-three-quarters-widescreen {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-offset-two-thirds-widescreen {
-    -webkit-margin-start: 66.6666%;
-            margin-inline-start: 66.6666%;
+    margin-inline-start: 66.6666%;
   }
   .bulma-column.bulma-is-offset-half-widescreen {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-offset-one-third-widescreen {
-    -webkit-margin-start: 0.3333%;
-            margin-inline-start: 0.3333%;
+    margin-inline-start: 0.3333%;
   }
   .bulma-column.bulma-is-offset-one-quarter-widescreen {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-offset-one-fifth-widescreen {
-    -webkit-margin-start: 20%;
-            margin-inline-start: 20%;
+    margin-inline-start: 20%;
   }
   .bulma-column.bulma-is-offset-two-fifths-widescreen {
-    -webkit-margin-start: 40%;
-            margin-inline-start: 40%;
+    margin-inline-start: 40%;
   }
   .bulma-column.bulma-is-offset-three-fifths-widescreen {
-    -webkit-margin-start: 60%;
-            margin-inline-start: 60%;
+    margin-inline-start: 60%;
   }
   .bulma-column.bulma-is-offset-four-fifths-widescreen {
-    -webkit-margin-start: 80%;
-            margin-inline-start: 80%;
+    margin-inline-start: 80%;
   }
   .bulma-column.bulma-is-0-widescreen {
     flex: none;
     width: 0%;
   }
   .bulma-column.bulma-is-offset-0-widescreen {
-    -webkit-margin-start: 0%;
-            margin-inline-start: 0%;
+    margin-inline-start: 0%;
   }
   .bulma-column.bulma-is-1-widescreen {
     flex: none;
     width: 8.3333333333%;
   }
   .bulma-column.bulma-is-offset-1-widescreen {
-    -webkit-margin-start: 8.3333333333%;
-            margin-inline-start: 8.3333333333%;
+    margin-inline-start: 8.3333333333%;
   }
   .bulma-column.bulma-is-2-widescreen {
     flex: none;
     width: 16.6666666667%;
   }
   .bulma-column.bulma-is-offset-2-widescreen {
-    -webkit-margin-start: 16.6666666667%;
-            margin-inline-start: 16.6666666667%;
+    margin-inline-start: 16.6666666667%;
   }
   .bulma-column.bulma-is-3-widescreen {
     flex: none;
     width: 25%;
   }
   .bulma-column.bulma-is-offset-3-widescreen {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-4-widescreen {
     flex: none;
     width: 33.3333333333%;
   }
   .bulma-column.bulma-is-offset-4-widescreen {
-    -webkit-margin-start: 33.3333333333%;
-            margin-inline-start: 33.3333333333%;
+    margin-inline-start: 33.3333333333%;
   }
   .bulma-column.bulma-is-5-widescreen {
     flex: none;
     width: 41.6666666667%;
   }
   .bulma-column.bulma-is-offset-5-widescreen {
-    -webkit-margin-start: 41.6666666667%;
-            margin-inline-start: 41.6666666667%;
+    margin-inline-start: 41.6666666667%;
   }
   .bulma-column.bulma-is-6-widescreen {
     flex: none;
     width: 50%;
   }
   .bulma-column.bulma-is-offset-6-widescreen {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-7-widescreen {
     flex: none;
     width: 58.3333333333%;
   }
   .bulma-column.bulma-is-offset-7-widescreen {
-    -webkit-margin-start: 58.3333333333%;
-            margin-inline-start: 58.3333333333%;
+    margin-inline-start: 58.3333333333%;
   }
   .bulma-column.bulma-is-8-widescreen {
     flex: none;
     width: 66.6666666667%;
   }
   .bulma-column.bulma-is-offset-8-widescreen {
-    -webkit-margin-start: 66.6666666667%;
-            margin-inline-start: 66.6666666667%;
+    margin-inline-start: 66.6666666667%;
   }
   .bulma-column.bulma-is-9-widescreen {
     flex: none;
     width: 75%;
   }
   .bulma-column.bulma-is-offset-9-widescreen {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-10-widescreen {
     flex: none;
     width: 83.3333333333%;
   }
   .bulma-column.bulma-is-offset-10-widescreen {
-    -webkit-margin-start: 83.3333333333%;
-            margin-inline-start: 83.3333333333%;
+    margin-inline-start: 83.3333333333%;
   }
   .bulma-column.bulma-is-11-widescreen {
     flex: none;
     width: 91.6666666667%;
   }
   .bulma-column.bulma-is-offset-11-widescreen {
-    -webkit-margin-start: 91.6666666667%;
-            margin-inline-start: 91.6666666667%;
+    margin-inline-start: 91.6666666667%;
   }
   .bulma-column.bulma-is-12-widescreen {
     flex: none;
     width: 100%;
   }
   .bulma-column.bulma-is-offset-12-widescreen {
-    -webkit-margin-start: 100%;
-            margin-inline-start: 100%;
+    margin-inline-start: 100%;
   }
 }
 @media screen and (min-width: 1408px) {
@@ -9705,152 +9529,128 @@ label.bulma-panel-block:hover {
     width: 80%;
   }
   .bulma-column.bulma-is-offset-three-quarters-fullhd {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-offset-two-thirds-fullhd {
-    -webkit-margin-start: 66.6666%;
-            margin-inline-start: 66.6666%;
+    margin-inline-start: 66.6666%;
   }
   .bulma-column.bulma-is-offset-half-fullhd {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-offset-one-third-fullhd {
-    -webkit-margin-start: 33.3333%;
-            margin-inline-start: 33.3333%;
+    margin-inline-start: 33.3333%;
   }
   .bulma-column.bulma-is-offset-one-quarter-fullhd {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-offset-one-fifth-fullhd {
-    -webkit-margin-start: 20%;
-            margin-inline-start: 20%;
+    margin-inline-start: 20%;
   }
   .bulma-column.bulma-is-offset-two-fifths-fullhd {
-    -webkit-margin-start: 40%;
-            margin-inline-start: 40%;
+    margin-inline-start: 40%;
   }
   .bulma-column.bulma-is-offset-three-fifths-fullhd {
-    -webkit-margin-start: 60%;
-            margin-inline-start: 60%;
+    margin-inline-start: 60%;
   }
   .bulma-column.bulma-is-offset-four-fifths-fullhd {
-    -webkit-margin-start: 80%;
-            margin-inline-start: 80%;
+    margin-inline-start: 80%;
   }
   .bulma-column.bulma-is-0-fullhd {
     flex: none;
     width: 0%;
   }
   .bulma-column.bulma-is-offset-0-fullhd {
-    -webkit-margin-start: 0%;
-            margin-inline-start: 0%;
+    margin-inline-start: 0%;
   }
   .bulma-column.bulma-is-1-fullhd {
     flex: none;
     width: 8.3333333333%;
   }
   .bulma-column.bulma-is-offset-1-fullhd {
-    -webkit-margin-start: 8.3333333333%;
-            margin-inline-start: 8.3333333333%;
+    margin-inline-start: 8.3333333333%;
   }
   .bulma-column.bulma-is-2-fullhd {
     flex: none;
     width: 16.6666666667%;
   }
   .bulma-column.bulma-is-offset-2-fullhd {
-    -webkit-margin-start: 16.6666666667%;
-            margin-inline-start: 16.6666666667%;
+    margin-inline-start: 16.6666666667%;
   }
   .bulma-column.bulma-is-3-fullhd {
     flex: none;
     width: 25%;
   }
   .bulma-column.bulma-is-offset-3-fullhd {
-    -webkit-margin-start: 25%;
-            margin-inline-start: 25%;
+    margin-inline-start: 25%;
   }
   .bulma-column.bulma-is-4-fullhd {
     flex: none;
     width: 33.3333333333%;
   }
   .bulma-column.bulma-is-offset-4-fullhd {
-    -webkit-margin-start: 33.3333333333%;
-            margin-inline-start: 33.3333333333%;
+    margin-inline-start: 33.3333333333%;
   }
   .bulma-column.bulma-is-5-fullhd {
     flex: none;
     width: 41.6666666667%;
   }
   .bulma-column.bulma-is-offset-5-fullhd {
-    -webkit-margin-start: 41.6666666667%;
-            margin-inline-start: 41.6666666667%;
+    margin-inline-start: 41.6666666667%;
   }
   .bulma-column.bulma-is-6-fullhd {
     flex: none;
     width: 50%;
   }
   .bulma-column.bulma-is-offset-6-fullhd {
-    -webkit-margin-start: 50%;
-            margin-inline-start: 50%;
+    margin-inline-start: 50%;
   }
   .bulma-column.bulma-is-7-fullhd {
     flex: none;
     width: 58.3333333333%;
   }
   .bulma-column.bulma-is-offset-7-fullhd {
-    -webkit-margin-start: 58.3333333333%;
-            margin-inline-start: 58.3333333333%;
+    margin-inline-start: 58.3333333333%;
   }
   .bulma-column.bulma-is-8-fullhd {
     flex: none;
     width: 66.6666666667%;
   }
   .bulma-column.bulma-is-offset-8-fullhd {
-    -webkit-margin-start: 66.6666666667%;
-            margin-inline-start: 66.6666666667%;
+    margin-inline-start: 66.6666666667%;
   }
   .bulma-column.bulma-is-9-fullhd {
     flex: none;
     width: 75%;
   }
   .bulma-column.bulma-is-offset-9-fullhd {
-    -webkit-margin-start: 75%;
-            margin-inline-start: 75%;
+    margin-inline-start: 75%;
   }
   .bulma-column.bulma-is-10-fullhd {
     flex: none;
     width: 83.3333333333%;
   }
   .bulma-column.bulma-is-offset-10-fullhd {
-    -webkit-margin-start: 83.3333333333%;
-            margin-inline-start: 83.3333333333%;
+    margin-inline-start: 83.3333333333%;
   }
   .bulma-column.bulma-is-11-fullhd {
     flex: none;
     width: 91.6666666667%;
   }
   .bulma-column.bulma-is-offset-11-fullhd {
-    -webkit-margin-start: 91.6666666667%;
-            margin-inline-start: 91.6666666667%;
+    margin-inline-start: 91.6666666667%;
   }
   .bulma-column.bulma-is-12-fullhd {
     flex: none;
     width: 100%;
   }
   .bulma-column.bulma-is-offset-12-fullhd {
-    -webkit-margin-start: 100%;
-            margin-inline-start: 100%;
+    margin-inline-start: 100%;
   }
 }
 
 .bulma-columns {
-  -webkit-margin-start: calc(-1 * var(--bulma-column-gap));
-          margin-inline-start: calc(-1 * var(--bulma-column-gap));
-  -webkit-margin-end: calc(-1 * var(--bulma-column-gap));
-          margin-inline-end: calc(-1 * var(--bulma-column-gap));
+  margin-inline-start: calc(-1 * var(--bulma-column-gap));
+  margin-inline-end: calc(-1 * var(--bulma-column-gap));
   margin-top: calc(-1 * var(--bulma-column-gap));
 }
 .bulma-columns:last-child {
@@ -9863,10 +9663,8 @@ label.bulma-panel-block:hover {
   justify-content: center;
 }
 .bulma-columns.bulma-is-gapless {
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   margin-top: 0;
 }
 .bulma-columns.bulma-is-gapless > .bulma-column {
@@ -13382,6 +13180,9 @@ label.bulma-panel-block:hover {
   --bulma-hero-body-padding-small: 1.5rem;
   --bulma-hero-body-padding-medium: 9rem 4.5rem;
   --bulma-hero-body-padding-large: 18rem 6rem;
+  --bulma-hero-gradient-h-offset: 5deg;
+  --bulma-hero-gradient-s-offset: 10%;
+  --bulma-hero-gradient-l-offset: 5%;
 }
 
 .bulma-hero {
@@ -13868,8 +13669,7 @@ label.bulma-panel-block:hover {
     justify-content: center;
   }
   .bulma-hero-buttons .bulma-button:not(:last-child) {
-    -webkit-margin-end: 1.5rem;
-            margin-inline-end: 1.5rem;
+    margin-inline-end: 1.5rem;
   }
 }
 
@@ -14028,13 +13828,11 @@ label.bulma-panel-block:hover {
 }
 
 .bulma-media-left {
-  -webkit-margin-end: var(--bulma-media-spacing);
-          margin-inline-end: var(--bulma-media-spacing);
+  margin-inline-end: var(--bulma-media-spacing);
 }
 
 .bulma-media-right {
-  -webkit-margin-start: var(--bulma-media-spacing);
-          margin-inline-start: var(--bulma-media-spacing);
+  margin-inline-start: var(--bulma-media-spacing);
 }
 
 .bulma-media-content {

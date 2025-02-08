@@ -33,3 +33,13 @@ npm install
 ```
 npm run build
 ```
+
+#### Test the web page into Github Workspce
+
+```sh
+npm i -g http-server
+```
+
+```sh
+http-server
+```
