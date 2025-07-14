@@ -3784,6 +3784,7 @@ a.bulma-box:active {
 }
 .bulma-button.bulma-is-outlined {
   --bulma-button-border-width: max(1px, 0.0625em);
+  --bulma-loading-color: hsl(var(--bulma-button-h), var(--bulma-button-s), var(--bulma-button-l));
   background-color: transparent;
   border-color: hsl(var(--bulma-button-h), var(--bulma-button-s), var(--bulma-button-l));
   color: hsl(var(--bulma-button-h), var(--bulma-button-s), var(--bulma-button-l));
@@ -21076,6 +21077,10 @@ has-background-danger.bulma-is-hoverable:active {
 
 .bulma-has-text-weight-bold {
   font-weight: 700 !important;
+}
+
+.bulma-has-text-weight-extrabold {
+  font-weight: 800 !important;
 }
 
 .bulma-is-family-primary {
